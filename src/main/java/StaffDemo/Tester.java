@@ -4,17 +4,24 @@ public class Tester extends Enginer {
     private Project project;
     private double partOfProject;
 
-    public Tester(String surname, String name, String secondname, double partOfProject) {
+    public Tester(String surname, String name, String secondname) {
         super(surname, name, secondname);
+    }
+
+    public void setPartOfProject(double partOfProject) {
         this.partOfProject = partOfProject;
     }
 
-    void calcPayment() {
+    public void setProject(Project project) {
+        this.project = project;
+    }
+
+    public void calcPayment() {
         payment = calcPaymentForPartOfProject() + calcPaymentWorkTime();
     }
 
     public double calcPaymentForPartOfProject() {
-        return  partOfProject * project.budget;
+        return  project.allotMoney(partOfProject * project.budget);
     }
 
     public double calcPaymentWorkTime() {

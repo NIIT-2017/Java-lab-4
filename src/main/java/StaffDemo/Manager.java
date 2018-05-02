@@ -16,7 +16,7 @@ public class Manager extends Employee implements PaymentForProject {
         this.rate = rate;
     }
 
-    void calcPayment() {
+    public void calcPayment() {
         payment = calcPaymentForPartOfProject();
     }
 

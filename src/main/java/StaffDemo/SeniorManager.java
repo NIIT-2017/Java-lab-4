@@ -13,14 +13,14 @@ public class SeniorManager extends ProjectManager {
         projects.add(project);
     }
 
-    void calcPayment() {
+    public void calcPayment() {
         payment = calcPaymentForHeading();
     }
 
     public double calcPaymentForHeading() {
         double summ = 0.0;
         for (Project nextProject : projects) {
-            summ += rate * nextProject.workers.size();
+            summ += rate * (nextProject.getCountManagers() + nextProject.getCountProgramers() + nextProject.getCountTesters());
         }
         return summ;
     }

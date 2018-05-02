@@ -10,12 +10,12 @@ public class Programmer extends Enginer {
         projects = new ArrayList<Work>();
     }
 
-    void addWork(Project project, Double part) {
+    public void addWork(Project project, Double part) {
         Work work = new Work(project, part);
         projects.add(work);
     }
 
-    void calcPayment() {
+    public void calcPayment() {
         payment = calcPaymentForPartOfProject() + calcPaymentWorkTime();
     }
 
@@ -23,9 +23,7 @@ public class Programmer extends Enginer {
         double summ=0.0;
         for (Work next : projects) {
             double money = next.part * next.project.budget;
-            summ += money;
-
-            next.project.budget -= money;
+            summ += next.project.allotMoney(money);
         }
         return summ;
     }

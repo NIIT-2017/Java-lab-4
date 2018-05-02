@@ -5,11 +5,11 @@ public class ProjectManager extends Manager implements Heading{
         super(surname, name, secondname);
     }
 
-    void calcPayment() {
+    public void calcPayment() {
         payment = calcPaymentForPartOfProject() + calcPaymentForHeading();
     }
 
     public double calcPaymentForHeading() {
-        return rate*project.workers.size();
+        return project.allotMoney(rate * (project.getCountProgramers() + project.getCountManagers()));
     }
 }

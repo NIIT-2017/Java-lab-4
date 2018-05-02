@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<projects>
+    <project title="Project1" budget="100000"/>
+    <project title="Project2" budget="100000"/>
+    <project title="Project3" budget="100000"/>
+</projects>

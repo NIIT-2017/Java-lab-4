@@ -2,12 +2,11 @@ package StaffDemo;
 
 public class Cleaner extends Personal {
 
-    public Cleaner(String surname, String name, String secondname, double rate) {
+    public Cleaner(String surname, String name, String secondname) {
         super(surname, name, secondname);
-        this.ratePerDayHours = rate;
     }
 
-    void calcPayment() {
+    public void calcPayment() {
         payment = calcPaymentWorkTime();
     }
 

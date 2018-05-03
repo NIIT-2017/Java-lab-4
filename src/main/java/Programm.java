@@ -1,8 +1,5 @@
 import StaffDemo.*;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -19,110 +16,85 @@ public class Programm {
 
 
     public static void main(String[] args) {
-        createStaff();
+        ArrayList<Project> projects = readProjectsFromFIle(new File("src/main/resources/project.xml"));
+        ArrayList<Employee> staff = readStaffFromFile(new File("src/main/resources/data.xml"));
+        ArrayList<Programmer> programmers = Programmer.getProgrammers(staff);
         System.out.println("Welcome to the StaffDemo");
-
-        Project project1 = new Project("Project1", 10000);
-        Project project2 = new Project("Project2", 10000);
-
-        Cleaner cleaner = new Cleaner("Иванов", "Иван", "Иванович");
-        cleaner.setDayWorkHours(8);
-        cleaner.setRatePerDayHours(50);
-
-        Driver driver = new Driver("Петров", "Петр", "петрович");
-        driver.setNightWorkHours(4);
-        driver.setRatePerNightHours(120);
-        driver.setDayWorkHours(8);
-        driver.setDayWorkHours(80);
-
-        Programmer programmer1 = new Programmer("Surname1", "Name1", "Secondname1");
-        programmer1.addWork(project1, 0.03);
-        programmer1.addWork(project2, 0.01);
-
-        Programmer programmer2 = new Programmer("Surname2", "Name2", "Secondname2");
-        programmer2.addWork(project1, 0.02);
-
-        Programmer programmer3 = new Programmer("Surname3", "Name3", "Secondname3");
-        programmer3.addWork(project1, 0.05);
-
-        Programmer programmer4 = new Programmer("Surname4", "Name4", "Secondname4");
-        programmer4.addWork(project2, 0.01);
-
-        Programmer programmer5 = new Programmer("Surname5", "Name5", "Secondname5");
-        programmer5.addWork(project2, 0.06);
-
-        TeamLeader leader1 = new TeamLeader("leaderSurname1", "LeaderName1", "leaderSecondname1");
-        leader1.setRateForProgrammer(8);
-        leader1.setProject(project1);
-
-        TeamLeader leader2 = new TeamLeader("leaderSurname2", "LeaderName2", "leaderSecondname2");
-        leader2.setRateForProgrammer(8);
-        leader2.setProject(project2);
-
     }
 
-    private static void createStaff() {
-        ArrayList<Employee> staff = new ArrayList<Employee>();
-        NodeList list = readFromXML(new File("src/main/resources/emploers.xml"));
-        for (int i = 0; i < 54; i++) {
-            if (i < 15) {
+    private static ArrayList<Project> readProjectsFromFIle(File data) {
+        ArrayList<Project> projects = new ArrayList<Project>();
+        NodeList list = readFromXML(new File("src/main/resources/projects.sml"), "project");
+        if (list != null) {
+            for (int i = 0; i < list.getLength(); i++) {
                 NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new Programmer(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
-            }
-            else if (i < 30) {
-                NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new Tester(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
-            }
-            else if (i < 38) {
-                NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new Driver(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
-            }
-            else if (i < 42) {
-                NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new Manager(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
-            }
-            else if (i < 47) {
-                NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new Cleaner(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
-            }
-            else if (i < 50) {
-                NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new TeamLeader(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
-            }
-            else if (i < 53) {
-                NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new ProjectManager(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
-            }
-            else if (i < 54) {
-                NamedNodeMap attributes = list.item(i).getAttributes();
-                staff.add(new SeniorManager(
-                        attributes.getNamedItem("surname").getNodeValue(),
-                        attributes.getNamedItem("name").getNodeValue(),
-                        attributes.getNamedItem("secondname").getNodeValue()));
+                projects.add(new Project(
+                        attributes.getNamedItem("title").getNodeValue(),
+                        Integer.parseInt(attributes.getNamedItem("budget").getNodeValue())));
             }
         }
-        writeDataToXML(staff);
+        return projects;
+    }
+
+    private static ArrayList<Employee> readStaffFromFile(File data){
+        ArrayList<Employee> staff = new ArrayList<Employee>();
+        NodeList list = readFromXML(data, "emploer");
+        if (list != null) {
+            for (int i = 0; i < list.getLength(); i++) {
+                NamedNodeMap attributes = list.item(i).getAttributes();
+                String s = attributes.getNamedItem("position").getNodeValue();
+                if ("Programmer".equals(s)) {
+                    staff.add(new Programmer(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                } else if ("Tester".equals(s)) {
+                    staff.add(new Tester(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                } else if ("Driver".equals(s)) {
+                    staff.add(new Driver(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                } else if ("Manager".equals(s)) {
+                    staff.add(new Manager(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                } else if ("Cleaner".equals(s)) {
+                    staff.add(new Cleaner(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                } else if ("TeamLeader".equals(s)) {
+                    staff.add(new TeamLeader(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                } else if ("ProjectManager".equals(s)) {
+                    staff.add(new ProjectManager(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                } else if ("SeniorManager".equals(s)) {
+                    staff.add(new SeniorManager(
+                            attributes.getNamedItem("ID").getNodeValue(),
+                            attributes.getNamedItem("surname").getNodeValue(),
+                            attributes.getNamedItem("name").getNodeValue(),
+                            attributes.getNamedItem("secondname").getNodeValue()));
+                }
+            }
+        }
+        return staff;
     }
 
     private static void writeDataToXML(ArrayList<Employee> staff) {
@@ -154,12 +126,12 @@ public class Programm {
         }
     }
 
-    private static NodeList readFromXML(File file) {
+    private static NodeList readFromXML(File file,String teg) {
         try {
             DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
             Document doc = db.parse(file);
             Element root = doc.getDocumentElement();
-            return root.getElementsByTagName("emploer");
+            return root.getElementsByTagName(teg);
 
         } catch (ParserConfigurationException e1) {
             e1.printStackTrace();

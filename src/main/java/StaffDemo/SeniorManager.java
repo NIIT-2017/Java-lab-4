@@ -9,6 +9,10 @@ public class SeniorManager extends ProjectManager {
         super(surname, name, secondname);
     }
 
+    public SeniorManager(String id, String surname, String name, String secondname) {
+        super(id, surname, name, secondname);
+    }
+
     void addProject(Project project) {
         projects.add(project);
     }
@@ -20,8 +24,18 @@ public class SeniorManager extends ProjectManager {
     public double calcPaymentForHeading() {
         double summ = 0.0;
         for (Project nextProject : projects) {
-            summ += rate * (nextProject.getCountManagers() + nextProject.getCountProgramers() + nextProject.getCountTesters());
+            summ += rate * (nextProject.getEmployee().size()+2);
         }
         return summ;
+    }
+
+    public static ArrayList<SeniorManager> getSeniorManagers(ArrayList<Employee> employees) {
+        ArrayList<SeniorManager> newArray = new ArrayList<SeniorManager>();
+        for(Employee next: employees){
+            if (next.getClass().getSimpleName().equals("SeniorManager")) {
+                newArray.add((SeniorManager) next);
+            }
+        }
+        return newArray;
     }
 }

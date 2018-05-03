@@ -3,16 +3,23 @@ package StaffDemo;
 import java.util.ArrayList;
 public class Programmer extends Enginer {
 
-    private ArrayList<Work> projects;
+    private Project project;
+    private double partOfProject;
 
     public Programmer(String surname, String name, String secondname) {
         super(surname, name, secondname);
-        projects = new ArrayList<Work>();
     }
 
-    public void addWork(Project project, Double part) {
-        Work work = new Work(project, part);
-        projects.add(work);
+    public Programmer(String id, String surname, String name, String secondname) {
+        super(id, surname, name, secondname);
+    }
+
+    public void setProject(Project project) {
+        this.project = project;
+    }
+
+    public void setPartOfProject(double partOfProject) {
+        this.partOfProject = partOfProject;
     }
 
     public void calcPayment() {
@@ -20,19 +27,25 @@ public class Programmer extends Enginer {
     }
 
     public double calcPaymentForPartOfProject() {
-        double summ=0.0;
-        for (Work next : projects) {
-            double money = next.part * next.project.budget;
-            summ += next.project.allotMoney(money);
-        }
-        return summ;
+        return project.allotMoney(partOfProject * project.getBudget());
     }
 
     public double calcPaymentWorkTime() {
         return workTime*rate;
     }
 
+    public static ArrayList<Programmer> getProgrammers(ArrayList<Employee> employees) {
+        ArrayList<Programmer> newArray = new ArrayList<Programmer>();
+        for(Employee next: employees){
+            if (next.getClass().getSimpleName().equals("Programmer")) {
+                newArray.add((Programmer) next);
+            }
+        }
+        return newArray;
+    }
+
     class Work{
+
         Project project;
         double part;
 

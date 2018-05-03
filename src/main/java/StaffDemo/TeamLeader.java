@@ -12,6 +12,10 @@ public class TeamLeader extends Programmer implements Heading{
         programmers = new ArrayList<Programmer>();
     }
 
+    public TeamLeader(String id, String surname, String name, String secondname) {
+        super(id, surname, name, secondname);
+    }
+
     public void setProject(Project project) {
         this.project = project;
     }

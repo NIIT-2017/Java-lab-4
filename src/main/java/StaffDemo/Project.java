@@ -3,17 +3,16 @@ package StaffDemo;
 import java.util.ArrayList;
 
 public class Project {
-    ArrayList<Programmer> programmers;
-    ArrayList<Manager> managers;
-    ArrayList<Tester> testers;
-    TeamLeader teamLeader;
-    ProjectManager projectManager;
-    String name;
-    double budget;
+    private ArrayList<Employee> employee;
+    private TeamLeader teamLeader;
+    private ProjectManager projectManager;
+    private String name;
+    private double budget;
 
     public Project(String name, double budget) {
         this.name = name;
         this.budget = budget;
+        employee = new ArrayList<Employee>();
     }
 
     double allotMoney(double money) {
@@ -28,40 +27,28 @@ public class Project {
         return 0.0;
     }
 
+    public double getBudget() {
+        return budget;
+    }
+
+    public void addEmployee(Employee employee) {
+        if(employee.getClass().getSimpleName().equals("ProjectManager"))
+            setProjectManager((ProjectManager)employee);
+        else if (employee.getClass().getSimpleName().equals("TeamLeader"))
+            setTeamLeader((TeamLeader)employee);
+        else this.employee.add(employee);
+    }
+
     public void setTeamLeader(TeamLeader teamLeader) {
         teamLeader.setProject(this);
         this.teamLeader = teamLeader;
-    }
-
-    public void addProgrammers(Programmer programmer, double part) {
-        programmer.addWork(this,part);
-        programmers.add(programmer);
-    }
-
-    public void addManager(Manager manager) {
-        manager.setProject(this);
-        managers.add(manager);
-    }
-
-    public void addTester(Tester tester) {
-        tester.setProject(this);
-        testers.add(tester);
     }
 
     public void setProjectManager(ProjectManager projectManager) {
         this.projectManager = projectManager;
     }
 
-    public int getCountProgramers() {
-        return programmers.size();
+    public ArrayList<Employee> getEmployee() {
+        return employee;
     }
-
-    public int getCountManagers() {
-        return managers.size();
-    }
-
-    public int getCountTesters() {
-        return testers.size();
-    }
-
 }

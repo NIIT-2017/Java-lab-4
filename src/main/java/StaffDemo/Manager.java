@@ -3,8 +3,8 @@ package StaffDemo;
 import java.util.ArrayList;
 
 public class Manager extends Employee implements PaymentForProject {
-    protected Project project;
-    protected double rate;
+    private Project project;
+    private double rate;
 
     public Manager(String surname, String name, String secondname) {
         super(surname, name, secondname);
@@ -16,6 +16,14 @@ public class Manager extends Employee implements PaymentForProject {
 
     public void setProject(Project project) {
         this.project = project;
+    }
+
+    public Project getProject() {
+        return project;
+    }
+
+    public double getRate() {
+        return rate;
     }
 
     public void setRate(double rate) {

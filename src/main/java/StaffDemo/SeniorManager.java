@@ -24,9 +24,13 @@ public class SeniorManager extends ProjectManager {
     public double calcPaymentForHeading() {
         double summ = 0.0;
         for (Project nextProject : projects) {
-            summ += rate * (nextProject.getEmployee().size()+2);
+            summ += getRate() * (nextProject.getEmployee().size()+2);
         }
         return summ;
+    }
+
+    public void setProjects(ArrayList<Project> projects) {
+        this.projects = projects;
     }
 
     public static ArrayList<SeniorManager> getSeniorManagers(ArrayList<Employee> employees) {

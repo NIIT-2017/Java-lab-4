@@ -1,6 +1,6 @@
 package StaffDemo;
 
-abstract class Enginer extends Employee implements PaymentForProject, WorkTime {
+public abstract class Enginer extends Employee implements PaymentForProject, WorkTime {
     Enginer(String surname, String name, String secondname) {
         super(surname, name, secondname);
     }

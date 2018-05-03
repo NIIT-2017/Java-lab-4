@@ -16,9 +16,9 @@ public class ProjectManager extends Manager implements Heading{
     }
 
     public double calcPaymentForHeading() {
-        int countProgrammersOfProject = Programmer.getProgrammers(project.getEmployee()).size();
-        int countManagersOfProject    = Manager.getManagers(project.getEmployee()).size();
-        return project.allotMoney(rate * (countManagersOfProject + countProgrammersOfProject + 1));
+        int countProgrammersOfProject = Programmer.getProgrammers(getProject().getEmployee()).size();
+        int countManagersOfProject    = Manager.getManagers(getProject().getEmployee()).size();
+        return getProject().allotMoney(getRate() * (countManagersOfProject + countProgrammersOfProject + 1));
     }
 
     public static ArrayList<ProjectManager> getProjectManagers(ArrayList<Employee> employees) {

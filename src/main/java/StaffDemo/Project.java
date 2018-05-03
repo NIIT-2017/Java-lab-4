@@ -1,6 +1,7 @@
 package StaffDemo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Project {
     private ArrayList<Employee> employee;
@@ -45,7 +46,20 @@ public class Project {
     }
 
     public void setProjectManager(ProjectManager projectManager) {
+        projectManager.setProject(this);
         this.projectManager = projectManager;
+    }
+
+    public void addManagers(List<Manager> managers) {
+        this.employee.addAll(managers);
+    }
+
+    public void addProgrammers(List<Programmer> programmers) {
+        this.employee.addAll(programmers);
+    }
+
+    public void addTesters(List<Tester> testers) {
+        this.employee.addAll(testers);
     }
 
     public ArrayList<Employee> getEmployee() {

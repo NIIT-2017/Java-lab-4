@@ -36,5 +36,13 @@ public class TeamLeader extends Programmer implements Heading{
         return rateForProgrammer*programmers.size();
     }
 
-
+    public static ArrayList<TeamLeader> getTeamLeaders(ArrayList<Employee> employees) {
+        ArrayList<TeamLeader> newArray = new ArrayList<TeamLeader>();
+        for(Employee next: employees){
+            if (next.getClass().getSimpleName().equals("TeamLeader")) {
+                newArray.add((TeamLeader) next);
+            }
+        }
+        return newArray;
+    }
 }

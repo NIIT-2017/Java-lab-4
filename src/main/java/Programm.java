@@ -16,15 +16,36 @@ public class Programm {
 
 
     public static void main(String[] args) {
-        ArrayList<Project> projects = readProjectsFromFIle(new File("src/main/resources/project.xml"));
+        ArrayList<Project> projects = readProjectsFromFIle(new File("src/main/resources/projects.xml"));
         ArrayList<Employee> staff = readStaffFromFile(new File("src/main/resources/data.xml"));
+
+
+        ArrayList<SeniorManager> seniorManagers = SeniorManager.getSeniorManagers(staff);
+        ArrayList<ProjectManager> projectManagers = ProjectManager.getProjectManagers(staff);
+        ArrayList<TeamLeader> teamLeaders = TeamLeader.getTeamLeaders(staff);
         ArrayList<Programmer> programmers = Programmer.getProgrammers(staff);
+        ArrayList<Manager> managers = Manager.getManagers(staff);
+        ArrayList<Tester> testers = Tester.getTesters(staff);
+
+        //заполяем поля проекта
+        for (int i = 0; i < projects.size(); i++) {
+            projects.get(i).setTeamLeader(teamLeaders.get(i));
+            projects.get(i).setProjectManager(projectManagers.get(i));
+            projects.get(i).addManagers(managers.subList(i*2,i*2+2));
+            projects.get(i).addProgrammers(programmers.subList(i*5,i*5+5));
+            projects.get(i).addTesters(testers.subList(i*5,i*5+5));
+        }
+
+        for (Employee enginer : projects.get(0).getEmployee()) {
+        }
+        //назанчаем личный вклад
+
         System.out.println("Welcome to the StaffDemo");
     }
 
     private static ArrayList<Project> readProjectsFromFIle(File data) {
         ArrayList<Project> projects = new ArrayList<Project>();
-        NodeList list = readFromXML(new File("src/main/resources/projects.sml"), "project");
+        NodeList list = readFromXML(data, "project");
         if (list != null) {
             for (int i = 0; i < list.getLength(); i++) {
                 NamedNodeMap attributes = list.item(i).getAttributes();
@@ -38,7 +59,7 @@ public class Programm {
 
     private static ArrayList<Employee> readStaffFromFile(File data){
         ArrayList<Employee> staff = new ArrayList<Employee>();
-        NodeList list = readFromXML(data, "emploer");
+        NodeList list = readFromXML(data, "employee");
         if (list != null) {
             for (int i = 0; i < list.getLength(); i++) {
                 NamedNodeMap attributes = list.item(i).getAttributes();
@@ -126,12 +147,12 @@ public class Programm {
         }
     }
 
-    private static NodeList readFromXML(File file,String teg) {
+    private static NodeList readFromXML(File file,String tag) {
         try {
             DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
             Document doc = db.parse(file);
             Element root = doc.getDocumentElement();
-            return root.getElementsByTagName(teg);
+            return root.getElementsByTagName(tag);
 
         } catch (ParserConfigurationException e1) {
             e1.printStackTrace();

@@ -2,8 +2,7 @@ package StaffDemo;
 
 import java.util.ArrayList;
 
-public class Manager extends Employee implements PaymentForProject {
-    private Project project;
+class Manager extends OfficePlankton implements PaymentForProject {
     private double rate;
 
     public Manager(String surname, String name, String secondname) {
@@ -20,20 +19,12 @@ public class Manager extends Employee implements PaymentForProject {
     }
 
     public double calcPaymentForPartOfProject() {
-        if (this.project==null) return 0.0;
-        else return rate*this.project.getBudget();
-    }
-
-    public void setProject(Project project) {
-        this.project = project;
+        if (this.getProject()==null) return 0.0;
+        else return rate*this.getProject().getBudget();
     }
 
     public void setRate(double rate) {
         this.rate = rate;
-    }
-
-    Project getProject() {
-        return project;
     }
 
     double getRate() {

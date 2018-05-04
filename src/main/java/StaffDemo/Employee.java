@@ -5,7 +5,7 @@ public abstract class Employee {
     private static int LALTID=0;
     private int ID;
     private String [] FIO;
-    double payment;
+    protected double payment;
 
     Employee(String surname, String name, String secondname) {
         this.ID = ++LALTID;

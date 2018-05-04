@@ -28,21 +28,11 @@ public class Project {
         return 0.0;
     }
 
-    public double getBudget() {
-        return budget;
-    }
-
-    public void addEmployee(Employee employee) {
-        if(employee.getClass().getSimpleName().equals("ProjectManager"))
-            setProjectManager((ProjectManager)employee);
-        else if (employee.getClass().getSimpleName().equals("TeamLeader"))
-            setTeamLeader((TeamLeader)employee);
-        else this.employee.add(employee);
-    }
-
-    public void setTeamLeader(TeamLeader teamLeader) {
-        teamLeader.setProject(this);
-        this.teamLeader = teamLeader;
+    public void addOfficeplankton(List<? extends OfficePlankton> employees) {
+        for (OfficePlankton nextEmployee : employees) {
+            nextEmployee.setProject(this);
+        }
+        this.employee.addAll(employees);
     }
 
     public void setProjectManager(ProjectManager projectManager) {
@@ -50,19 +40,28 @@ public class Project {
         this.projectManager = projectManager;
     }
 
-    public void addManagers(List<Manager> managers) {
-        this.employee.addAll(managers);
-    }
-
-    public void addProgrammers(List<Programmer> programmers) {
-        this.employee.addAll(programmers);
-    }
-
-    public void addTesters(List<Tester> testers) {
-        this.employee.addAll(testers);
+    public void setTeamLeader(TeamLeader teamLeader) {
+        teamLeader.setProject(this);
+        this.teamLeader = teamLeader;
     }
 
     public ArrayList<Employee> getEmployee() {
         return employee;
+    }
+
+    double getBudget() {
+        return budget;
+    }
+
+    public TeamLeader getTeamLeader() {
+        return teamLeader;
+    }
+
+    public ProjectManager getProjectManager() {
+        return projectManager;
+    }
+
+    public String getName() {
+        return name;
     }
 }

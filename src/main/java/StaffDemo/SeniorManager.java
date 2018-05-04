@@ -8,6 +8,7 @@ public class SeniorManager extends ProjectManager {
 
     public SeniorManager(String surname, String name, String secondname) {
         super(surname, name, secondname);
+        projects = new ArrayList<Project>();
     }
 
     public SeniorManager(String id, String surname, String name, String secondname) {

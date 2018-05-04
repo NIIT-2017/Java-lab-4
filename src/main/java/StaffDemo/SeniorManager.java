@@ -1,6 +1,7 @@
 package StaffDemo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SeniorManager extends ProjectManager {
     private ArrayList<Project> projects;
@@ -11,10 +12,6 @@ public class SeniorManager extends ProjectManager {
 
     public SeniorManager(String id, String surname, String name, String secondname) {
         super(id, surname, name, secondname);
-    }
-
-    void addProject(Project project) {
-        projects.add(project);
     }
 
     public void calcPayment() {
@@ -41,5 +38,13 @@ public class SeniorManager extends ProjectManager {
             }
         }
         return newArray;
+    }
+
+    void addProject(Project project) {
+        projects.add(project);
+    }
+
+    void addProjects(List<Project> project) {
+        projects.addAll(project);
     }
 }

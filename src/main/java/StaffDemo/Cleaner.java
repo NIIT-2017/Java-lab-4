@@ -17,7 +17,7 @@ public class Cleaner extends Personal {
     }
 
     public double calcPaymentWorkTime() {
-        return ratePerDayHours * dayWorkHours;
+        return rateDayHours * dayWorkHours;
         }
 
     public static ArrayList<Cleaner> getCleaners(ArrayList<Employee> employees) {

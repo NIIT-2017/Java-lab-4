@@ -2,36 +2,23 @@ package StaffDemo;
 
 import java.util.ArrayList;
 public class Programmer extends Enginer {
-
-    private Project project;
-    private double partOfProject;
-
-    public Programmer(String surname, String name, String secondname) {
-        super(surname, name, secondname);
-    }
+    private double rateOvertimeHour;
+    private double overtimeHours;
 
     public Programmer(String id, String surname, String name, String secondname) {
         super(id, surname, name, secondname);
     }
 
-    public void setProject(Project project) {
-        this.project = project;
-    }
-
-    public void setPartOfProject(double partOfProject) {
-        this.partOfProject = partOfProject;
+    public Programmer(String surname, String name, String secondname) {
+        super(surname, name, secondname);
     }
 
     public void calcPayment() {
-        payment = calcPaymentForPartOfProject() + calcPaymentWorkTime();
+        payment = calcPaymentForPartOfProject() + calcPaymentWorkTime() + calcPaymentOvertime();
     }
 
-    public double calcPaymentForPartOfProject() {
-        return project.allotMoney(partOfProject * project.getBudget());
-    }
-
-    public double calcPaymentWorkTime() {
-        return workTime*rate;
+    double calcPaymentOvertime() {
+        return overtimeHours * rateOvertimeHour;
     }
 
     public static ArrayList<Programmer> getProgrammers(ArrayList<Employee> employees) {
@@ -44,14 +31,15 @@ public class Programmer extends Enginer {
         return newArray;
     }
 
-    class Work{
+    public double getOvertimeHours() {
+        return overtimeHours;
+    }
 
-        Project project;
-        double part;
+    public void setRateOvertimeHour(double rateOvertimeHour) {
+        this.rateOvertimeHour = rateOvertimeHour;
+    }
 
-        Work(Project project, double part) {
-            this.project = project;
-            this.part = part;
-        }
+    public void setOvertimeHours(double overtimeHours) {
+        this.overtimeHours = overtimeHours;
     }
 }

@@ -1,6 +1,5 @@
 package StaffDemo;
 
-import java.util.ArrayList;
 
 public abstract class Employee {
     static int LALTID=0;

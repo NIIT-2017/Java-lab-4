@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Driver extends Personal {
 
     private double nightWorkHours;
-    private double ratePerNightHours;
+    private double rateNightHours;
 
     public Driver(String surname, String name, String secondname) {
         super(surname, name, secondname);
@@ -19,12 +19,12 @@ public class Driver extends Personal {
         this.nightWorkHours = nightWorkHours;
     }
 
-    public void setRatePerNightHours(double ratePerNightHours) {
-        this.ratePerNightHours = ratePerNightHours;
+    public void setRateNightHours(double rateNightHours) {
+        this.rateNightHours = rateNightHours;
     }
 
     public double calcPaymentWorkTime() {
-        return ratePerDayHours * dayWorkHours + ratePerNightHours * nightWorkHours;
+        return rateDayHours * dayWorkHours + rateNightHours * nightWorkHours;
     }
 
     public void calcPayment() {

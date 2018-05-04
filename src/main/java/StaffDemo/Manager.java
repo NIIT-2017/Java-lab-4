@@ -14,22 +14,6 @@ public class Manager extends Employee implements PaymentForProject {
         super(id, surname, name, secondname);
     }
 
-    public void setProject(Project project) {
-        this.project = project;
-    }
-
-    public Project getProject() {
-        return project;
-    }
-
-    public double getRate() {
-        return rate;
-    }
-
-    public void setRate(double rate) {
-        this.rate = rate;
-    }
-
     public void calcPayment() {
         payment = calcPaymentForPartOfProject();
     }
@@ -37,6 +21,22 @@ public class Manager extends Employee implements PaymentForProject {
     public double calcPaymentForPartOfProject() {
         if (this.project==null) return 0.0;
         else return rate*this.project.getBudget();
+    }
+
+    public void setProject(Project project) {
+        this.project = project;
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
+    Project getProject() {
+        return project;
+    }
+
+    double getRate() {
+        return rate;
     }
 
     public static ArrayList<Manager> getManagers(ArrayList<Employee> employees) {

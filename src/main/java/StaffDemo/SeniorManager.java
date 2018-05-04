@@ -11,7 +11,8 @@ public class SeniorManager extends ProjectManager {
     }
 
     public SeniorManager(String id, String surname, String name, String secondname) {
-        super(id, surname, name, secondname);
+        super(surname, name, secondname);
+        this.setID(Integer.parseInt(id));
     }
 
     public void calcPayment() {

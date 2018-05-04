@@ -9,10 +9,6 @@ public abstract class Personal extends Employee implements WorkTime{
         super(surname, name, secondname);
     }
 
-    Personal(String id, String surname, String name, String secondname) {
-        super(id, surname, name, secondname);
-    }
-
     public void setDayWorkHours(double dayWorkHours) {
         this.dayWorkHours = dayWorkHours;
     }

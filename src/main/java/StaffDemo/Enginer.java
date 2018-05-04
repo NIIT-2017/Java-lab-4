@@ -10,10 +10,6 @@ public abstract class Enginer extends Employee implements PaymentForProject, Wor
         super(surname, name, secondname);
     }
 
-    Enginer(String id, String surname, String name, String secondname) {
-        super(id, surname, name, secondname);
-    }
-
     public double calcPaymentWorkTime() {
         return workTime*rate;
     }

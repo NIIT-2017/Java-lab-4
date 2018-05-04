@@ -2,9 +2,9 @@ package StaffDemo;
 
 
 public abstract class Employee {
-    static int LALTID=0;
-    int ID;
-    String [] FIO;
+    private static int LALTID=0;
+    private int ID;
+    private String [] FIO;
     double payment;
 
     Employee(String surname, String name, String secondname) {
@@ -12,14 +12,11 @@ public abstract class Employee {
         this.FIO = new String[]{surname, name, secondname};
     }
 
-    Employee(String ID, String surname, String name, String secondname) {
-        this.ID = Integer.parseInt(ID);
-        this.FIO = new String[]{surname, name, secondname};
-    }
-
-
-
     abstract public void calcPayment();
+
+    protected void setID(int ID) {
+        this.ID = ID;
+    }
 
     public String[] getFIO() {
         return FIO;

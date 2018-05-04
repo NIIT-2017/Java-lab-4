@@ -12,7 +12,8 @@ public class Driver extends Personal {
     }
 
     public Driver(String id, String surname, String name, String secondname) {
-        super(id, surname, name, secondname);
+        super(surname, name, secondname);
+        this.setID(Integer.parseInt(id));
     }
 
     public void setNightWorkHours(double nightWorkHours) {

@@ -6,7 +6,8 @@ public class Programmer extends Enginer {
     private double overtimeHours;
 
     public Programmer(String id, String surname, String name, String secondname) {
-        super(id, surname, name, secondname);
+        super(surname, name, secondname);
+        this.setID(Integer.parseInt(id));
     }
 
     public Programmer(String surname, String name, String secondname) {

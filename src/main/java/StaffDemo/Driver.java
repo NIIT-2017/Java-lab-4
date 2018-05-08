@@ -3,9 +3,8 @@ package StaffDemo;
 import java.util.ArrayList;
 
 public class Driver extends Personal {
-
-    private double nightWorkHours;
-    private double rateNightHours;
+    private double overTimeHours;
+    private double rateOverTimeHour;
 
     public Driver(String surname, String name, String secondname) {
         super(surname, name, secondname);
@@ -16,20 +15,20 @@ public class Driver extends Personal {
         this.setID(Integer.parseInt(id));
     }
 
-    public void setNightWorkHours(double nightWorkHours) {
-        this.nightWorkHours = nightWorkHours;
-    }
-
-    public void setRateNightHours(double rateNightHours) {
-        this.rateNightHours = rateNightHours;
+    public void calcPayment() {
+        payment = calcPaymentWorkTime();
     }
 
     public double calcPaymentWorkTime() {
-        return rateDayHours * dayWorkHours + rateNightHours * nightWorkHours;
+        return ratePerWorkHour * workHours + rateOverTimeHour * overTimeHours;
     }
 
-    public void calcPayment() {
-        payment = calcPaymentWorkTime();
+    public void setRateOverTimeHour(double rateOverTimeHour) {
+        this.rateOverTimeHour = rateOverTimeHour;
+    }
+
+    public void setOverTimeHours(double overTimeHours) {
+        this.overTimeHours = overTimeHours;
     }
 
     public static ArrayList<Driver> getDrivers(ArrayList<Employee> employees) {

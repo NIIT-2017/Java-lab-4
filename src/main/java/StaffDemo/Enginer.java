@@ -1,8 +1,8 @@
 package StaffDemo;
 
-abstract class Enginer extends OfficePlankton implements PaymentForProject, WorkTime {
-    private double rate;
-    private double workTime;
+public abstract class Enginer extends OfficePlankton implements PaymentForProject, WorkTime {
+    private double ratePerWorkHour;
+    private double workHours;
     private double partOfProject;
 
     Enginer(String surname, String name, String secondname) {
@@ -10,7 +10,7 @@ abstract class Enginer extends OfficePlankton implements PaymentForProject, Work
     }
 
     public double calcPaymentWorkTime() {
-        return workTime*rate;
+        return workHours * ratePerWorkHour;
     }
 
     public double calcPaymentForPartOfProject() {
@@ -21,15 +21,19 @@ abstract class Enginer extends OfficePlankton implements PaymentForProject, Work
         return partOfProject;
     }
 
-    public void setPartOfProject(double partOfProject) {
+    public void setRatePerProject(double partOfProject) {
         this.partOfProject = partOfProject;
     }
 
-    public void setRate(double rate) {
-        this.rate = rate;
+    public void setRatePerWorkHour(double rate) {
+        this.ratePerWorkHour = rate;
     }
 
-    public void setWorkTime(double workTime) {
-        this.workTime = workTime;
+    public void setWorkHours(double workTime) {
+        this.workHours = workTime;
+    }
+
+    public void setRateDayHours(double rate) {
+        this.ratePerWorkHour = rate;
     }
 }

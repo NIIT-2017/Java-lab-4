@@ -3,6 +3,7 @@ package StaffDemo;
 import java.util.ArrayList;
 
 public class ProjectManager extends Manager implements Heading{
+    private double ratePerEmployees;
     public ProjectManager(String surname, String name, String secondname) {
         super(surname, name, secondname);
     }
@@ -19,7 +20,11 @@ public class ProjectManager extends Manager implements Heading{
     public double calcPaymentForHeading() {
         int countProgrammersOfProject = Programmer.getProgrammers(getProject().getEmployee()).size();
         int countManagersOfProject    = Manager.getManagers(getProject().getEmployee()).size();
-        return getProject().allotMoney(getRate() * (countManagersOfProject + countProgrammersOfProject + 1));
+        return getProject().allotMoney(ratePerEmployees * (countManagersOfProject + countProgrammersOfProject + 1));
+    }
+
+    public void setRatePerEmployees(double ratePerEmploues) {
+        this.ratePerEmployees = ratePerEmploues;
     }
 
     public static ArrayList<ProjectManager> getProjectManagers(ArrayList<Employee> employees) {

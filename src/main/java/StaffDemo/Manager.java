@@ -2,8 +2,8 @@ package StaffDemo;
 
 import java.util.ArrayList;
 
-class Manager extends OfficePlankton implements PaymentForProject {
-    private double rate;
+public class Manager extends OfficePlankton implements PaymentForProject {
+    private double ratePerProject;
 
     public Manager(String surname, String name, String secondname) {
         super(surname, name, secondname);
@@ -20,15 +20,15 @@ class Manager extends OfficePlankton implements PaymentForProject {
 
     public double calcPaymentForPartOfProject() {
         if (this.getProject()==null) return 0.0;
-        else return rate*this.getProject().getBudget();
+        else return ratePerProject *this.getProject().getBudget();
     }
 
-    public void setRate(double rate) {
-        this.rate = rate;
+    public void setRatePerProject(double ratePerProject) {
+        this.ratePerProject = ratePerProject;
     }
 
-    double getRate() {
-        return rate;
+    double getRatePerProject() {
+        return ratePerProject;
     }
 
     public static ArrayList<Manager> getManagers(ArrayList<Employee> employees) {

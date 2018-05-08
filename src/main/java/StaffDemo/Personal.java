@@ -2,19 +2,19 @@ package StaffDemo;
 
 public abstract class Personal extends Employee implements WorkTime{
 
-    double dayWorkHours;
-    double rateDayHours;
+    double workHours;
+    double ratePerWorkHour;
 
     Personal(String surname, String name, String secondname) {
         super(surname, name, secondname);
     }
 
-    public void setDayWorkHours(double dayWorkHours) {
-        this.dayWorkHours = dayWorkHours;
+    public void setWorkHours(double workHours) {
+        this.workHours = workHours;
     }
 
-    public void setRateDayHours(double rateDayHours) {
-        this.rateDayHours = rateDayHours;
+    public void setRatePerWorkHour(double ratePerWorkHour) {
+        this.ratePerWorkHour = ratePerWorkHour;
     }
 
 }

@@ -2,6 +2,9 @@ import StaffDemo.*;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
+import javax.swing.*;
+import javax.swing.event.TableModelListener;
+import javax.swing.table.TableModel;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -10,7 +13,10 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Programm {
 
@@ -20,27 +26,86 @@ public class Programm {
         ArrayList<Employee> staff = readStaffFromFile(new File("src/main/resources/data.xml"));
 
 
-        ArrayList<SeniorManager> seniorManagers = SeniorManager.getSeniorManagers(staff);
+        SeniorManager seniorManager = SeniorManager.getSeniorManager(staff);
         ArrayList<ProjectManager> projectManagers = ProjectManager.getProjectManagers(staff);
         ArrayList<TeamLeader> teamLeaders = TeamLeader.getTeamLeaders(staff);
         ArrayList<Programmer> programmers = Programmer.getProgrammers(staff);
         ArrayList<Manager> managers = Manager.getManagers(staff);
         ArrayList<Tester> testers = Tester.getTesters(staff);
 
+        //добавить все проекты
+        if (seniorManager != null) {
+            seniorManager.setProjects(projects);
+        }
         //заполяем поля проекта
         for (int i = 0; i < projects.size(); i++) {
             projects.get(i).setTeamLeader(teamLeaders.get(i));
             projects.get(i).setProjectManager(projectManagers.get(i));
-            projects.get(i).addManagers(managers.subList(i*2,i*2+2));
-            projects.get(i).addProgrammers(programmers.subList(i*5,i*5+5));
-            projects.get(i).addTesters(testers.subList(i*5,i*5+5));
+            projects.get(i).addOfficeplankton(managers.subList(i*2,i*2+2));
+            projects.get(i).addOfficeplankton(programmers.subList(i*5,i*5+5));
+            projects.get(i).addOfficeplankton(testers.subList(i*5,i*5+5));
         }
 
-        for (Employee enginer : projects.get(0).getEmployee()) {
+        setRandom(staff);
+
+
+        for (Employee nextEmployee : staff) {
+            nextEmployee.calcPayment();
         }
+
+        drowJFrame(staff);
+
         //назанчаем личный вклад
 
         System.out.println("Welcome to the StaffDemo");
+    }
+
+    private static void setRandom(List<Employee> staff) {
+        Random random = new Random();
+        for (Employee newEmployee : staff) {
+            if (newEmployee instanceof Heading) {
+                //доплата за каждого подчиненного
+                ((Heading)newEmployee).setRatePerEmployees(1000);
+            }
+
+            if (newEmployee instanceof WorkTime) {
+                //отработтанные часы и ставка
+                ((WorkTime)newEmployee).setWorkHours(100+20*random.nextDouble());
+                ((WorkTime)newEmployee).setRatePerWorkHour(200+150*random.nextDouble());
+            }
+
+            if (newEmployee instanceof PaymentForProject) {
+                //личный вклад в проект в процентах
+                ((PaymentForProject)newEmployee).setRatePerProject(0.02+0.02*random.nextDouble());
+            }
+
+            if (newEmployee instanceof Driver) {
+                //отработанные ночные часы
+                ((Driver)newEmployee).setOverTimeHours(5+7*random.nextDouble());
+                ((Driver)newEmployee).setRateOverTimeHour(300+100*random.nextDouble());
+            }
+
+            if (newEmployee instanceof Programmer) {
+                //переработка и программеров
+                ((Programmer)newEmployee).setOvertimeHours(2+5*random.nextDouble());
+                ((Programmer)newEmployee).setRateOvertimeHour(300+100*random.nextDouble());
+            }
+
+            if (newEmployee instanceof TeamLeader) {
+                //доплата за каждого работника у тимлида
+                ((TeamLeader)newEmployee).setRatePerEmployees(2000);
+            }
+
+            if (newEmployee instanceof ProjectManager) {
+                //доплата за кажого работника у проектного менеджера
+                ((ProjectManager)newEmployee).setRatePerEmployees(6000);
+            }
+
+            if (newEmployee instanceof SeniorManager) {
+                //доплата за каждого подчиненного у сеньера
+                ((SeniorManager)newEmployee).setRatePerProject(6000);
+            }
+        }
     }
 
     private static ArrayList<Project> readProjectsFromFIle(File data) {
@@ -163,20 +228,82 @@ public class Programm {
         }
         return null;
     }
-}
 
-/*
-53
-прочитать данные о сотрудниках из файла
-создать 3 проекта
-создать 15 программистов
-создать 15 тестировщиков
-создать 3 Лидера (1 лидер на 10 человек)
-создать 8 водителей
-создать 5 уборщика
-создать 6 менаджера(по 2 на проект)
-соать проектрого менаджера по 1 на проект
-содать руководителья направления
-расчиттать з/п для всех сотрудников
-вывести в виде таблицы
-*/
+    private static void drowJFrame(ArrayList<Employee> staff) {
+        JFrame window = new JFrame("Расчет выплат");
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setSize(400,600);
+        //window.setLayout(new FlowLayout());
+        JTable table = new JTable();
+        Model model = new Model(staff);
+        table.setModel(model);
+        window.add(table);
+        window.setContentPane(new JScrollPane(table));
+        window.setVisible(true);
+    }
+
+    static class Model implements TableModel {
+        ArrayList<Employee> staff;
+
+        Model(ArrayList<Employee> staff) {
+            this.staff = staff;
+        }
+
+        public int getRowCount() {
+            return staff.size();
+        }
+
+        public int getColumnCount() {
+            return 5;
+        }
+
+        public String getColumnName(int i) {
+            switch (i) {
+                case 0:
+                    return "Фамилия";
+                case 1:
+                    return "Имя";
+                case 2:
+                    return "Отчество";
+                case 3:
+                    return "Должность";
+                case 4:
+                    return "Зряплата";
+            }
+            return null;
+        }
+
+        public Class<?> getColumnClass(int i) {
+            return String.class;
+        }
+
+        public boolean isCellEditable(int i, int i1) {
+            return false;
+        }
+
+        public Object getValueAt(int i, int i1) {
+            String value= "";
+            if (i1<3)value = staff.get(i).getFIO()[i1];
+            else if (i1==3){
+                value = staff.get(i).getClass().getSimpleName();
+            }
+            else if (i1==4){
+                BigDecimal bigDecimal = new BigDecimal(staff.get(i).getPayment());
+                value = bigDecimal.setScale(2,BigDecimal.ROUND_DOWN).toString();
+            }
+            return value;
+        }
+
+        public void setValueAt(Object o, int i, int i1) {
+
+        }
+
+        public void addTableModelListener(TableModelListener tableModelListener) {
+
+        }
+
+        public void removeTableModelListener(TableModelListener tableModelListener) {
+
+        }
+    }
+}

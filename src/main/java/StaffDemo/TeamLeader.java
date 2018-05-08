@@ -3,7 +3,7 @@ package StaffDemo;
 import java.util.ArrayList;
 
 public class TeamLeader extends Programmer implements Heading{
-    private double rateForProgrammer;
+    private double ratePerEmployees;
 
     public TeamLeader(String surname, String name, String secondname) {
         super(surname, name, secondname);
@@ -19,7 +19,11 @@ public class TeamLeader extends Programmer implements Heading{
 
     public double calcPaymentForHeading() {
         int countProgrammers = Programmer.getProgrammers(getProject().getEmployee()).size();
-        return rateForProgrammer * countProgrammers;
+        return ratePerEmployees * countProgrammers;
+    }
+
+    public void setRatePerEmployees(double ratePerEmploues) {
+        this.ratePerEmployees = ratePerEmploues;
     }
 
     public static ArrayList<TeamLeader> getTeamLeaders(ArrayList<Employee> employees) {
@@ -30,9 +34,5 @@ public class TeamLeader extends Programmer implements Heading{
             }
         }
         return newArray;
-    }
-
-    public void setRateForProgrammer(double rateForProgrammer) {
-        this.rateForProgrammer = rateForProgrammer;
     }
 }

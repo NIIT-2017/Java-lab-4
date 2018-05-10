@@ -15,97 +15,21 @@ import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 public class Programm {
-
-
     public static void main(String[] args) {
         ArrayList<Project> projects = readProjectsFromFIle(new File("src/main/resources/projects.xml"));
         ArrayList<Employee> staff = readStaffFromFile(new File("src/main/resources/data.xml"));
-
-
-        SeniorManager seniorManager = SeniorManager.getSeniorManager(staff);
-        ArrayList<ProjectManager> projectManagers = ProjectManager.getProjectManagers(staff);
-        ArrayList<TeamLeader> teamLeaders = TeamLeader.getTeamLeaders(staff);
-        ArrayList<Programmer> programmers = Programmer.getProgrammers(staff);
-        ArrayList<Manager> managers = Manager.getManagers(staff);
-        ArrayList<Tester> testers = Tester.getTesters(staff);
-
-        //добавить все проекты
-        if (seniorManager != null) {
-            seniorManager.setProjects(projects);
-        }
-        //заполяем поля проекта
-        for (int i = 0; i < projects.size(); i++) {
-            projects.get(i).setTeamLeader(teamLeaders.get(i));
-            projects.get(i).setProjectManager(projectManagers.get(i));
-            projects.get(i).addOfficeplankton(managers.subList(i*2,i*2+2));
-            projects.get(i).addOfficeplankton(programmers.subList(i*5,i*5+5));
-            projects.get(i).addOfficeplankton(testers.subList(i*5,i*5+5));
-        }
-
-        setRandom(staff);
-
-
+        //заполнить поля рандомно
+        setField(projects, staff);
+        //вычисляем зарблату у каждого
         for (Employee nextEmployee : staff) {
             nextEmployee.calcPayment();
         }
-
-        drowJFrame(staff);
-
-        //назанчаем личный вклад
-
+        //отрисовка таблицы
+        drawJFrame(staff);
         System.out.println("Welcome to the StaffDemo");
-    }
-
-    private static void setRandom(List<Employee> staff) {
-        Random random = new Random();
-        for (Employee newEmployee : staff) {
-            if (newEmployee instanceof Heading) {
-                //доплата за каждого подчиненного
-                ((Heading)newEmployee).setRatePerEmployees(1000);
-            }
-
-            if (newEmployee instanceof WorkTime) {
-                //отработтанные часы и ставка
-                ((WorkTime)newEmployee).setWorkHours(100+20*random.nextDouble());
-                ((WorkTime)newEmployee).setRatePerWorkHour(200+150*random.nextDouble());
-            }
-
-            if (newEmployee instanceof PaymentForProject) {
-                //личный вклад в проект в процентах
-                ((PaymentForProject)newEmployee).setRatePerProject(0.02+0.02*random.nextDouble());
-            }
-
-            if (newEmployee instanceof Driver) {
-                //отработанные ночные часы
-                ((Driver)newEmployee).setOverTimeHours(5+7*random.nextDouble());
-                ((Driver)newEmployee).setRateOverTimeHour(300+100*random.nextDouble());
-            }
-
-            if (newEmployee instanceof Programmer) {
-                //переработка и программеров
-                ((Programmer)newEmployee).setOvertimeHours(2+5*random.nextDouble());
-                ((Programmer)newEmployee).setRateOvertimeHour(300+100*random.nextDouble());
-            }
-
-            if (newEmployee instanceof TeamLeader) {
-                //доплата за каждого работника у тимлида
-                ((TeamLeader)newEmployee).setRatePerEmployees(2000);
-            }
-
-            if (newEmployee instanceof ProjectManager) {
-                //доплата за кажого работника у проектного менеджера
-                ((ProjectManager)newEmployee).setRatePerEmployees(6000);
-            }
-
-            if (newEmployee instanceof SeniorManager) {
-                //доплата за каждого подчиненного у сеньера
-                ((SeniorManager)newEmployee).setRatePerProject(6000);
-            }
-        }
     }
 
     private static ArrayList<Project> readProjectsFromFIle(File data) {
@@ -192,9 +116,9 @@ public class Programm {
             for (Employee aStaff : staff) {
                 Element newEntry = document.createElement("employer");
                 newEntry.setAttribute("ID", Integer.toString(aStaff.getID()));
-                newEntry.setAttribute("name", aStaff.getFIO()[0]);
-                newEntry.setAttribute("secondname", aStaff.getFIO()[1]);
-                newEntry.setAttribute("surname", aStaff.getFIO()[2]);
+                newEntry.setAttribute("surname", aStaff.getFIO()[0]);
+                newEntry.setAttribute("name", aStaff.getFIO()[1]);
+                newEntry.setAttribute("secondname", aStaff.getFIO()[2]);
                 newEntry.setAttribute("position", aStaff.getClass().getSimpleName());
 
                 root.appendChild(newEntry);
@@ -229,7 +153,70 @@ public class Programm {
         return null;
     }
 
-    private static void drowJFrame(ArrayList<Employee> staff) {
+    private static void setField(ArrayList<Project> projects, ArrayList<Employee> staff) {
+        SeniorManager seniorManager = SeniorManager.getSeniorManager(staff);
+        ArrayList<ProjectManager> projectManagers = ProjectManager.getProjectManagers(staff);
+        ArrayList<TeamLeader> teamLeaders = TeamLeader.getTeamLeaders(staff);
+        ArrayList<Programmer> programmers = Programmer.getProgrammers(staff);
+        ArrayList<Manager> managers = Manager.getManagers(staff);
+        ArrayList<Tester> testers = Tester.getTesters(staff);
+        ArrayList<Driver> drivers = Driver.getDrivers(staff);
+        ArrayList<Cleaner> cleaners = Cleaner.getCleaners(staff);
+        Random random = new Random();
+        //заполяем поля проекта
+        for (int i = 0; i < projects.size(); i++) {
+            projects.get(i).setTeamLeader(teamLeaders.get(i));
+            projects.get(i).setProjectManager(projectManagers.get(i));
+            projects.get(i).addOfficeplankton(managers.subList(i*2,i*2+2));
+            projects.get(i).addOfficeplankton(programmers.subList(i*5,i*5+5));
+            projects.get(i).addOfficeplankton(testers.subList(i*5,i*5+5));
+        }
+        //назначить проекты и ставку за подчиненного
+        if (seniorManager != null) {
+            seniorManager.setProjects(projects);
+            seniorManager.setRatePerProject(50000);
+        }
+
+        for (ProjectManager projectManager : projectManagers) {
+            projectManager.setRatePerProject(0.2+0.1*random.nextDouble());
+            projectManager.setRatePerEmployees(6000);
+        }
+        for (TeamLeader teamLeader : teamLeaders) {
+            teamLeader.setRatePerEmployees(1000);
+            teamLeader.setOvertimeHours(10*random.nextDouble());
+            teamLeader.setRateOvertimeHour(500);
+            teamLeader.setRatePerProject(0.01+0.02*random.nextDouble());
+            teamLeader.setWorkHours(150+10*random.nextDouble());
+            teamLeader.setRatePerWorkHour(300);
+        }
+        for (Programmer programmer : programmers) {
+            programmer.setOvertimeHours(10*random.nextDouble());
+            programmer.setRateOvertimeHour(500);
+            programmer.setRatePerProject(0.01+0.02*random.nextDouble());
+            programmer.setWorkHours(150+10*random.nextDouble());
+            programmer.setRateDayHours(300);
+        }
+        for (Tester tester : testers) {
+            tester.setRatePerWorkHour(300);
+            tester.setWorkHours(160);
+            tester.setRatePerProject(0.02*random.nextDouble());
+        }
+        for (Manager manager : managers) {
+            manager.setRatePerProject(0.2+0.05*random.nextDouble());
+        }
+        for (Driver driver : drivers) {
+            driver.setWorkHours(100);
+            driver.setRatePerWorkHour(150);
+            driver.setOverTimeHours(30*random.nextDouble());
+            driver.setRateOverTimeHour(250);
+        }
+        for (Cleaner cleaner : cleaners) {
+            cleaner.setWorkHours(20);
+            cleaner.setRatePerWorkHour(600);
+        }
+    }
+
+    private static void drawJFrame(ArrayList<Employee> staff) {
         JFrame window = new JFrame("Расчет выплат");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(400,600);

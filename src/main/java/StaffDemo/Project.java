@@ -9,17 +9,19 @@ public class Project {
     private ProjectManager projectManager;
     private String name;
     private double budget;
+    private double restMoney;
 
     public Project(String name, double budget) {
         this.name = name;
         this.budget = budget;
+        this.restMoney = budget;
         employee = new ArrayList<Employee>();
     }
 
     double allotMoney(double money) {
         try {
-            if (budget >= money) {
-                budget -= money;
+            if (restMoney >= money) {
+                restMoney -= money;
                 return money;
             } else throw new StaffException("not enough money");
         } catch (StaffException e) {

@@ -3,8 +3,9 @@ package StaffDemo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SeniorManager extends ProjectManager {
+public class SeniorManager extends Employee {
     private ArrayList<Project> projects;
+    private double ratePerProject;
 
     public SeniorManager(String surname, String name, String secondname) {
         super(surname, name, secondname);
@@ -20,13 +21,12 @@ public class SeniorManager extends ProjectManager {
         payment = calcPaymentForHeading();
     }
 
-    public double calcPaymentForHeading() {
-        double summ = 0.0;
-        if (projects==null) return 0.0;
-        for (Project nextProject : projects) {
-            summ += getRatePerProject() * (nextProject.getEmployee().size()+2);
-        }
-        return summ;
+    private double calcPaymentForHeading() {
+        return ratePerProject * projects.size();
+    }
+
+    public void setRatePerProject(double ratePerProject) {
+        this.ratePerProject = ratePerProject;
     }
 
     public void setProjects(ArrayList<Project> projects) {
@@ -40,13 +40,5 @@ public class SeniorManager extends ProjectManager {
             }
         }
         return null;
-    }
-
-    void addProject(Project project) {
-        projects.add(project);
-    }
-
-    void addProjects(List<Project> project) {
-        projects.addAll(project);
     }
 }

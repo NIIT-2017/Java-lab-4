@@ -2,7 +2,7 @@ package StaffDemo;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//проект в котором заняты рабочие
 public class Project {
     private ArrayList<Employee> employee;
     private TeamLeader teamLeader;
@@ -17,7 +17,8 @@ public class Project {
         this.restMoney = budget;
         employee = new ArrayList<Employee>();
     }
-
+//зарезервировать деньги из бюджета проекта если достаточно то вернуть сумму
+//    если нет денег то исключение
     double allotMoney(double money) {
         try {
             if (restMoney >= money) {
@@ -29,24 +30,24 @@ public class Project {
         }
         return 0.0;
     }
-
+//назначить на проект работника
     public void addOfficeplankton(List<? extends OfficePlankton> employees) {
         for (OfficePlankton nextEmployee : employees) {
             nextEmployee.setProject(this);
         }
         this.employee.addAll(employees);
     }
-
+//назначить руководителя проекта
     public void setProjectManager(ProjectManager projectManager) {
         projectManager.setProject(this);
         this.projectManager = projectManager;
     }
-
+//назначить лидера
     public void setTeamLeader(TeamLeader teamLeader) {
         teamLeader.setProject(this);
         this.teamLeader = teamLeader;
     }
-
+//сетеры и гетеры
     public ArrayList<Employee> getEmployee() {
         return employee;
     }

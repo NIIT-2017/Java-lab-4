@@ -1,7 +1,7 @@
 package StaffDemo;
 
 public abstract class Personal extends Employee implements WorkTime{
-
+    //у персонала только рабочие часы и ставка за час
     double workHours;
     double ratePerWorkHour;
 

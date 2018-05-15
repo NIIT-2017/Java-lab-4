@@ -1,5 +1,5 @@
 package StaffDemo;
-
+//абстрактный класс для всех работников занятых в проектах
 abstract class OfficePlankton extends Employee {
     private Project project;
 

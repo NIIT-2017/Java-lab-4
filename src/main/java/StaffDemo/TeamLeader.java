@@ -1,27 +1,27 @@
 package StaffDemo;
 
 import java.util.ArrayList;
-
+//руководитель группы
 public class TeamLeader extends Programmer implements Heading{
     private double ratePerEmployees;
-
+//конструктор для нового
     public TeamLeader(String surname, String name, String secondname) {
         super(surname, name, secondname);
     }
-
-    public TeamLeader(String id, String surname, String name, String secondname) {
+//конструктор для чтения из файла
+    TeamLeader(String id, String surname, String name, String secondname) {
         super(id, surname, name, secondname);
     }
-
+//расчет ЗП за участие в проекте + заотработарнное время + сверхурочное время + руководство
     public void calcPayment() {
         payment = calcPaymentForPartOfProject() + calcPaymentWorkTime() + calcPaymentForHeading() + calcPaymentOvertime();
     }
-
+//расчет за руководство
     public double calcPaymentForHeading() {
         int countProgrammers = Programmer.getProgrammers(getProject().getEmployee()).size();
         return ratePerEmployees * countProgrammers;
     }
-
+//сетеры и гетеры
     public void setRatePerEmployees(double ratePerEmploues) {
         this.ratePerEmployees = ratePerEmploues;
     }

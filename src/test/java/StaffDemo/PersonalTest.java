@@ -38,32 +38,32 @@ public class PersonalTest {
     @Test
     public void setRatePerWorkHour() {
         assertEquals(0,cleaner.getRatePerWorkHour(),0.00000001);
-        cleaner.setRatePerWorkHour(500);
+        cleaner.setRateWorkHour(500);
         assertEquals(500,cleaner.getRatePerWorkHour(),0.00000001);
         assertEquals(0,driver.getRatePerWorkHour(),0.00000001);
-        driver.setRatePerWorkHour(400);
+        driver.setRateWorkHour(400);
         assertEquals(400,driver.getRatePerWorkHour(),0.00000001);
     }
 
     @Test
     public void setRatePerWorkHourNegative() {
         assertEquals(0,cleaner.getRatePerWorkHour(),0.00000001);
-        cleaner.setRatePerWorkHour(-500);
+        cleaner.setRateWorkHour(-500);
         assertEquals(0,cleaner.getRatePerWorkHour(),0.00000001);
         assertEquals(0,driver.getRatePerWorkHour(),0.00000001);
-        driver.setRatePerWorkHour(-400);
+        driver.setRateWorkHour(-400);
         assertEquals(0,driver.getRatePerWorkHour(),0.00000001);
     }
 
     @Test
     public void calcPaymentWorkTime() {
         assertEquals(0,cleaner.calcPaymentWorkTime(),0.00000001);
-        cleaner.setRatePerWorkHour(500);
+        cleaner.setRateWorkHour(500);
         cleaner.setWorkHours(40);
         assertEquals(40*500,cleaner.calcPaymentWorkTime(),0.00000001);
 
         assertEquals(0,driver.calcPaymentWorkTime(),0.00000001);
-        driver.setRatePerWorkHour(400);
+        driver.setRateWorkHour(400);
         driver.setWorkHours(20);
         assertEquals(20*400,driver.calcPaymentWorkTime(),0.00000001);
     }

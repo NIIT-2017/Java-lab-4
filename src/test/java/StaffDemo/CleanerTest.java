@@ -25,7 +25,7 @@ public class CleanerTest {
         int i = 0;
         for (Cleaner next : cleaners) {
             next.setWorkHours(8+i%3);
-            next.setRatePerWorkHour(300*i%3);
+            next.setRateWorkHour(300*i%3);
             assertEquals((8+i%3)*(300*i%3),next.getPayment(),0.00000001);
             i++;
         }

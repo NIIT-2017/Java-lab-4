@@ -77,7 +77,7 @@ public class DriverTest {
             next.setOverTimeHours(1+i%3);
             next.setRateOverTimeHour(100*i%3);
             next.setWorkHours(1+i%2);
-            next.setRatePerWorkHour(100*i%2);
+            next.setRateWorkHour(100*i%2);
             next.calcPayment();
             assertEquals((1+i%3)*(100*i%3)+(1+i%2)*(100*i%2),next.getPayment(),0.00000001);
             i++;

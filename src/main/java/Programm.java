@@ -1,23 +1,11 @@
 import StaffDemo.*;
-import org.w3c.dom.*;
-import org.xml.sax.SAXException;
 
 import javax.swing.*;
 import javax.swing.event.TableModelListener;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import java.io.File;
-import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.Random;
 
 public class Programm {
@@ -68,17 +56,17 @@ public class Programm {
             teamLeader.setRateOvertimeHour(500);
             teamLeader.setRatePerProject(0.01+0.02*random.nextDouble());
             teamLeader.setWorkHours(150+10*random.nextDouble());
-            teamLeader.setRatePerWorkHour(300);
+            teamLeader.setRateWorkHour(300);
         }
         for (Programmer programmer : programmers) {
             programmer.setOvertimeHours(10*random.nextDouble());
             programmer.setRateOvertimeHour(500);
             programmer.setRatePerProject(0.01+0.02*random.nextDouble());
             programmer.setWorkHours(150+10*random.nextDouble());
-            programmer.setRateDayHours(300);
+            programmer.setRateWorkHour(300);
         }
         for (Tester tester : testers) {
-            tester.setRatePerWorkHour(300);
+            tester.setRateWorkHour(300);
             tester.setWorkHours(160);
             tester.setRatePerProject(0.02*random.nextDouble());
         }
@@ -87,13 +75,13 @@ public class Programm {
         }
         for (Driver driver : drivers) {
             driver.setWorkHours(100);
-            driver.setRatePerWorkHour(150);
+            driver.setRateWorkHour(150);
             driver.setOverTimeHours(30*random.nextDouble());
             driver.setRateOverTimeHour(250);
         }
         for (Cleaner cleaner : cleaners) {
             cleaner.setWorkHours(20);
-            cleaner.setRatePerWorkHour(600);
+            cleaner.setRateWorkHour(600);
         }
     }
 

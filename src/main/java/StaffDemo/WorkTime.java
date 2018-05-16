@@ -1,7 +1,7 @@
 package StaffDemo;
 
 public interface WorkTime {
-    void setRatePerWorkHour(double rate);
+    void setRateWorkHour(double rate);
     void setWorkHours(double hours);
     double calcPaymentWorkTime();
 }

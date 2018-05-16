@@ -14,7 +14,7 @@ public abstract class Personal extends Employee implements WorkTime{
             this.workHours = workHours;
     }
 
-    public void setRatePerWorkHour(double ratePerWorkHour) {
+    public void setRateWorkHour(double ratePerWorkHour) {
         if (ratePerWorkHour>0)
             this.ratePerWorkHour = ratePerWorkHour;
     }

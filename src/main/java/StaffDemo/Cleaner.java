@@ -16,10 +16,6 @@ public class Cleaner extends Personal {
     public void calcPayment() {
         payment = calcPaymentWorkTime();
     }
-//    считаем за отработанное время
-    public double calcPaymentWorkTime() {
-        return ratePerWorkHour * workHours;
-    }
 //    выделить из списка всех Cleaner
     public static ArrayList<Cleaner> getCleaners(ArrayList<Employee> employees) {
         ArrayList<Cleaner> newArray = new ArrayList<Cleaner>();

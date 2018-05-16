@@ -10,8 +10,11 @@ public abstract class Employee {
     protected double payment;
 
     Employee(String surname, String name, String secondname) {
-        this.ID = ++LASTID;
-        this.FIO = new String[]{surname, name, secondname};
+        if (surname.length()==0) return;
+        else {
+            this.ID = ++LASTID;
+            this.FIO = new String[]{surname, name, secondname};
+        }
     }
 //все наследники должны реализовать расчет ЗП
     abstract public void calcPayment();

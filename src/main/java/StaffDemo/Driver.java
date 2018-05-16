@@ -16,12 +16,11 @@ public class Driver extends Personal {
     }
 //расчет ЗП
     public void calcPayment() {
-        payment = calcPaymentWorkTime();
+        payment = calcPaymentWorkTime() + calcPaymentOverTIme();
     }
-//расчет ЗП за отработанное время
-    public double calcPaymentWorkTime() {
-        return ratePerWorkHour * workHours + rateOverTimeHour * overTimeHours;
-    }
+//расчет сверхурочных часов
+    public double calcPaymentOverTIme(){return  rateOverTimeHour * overTimeHours;}
+
 //установить сверхурочные часы
     public void setRateOverTimeHour(double rateOverTimeHour) {
         this.rateOverTimeHour = rateOverTimeHour;

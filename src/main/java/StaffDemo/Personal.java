@@ -16,5 +16,8 @@ public abstract class Personal extends Employee implements WorkTime{
     public void setRatePerWorkHour(double ratePerWorkHour) {
         this.ratePerWorkHour = ratePerWorkHour;
     }
-
+    //расчет ЗП за отработанное время
+    public double calcPaymentWorkTime() {
+        return ratePerWorkHour * workHours;
+    }
 }

@@ -20,8 +20,8 @@ import java.util.List;
 
 public class Staff {
     //хранит и управляем списками сотрудников и проектов
-    ArrayList<Project> projects;
-    ArrayList<Employee> employees;
+    private ArrayList<Project> projects;
+    private ArrayList<Employee> employees;
 
     public Staff() {
         this.employees = new ArrayList<Employee>();
@@ -35,22 +35,48 @@ public class Staff {
 
     //добавить одного сотрудника в штат
     public void addEmployee(Employee employee) {
-        employees.add(employee);
+        boolean result = true;
+        if (employee==null) result = false;
+        else {
+            if (employee.getID() <= 0) result = false;
+            if (employee.getFIO() == null) result = false;
+            else {
+                if (employee.getFIO()[0].trim().equals("")) result = false;
+                if (employee.getFIO()[1].trim().equals("")) result = false;
+                if (employee.getFIO()[2].trim().equals("")) result = false;
+            }
+        }
+        if (result)this.employees.add(employee);
     }
 
     //добавить список сотрудников в штат
-    public void addEmployes(List<Employee> employees) {
-        employees.addAll(employees);
+    public void addEmployees(List<Employee> employees) {
+        if (employees!=null)
+        {
+            for (Employee next : employees) {
+                this.addEmployee(next);
+            }
+        }
     }
 
     //добавить один проект
     public void addProject(Project project) {
-        projects.add(project);
+        boolean result = true;
+        if (project==null) result = false;
+        else {
+            if (project.getName().trim().equals("")) result = false;
+            if (project.getBudget()<=0) result = false;
+        }
+        if (result)this.projects.add(project);
     }
 
     //добавить проекты списком
     public void addProjects(List<Project> projects) {
-        projects.addAll(projects);
+        if (projects != null) {
+            for (Project next : projects) {
+                this.addProject(next);
+            }
+        }
     }
 
     //прочитать список проектов из файла
@@ -179,10 +205,10 @@ public class Staff {
 
     //гетер для работников
     public ArrayList<Employee> getEmployees() {
-        return employees;
+        return new ArrayList<Employee>(employees);
     }
     //гетер для проектов
     public ArrayList<Project> getProjects() {
-        return projects;
+        return new ArrayList<Project>(projects);
     }
 }

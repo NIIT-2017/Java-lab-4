@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 public class EmployeeTest {
 
-    ArrayList<Employee> employees;
+    private ArrayList<Employee> employees;
 
     @Before
     public void setUp() throws Exception {

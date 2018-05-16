@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class StaffTest {
-    Staff staff;
-    ArrayList<Employee> employees;
-    Employee employee;
+    private Staff staff;
+    private ArrayList<Employee> employees;
+    private Employee employee;
 
-    ArrayList<Project> projects;
-    Project project;
+    private ArrayList<Project> projects;
+    private Project project;
     @Before
     public void setUp() throws Exception {
         staff = new Staff();

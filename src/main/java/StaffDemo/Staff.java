@@ -19,6 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Staff {
+    //последний занятый номер работника
+    private static int LASTID =0;
     //хранит и управляем списками сотрудников и проектов
     private ArrayList<Project> projects;
     private ArrayList<Employee> employees;
@@ -38,7 +40,8 @@ public class Staff {
         boolean result = true;
         if (employee==null) result = false;
         else {
-            if (employee.getID() <= 0) result = false;
+            if (employee.getID() < 0) result = false;
+            if (employee.getID() == 0) employee.setID(++LASTID);
             if (employee.getFIO() == null) result = false;
             else {
                 if (employee.getFIO()[0].trim().equals("")) result = false;

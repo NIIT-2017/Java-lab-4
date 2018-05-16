@@ -1,36 +1,42 @@
 package StaffDemo;
 
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class CleanerTest {
-    Cleaner cleaner;
+    private ArrayList<Cleaner> cleaners;
+    private Cleaner cleaner;
 
-    @org.junit.Test
-    public void createNormal() {
-        cleaner = new Cleaner("surname","name","secondname");
-        assertNotNull(cleaner);
+    @Before
+    public void setUp() throws Exception {
+        cleaners = new ArrayList<Cleaner>();
+        for (int i = 0; i < 5; i++) {
+            cleaners.add(new Cleaner("Csurname" + i, "Cname" + i, "Csecondname" + i));
+        }
+        cleaner = cleaners.get(0);
     }
 
-    @org.junit.Test (expected = NumberFormatException.class)
-    public void createNotNumberID() {
-        cleaner = new Cleaner("ID","surname", "name", "secondname");
-        assertNull(cleaner);
+    @Test
+    public void calcPayment() {
+        int i = 0;
+        for (Cleaner next : cleaners) {
+            next.setWorkHours(8+i%3);
+            next.setRatePerWorkHour(300*i%3);
+            assertEquals((8+i%3)*(300*i%3),next.getPayment(),0.00000001);
+            i++;
+        }
     }
 
-//тесты на вычисление ЗП
-    @org.junit.Test
-    public void calcPaymentNormal() {
-        cleaner = new Cleaner("surname","name","secondname");
-        cleaner.setRatePerWorkHour(400);
-        cleaner.setWorkHours(8);
-        cleaner.calcPayment();
-        assertEquals(8*400,cleaner.getPayment(),0.0000001);
-    }
-
-    @org.junit.Test
-    public void calcPaymentNotData() {
-        cleaner = new Cleaner("surname","name","secondname");
-        cleaner.calcPayment();
-        assertEquals(0.0,cleaner.getPayment(),0.0000001);
+    @Test
+    public void getCleaners() {
+        ArrayList<Employee> employees = new ArrayList<Employee>();
+        employees.add(new Manager("Msurname", "Mname", "Msecondname"));
+        employees.add(new Programmer("Psurname", "Pname", "Psecondname"));
+        employees.addAll(cleaners);
+        assertEquals(cleaners,Cleaner.getCleaners(employees));
     }
 }

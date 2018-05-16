@@ -21,15 +21,27 @@ public class Driver extends Personal {
 //расчет сверхурочных часов
     public double calcPaymentOverTIme(){return  rateOverTimeHour * overTimeHours;}
 
-//установить сверхурочные часы
+    //установить сверхурочные часы
+
     public void setRateOverTimeHour(double rateOverTimeHour) {
-        this.rateOverTimeHour = rateOverTimeHour;
+        if(rateOverTimeHour>0)
+            this.rateOverTimeHour = rateOverTimeHour;
     }
-//установить ставку за сверхурочные
+    //установить ставку за сверхурочные
     public void setOverTimeHours(double overTimeHours) {
-        this.overTimeHours = overTimeHours;
+        if (overTimeHours>0)
+            this.overTimeHours = overTimeHours;
     }
-//выбрать всех водителей из списка
+
+    public double getOverTimeHours() {
+        return overTimeHours;
+    }
+
+    public double getRateOverTimeHour() {
+        return rateOverTimeHour;
+    }
+
+    //выбрать всех водителей из списка
     public static ArrayList<Driver> getDrivers(ArrayList<Employee> employees) {
         ArrayList<Driver> newArray = new ArrayList<Driver>();
         for(Employee next: employees){

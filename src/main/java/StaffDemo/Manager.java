@@ -2,7 +2,7 @@ package StaffDemo;
 
 import java.util.ArrayList;
 //менеджер имеет только ставку за участие в проекте в котором участвует
-public class Manager extends OfficePlankton implements PaymentForProject {
+public class Manager extends OfficePlankton {
 
 //конструктор для нового менеджера
     public Manager(String surname, String name, String secondname) {

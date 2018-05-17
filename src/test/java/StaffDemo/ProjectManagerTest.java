@@ -55,10 +55,9 @@ public class ProjectManagerTest {
 
     @Test
     public void getProjectManagers() {
-        ProjectManager projectManager = projectManagers.get(0);
-        assertEquals(0,projectManager.getRatePerEmployees(),0.00000001);
-        projectManager.setRatePerEmployees(1000);
-        assertEquals(1000,projectManager.getRatePerEmployees(),0.00000001);
+        ArrayList<Employee> employees = new ArrayList<Employee>(projectManagers);
+        employees.addAll(officePlanktons);
+        assertEquals(projectManagers,ProjectManager.getProjectManagers(employees));
     }
 
     @Test
@@ -81,5 +80,14 @@ public class ProjectManagerTest {
             next.calcPayment();
             assertEquals(payment, next.getPayment(),0.00000001);
         }
+    }
+
+    @Test
+    public void getRatePerEmployees() {
+        ProjectManager projectManager = projectManagers.get(0);
+        assertEquals(0,projectManager.getRatePerEmployees(),0.00000001);
+        projectManager.setRatePerEmployees(1000);
+        assertEquals(1000,projectManager.getRatePerEmployees(),0.00000001);
+
     }
 }

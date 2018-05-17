@@ -18,7 +18,12 @@ public class Programmer extends Enginer {
     public void calcPayment() {
         payment = calcPaymentForPartOfProject() + calcPaymentWorkTime() + calcPaymentOvertime();
     }
-//расчет сверхурочных
+
+    public double getRateOvertimeHour() {
+        return rateOvertimeHour;
+    }
+
+    //расчет сверхурочных
     double calcPaymentOvertime() {
         return overtimeHours * rateOvertimeHour;
     }
@@ -38,10 +43,13 @@ public class Programmer extends Enginer {
     }
 
     public void setRateOvertimeHour(double rateOvertimeHour) {
-        this.rateOvertimeHour = rateOvertimeHour;
+        if (rateOvertimeHour > 0) {
+            this.rateOvertimeHour = rateOvertimeHour;
+        }
     }
 
     public void setOvertimeHours(double overtimeHours) {
-        this.overtimeHours = overtimeHours;
+        if (overtimeHours>0)
+            this.overtimeHours = overtimeHours;
     }
 }

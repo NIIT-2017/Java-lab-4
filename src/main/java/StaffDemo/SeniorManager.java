@@ -26,11 +26,23 @@ public class SeniorManager extends Employee {
     }
 //сетеры и гетеры
     public void setRatePerProject(double ratePerProject) {
-        this.ratePerProject = ratePerProject;
+        if (ratePerProject>0)
+            this.ratePerProject = ratePerProject;
     }
 
     public void setProjects(ArrayList<Project> projects) {
         this.projects = projects;
+    }
+
+    public ArrayList<Project> getProjects() {
+        if (projects.size()==0)
+            return null;
+        else
+            return new ArrayList<Project>(projects);
+    }
+
+    public double getRatePerProject() {
+        return ratePerProject;
     }
 
     public static SeniorManager getSeniorManager(ArrayList<Employee> employees) {

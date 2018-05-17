@@ -20,14 +20,7 @@ public class EnginerTest {
         enginer = enginers.get(0);
     }
 
-    @Test
-    public void setRatePerProject() {
-        for (Enginer next : enginers) {
-            assertEquals(0,next.getPartOfProject(),0.00000001);
-            next.setRatePerProject(0.01);
-            assertEquals(0.01, next.getPartOfProject(), 0.00000001);
-        }
-    }
+
 
     @Test
     public void setRateWorkHour() {
@@ -47,14 +40,7 @@ public class EnginerTest {
         }
     }
 
-    @Test
-    public void setRatePerProjectNegative() {
-        for (Enginer next : enginers) {
-            assertEquals(0,next.getPartOfProject(),0.00000001);
-            next.setRatePerProject(-0.01);
-            assertEquals(0, next.getPartOfProject(), 0.00000001);
-        }
-    }
+
 
     @Test
     public void setRateWorkHourNegative() {
@@ -74,15 +60,7 @@ public class EnginerTest {
         }
     }
 
-    @Test
-    public void calcPaymentForPartOfProject() {
-        Project project = new Project("Project", 100000);
-        project.addOfficeplankton(enginers);
-        for (Enginer next : enginers) {
-            next.setRatePerProject(0.01);
-            assertEquals(0.01 * project.getBudget(), next.calcPaymentForPartOfProject(), 0.00000001);
-        }
-    }
+
 
     @Test
     public void calcPaymentWorkTime() {
@@ -95,14 +73,5 @@ public class EnginerTest {
         }
     }
 
-    @Test
-    public void getPartOfProject() {
-        int i = 0;
-        for (Enginer next : enginers) {
-            assertEquals(0, next.getPartOfProject(), 0.00000001);
-            next.setRatePerProject(10*i%3);
-            assertEquals((10 * i % 3), next.getPartOfProject(), 0.00000001);
-            i++;
-        }
-    }
+
 }

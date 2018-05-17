@@ -43,4 +43,44 @@ public class OfficePlanktonTest {
             assertEquals(next.getProject(),projects.get(0));
         }
     }
+
+    @Test
+    public void calcPaymentForPartOfProject() {
+        Project project = new Project("Project", 100000);
+        project.addOfficeplankton(officePlanktons);
+        for (OfficePlankton next : officePlanktons) {
+            next.setRatePerProject(0.01);
+            assertEquals(0.01 * project.getBudget(), next.calcPaymentForPartOfProject(), 0.00000001);
+        }
+    }
+
+    @Test
+    public void setRatePerProject() {
+        for (OfficePlankton next : officePlanktons) {
+            assertEquals(0,next.getRatePerProject(),0.00000001);
+            next.setRatePerProject(0.01);
+            assertEquals(0.01, next.getRatePerProject(), 0.00000001);
+        }
+    }
+
+    @Test
+    public void setRatePerProjectNegative() {
+        for (OfficePlankton next : officePlanktons) {
+            assertEquals(0,next.getRatePerProject(),0.00000001);
+            next.setRatePerProject(-0.01);
+            assertEquals(0, next.getRatePerProject(), 0.00000001);
+        }
+    }
+
+    @Test
+    public void getRatePerProject() {
+        int i = 0;
+        for (OfficePlankton next : officePlanktons) {
+
+            assertEquals(0, next.getRatePerProject(), 0.00000001);
+            next.setRatePerProject(10 * i % 3);
+            assertEquals((10 * i % 3), next.getRatePerProject(), 0.00000001);
+            i++;
+        }
+    }
 }

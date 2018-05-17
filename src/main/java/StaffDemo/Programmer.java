@@ -14,7 +14,8 @@ public class Programmer extends Enginer {
     public Programmer(String surname, String name, String secondname) {
         super(surname, name, secondname);
     }
-//расчет ЗП как от участия в проекте + отработтанное время + оплата сверхурочных
+
+    //расчет ЗП как от участия в проекте + отработтанное время + оплата сверхурочных
     public void calcPayment() {
         payment = calcPaymentForPartOfProject() + calcPaymentWorkTime() + calcPaymentOvertime();
     }

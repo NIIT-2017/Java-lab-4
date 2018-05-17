@@ -22,11 +22,17 @@ public class ProjectManager extends Manager implements Heading{
     public double calcPaymentForHeading() {
         int countProgrammersOfProject = Programmer.getProgrammers(getProject().getEmployee()).size();
         int countManagersOfProject    = Manager.getManagers(getProject().getEmployee()).size();
-        return getProject().allotMoney(ratePerEmployees * (countManagersOfProject + countProgrammersOfProject + 1));
+        int countTestersOfProject     = Tester.getTesters(getProject().getEmployee()).size();
+        return getProject().allotMoney(ratePerEmployees * (countManagersOfProject + countProgrammersOfProject + countTestersOfProject + 1));
     }
 //сетер
     public void setRatePerEmployees(double ratePerEmploues) {
-        this.ratePerEmployees = ratePerEmploues;
+        if (ratePerEmploues>0)
+            this.ratePerEmployees = ratePerEmploues;
+    }
+
+    public double getRatePerEmployees() {
+        return ratePerEmployees;
     }
 
     public static ArrayList<ProjectManager> getProjectManagers(ArrayList<Employee> employees) {

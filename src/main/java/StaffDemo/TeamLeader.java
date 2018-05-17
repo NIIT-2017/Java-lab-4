@@ -23,7 +23,13 @@ public class TeamLeader extends Programmer implements Heading{
     }
 //сетеры и гетеры
     public void setRatePerEmployees(double ratePerEmploues) {
-        this.ratePerEmployees = ratePerEmploues;
+        if (ratePerEmploues > 0) {
+            this.ratePerEmployees = ratePerEmploues;
+        }
+    }
+
+    public double getRatePerEmployees() {
+        return ratePerEmployees;
     }
 
     public static ArrayList<TeamLeader> getTeamLeaders(ArrayList<Employee> employees) {

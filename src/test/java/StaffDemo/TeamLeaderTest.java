@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 public class TeamLeaderTest {
     private ArrayList<TeamLeader> teamLeaders;
     private TeamLeader teamLeader;
+    private ArrayList<OfficePlankton> officePlanktons;
 
     @Before
     public void setUp() throws Exception {
@@ -19,6 +20,16 @@ public class TeamLeaderTest {
             teamLeaders.add(new TeamLeader("TLsurname" + i, "TLname" + i, "TLsecondname" + i));
         }
         teamLeader = teamLeaders.get(0);
+        officePlanktons = new ArrayList<OfficePlankton>();
+        for (int i = 0; i < 5; i++) {
+            officePlanktons.add(new Programmer("Psurname" + i, "Pname" + i, "Psecondname" + i));
+        }
+        for (int i = 0; i < 5; i++) {
+            officePlanktons.add(new Tester("Tsurname" + i, "Tname" + i, "Tsecondname" + i));
+        }
+        for (int i = 0; i < 5; i++) {
+            officePlanktons.add(new Manager("Msurname" + i, "Mname" + i, "Msecondname" + i));
+        }
     }
 
     @Test
@@ -61,8 +72,8 @@ public class TeamLeaderTest {
         ArrayList<Programmer> programmers = new ArrayList<Programmer>();
         for (int i = 0; i < 5; i++) {
             programmers.add(new Programmer("Psurname"+i, "Pname"+i, "Psecondname"+i));
-            programmers.get(i).setProject(project);
         }
+        teamLeader.getProject().addOfficeplankton(programmers);
         teamLeader.setRatePerEmployees(1000);
         assertEquals(1000*project.getEmployee().size(),teamLeader.calcPaymentForHeading(),0.00000001);
     }
@@ -73,6 +84,7 @@ public class TeamLeaderTest {
         for (TeamLeader next : teamLeaders) {
             new Project("Project" + i, 100000).setTeamLeader(next);
             next.setRatePerEmployees(1000 * i % 3);
+            next.getProject().addOfficeplankton(officePlanktons);
             next.setWorkHours(40 + i % 3);
             next.setRateWorkHour(300 * i % 3);
             next.setOvertimeHours(10 * i % 3);

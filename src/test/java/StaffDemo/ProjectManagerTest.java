@@ -75,6 +75,7 @@ public class ProjectManagerTest {
         for (ProjectManager next : projectManagers) {
             next.setRatePerEmployees(1000*i%3);
             next.setRatePerProject(0.01*i%3);
+            next.getProject().addOfficeplankton(officePlanktons);
             double payment = (1000 * i % 3) * next.getProject().getEmployee().size() +
                     (0.01*i%3)*next.getProject().getBudget();
             next.calcPayment();

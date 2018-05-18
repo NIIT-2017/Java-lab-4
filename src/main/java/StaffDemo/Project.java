@@ -20,36 +20,43 @@ public class Project {
 //зарезервировать деньги из бюджета проекта если достаточно то вернуть сумму
 //    если нет денег то исключение
     double allotMoney(double money) {
-        try {
+        if (money > 0) {
             if (restMoney >= money) {
                 restMoney -= money;
                 return money;
-            } else throw new StaffException("not enough money");
-        } catch (StaffException e) {
-            e.printStackTrace();
+            }
+            else return 0.0;
         }
-        return 0.0;
+        else return 0.0;
     }
 //назначить на проект работника
     public void addOfficeplankton(List<? extends OfficePlankton> employees) {
-        for (OfficePlankton nextEmployee : employees) {
-            nextEmployee.setProject(this);
+        if (employees!=null) {
+            for (OfficePlankton nextEmployee : employees) {
+                nextEmployee.setProject(this);
+            }
+            this.employee.addAll(employees);
         }
-        this.employee.addAll(employees);
     }
 //назначить руководителя проекта
     public void setProjectManager(ProjectManager projectManager) {
-        projectManager.setProject(this);
-        this.projectManager = projectManager;
+        if (projectManager != null) {
+            projectManager.setProject(this);
+            this.projectManager = projectManager;
+        }
     }
 //назначить лидера
     public void setTeamLeader(TeamLeader teamLeader) {
-        teamLeader.setProject(this);
-        this.teamLeader = teamLeader;
+        if (teamLeader != null) {
+            teamLeader.setProject(this);
+            this.teamLeader = teamLeader;
+        }
     }
 //сетеры и гетеры
     public ArrayList<Employee> getEmployee() {
-        return employee;
+        if (employee.size()>0) return employee;
+        else return null;
+
     }
 
     double getBudget() {

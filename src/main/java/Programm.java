@@ -19,7 +19,6 @@ public class Programm {
         }
         //отрисовка таблицы
         drawJFrame(staff.getEmployees());
-        System.out.println("Welcome to the StaffDemo");
     }
 
     private static void setField(ArrayList<Project> projects, ArrayList<Employee> staff) {

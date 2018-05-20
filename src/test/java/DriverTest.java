@@ -1,7 +1,6 @@
-import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DriverTest {
 
@@ -10,6 +9,6 @@ class DriverTest {
         Driver Personal=new Driver("Abram","324234",100,180);
 
         int expected=18000+18000*20/100;
-        Assert.assertEquals(expected,Personal.getPayment());
+        assertEquals(expected,Personal.getPayment());
     }
 }

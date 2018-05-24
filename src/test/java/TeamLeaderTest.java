@@ -14,6 +14,6 @@ public class TeamLeaderTest {
     @Test
     public void calcPayment() {
         TeamLeader c1=new TeamLeader(1,"Alex",100,100,5,5,"Project2");
-        assertEquals(0.05*1000000+100*100+5*500,c1.CalcPayment(),0.01);
+        assertEquals(0.05*200000+100*100+5*500,c1.CalcPayment(),0.01);
     }
 }

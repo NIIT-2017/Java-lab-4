@@ -19,18 +19,18 @@ public class TeamLeaderTest {
 
     @Test
     public void payForProject() {
-        assertEquals(37500,teamLeader.payForProject());
+        assertEquals(37500.0,teamLeader.payForProject());
 
     }
 
     @Test
     public void payForHours() {
-        assertEquals(99000, teamLeader.payForHours());
+        assertEquals(99000.0, teamLeader.payForHours());
     }
 
     @Test
     public void calcPayment() {
-        assertEquals(171500, teamLeader.calcPayment());
+        assertEquals(171500.0, teamLeader.calcPayment());
     }
 
     @Test

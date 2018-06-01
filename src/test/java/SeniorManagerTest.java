@@ -19,7 +19,7 @@ public class SeniorManagerTest {
     @Test
     public void payForProject() {
 
-        assertEquals(20000,seniorManager.payForProject());
+        assertEquals(20000.0,seniorManager.payForProject());
     }
 
     @Test
@@ -29,6 +29,6 @@ public class SeniorManagerTest {
 
     @Test
     public void calcPayment() {
-        assertEquals(35000,seniorManager.calcPayment());
+        assertEquals(35000.0,seniorManager.calcPayment());
     }
 }

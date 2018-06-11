@@ -2,21 +2,25 @@ import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class StaffDemo {
     public static void main(String[]args){
-        String path="Staff of company.xlsx";
+        String path="/Staff of company.xlsx";
         Payroll payroll=null;
         try {
             payroll=new Payroll(path);
             } catch (IOException e) {
             e.printStackTrace();
         }
+
+
         ArrayList<Employee >staff=payroll.getStaff();
         ArrayList<WorkProject>workProjects=payroll.getWorkProjects();
 
@@ -81,7 +85,7 @@ public ArrayList<Employee>getStaff(){
        ArrayList <ArrayList <String>> arrayLength = new ArrayList <ArrayList <String>>(0);
        String line = "";
        //read excel file
-       FileInputStream inputStream = new FileInputStream(pathFile);
+       InputStream inputStream = File.class.getResourceAsStream(pathFile);
 
        XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
        XSSFSheet sheet = workbook.getSheet(sheetName);/////////////////////////////////// can be NullPointerException
@@ -297,15 +301,24 @@ class Employee {
     private int payment;// заработная плата.
     private ArrayList<WorkProject> project;
     private int bonus;
+    private String position;
     Employee(String name,String id){
         this.name=name;
         this.id=id;
         this.workTime=0.0;
         this.payment=0;
-        //this.project="None";
         this.bonus=0;
         this.project=new ArrayList <>(0);
         this.numberSubordinates=0;
+        this.position="";
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
     }
 
     public int getNumberSubordinates() {
@@ -351,6 +364,7 @@ protected void setNumberSubordinates(int numberSubordinates){
     }
 
 }
+
 //Personal - работник по найму с оплатой за фактически отработанное время. Имеет ставку за час.
 class Personal extends Employee implements WorkTime{
    private int base; //базовая ставка руб./час
@@ -386,7 +400,9 @@ class Cleaner extends Personal{
     Cleaner(String name, String id, int baseRatePerHour, double workTime) {
         super(name, id, baseRatePerHour);
         setCalculatedWorkTime(workTime);
+        setPosition( getClass().getCanonicalName());
     }
+
 }
 //Driver - водитель.
 class Driver extends Personal{
@@ -395,6 +411,7 @@ class Driver extends Personal{
         super(name, id, baseRatePerHour);
         this.bonusPercentUp=20;
         setCalculatedWorkTime(workTime);
+        setPosition( getClass().getCanonicalName());
     }
 
     public void setCalculatedWorkTime(double workHour) {
@@ -416,8 +433,11 @@ abstract class Engineer extends Employee implements WorkTime,Project{
         setCalculatedWorkTime(workTime);
          }
 
+    public int getBase() {
+        return base;
+    }
 
-@Override
+    @Override
     public void setCalculatedWorkTime(double workHour) {
         setWorkTime(workHour);
         int payment=(int)(base*getWorkTime());
@@ -432,7 +452,7 @@ class Tester extends Engineer{
 
     Tester(String name, String id, int baseRatePerHour, double workTime) {
         super(name, id, baseRatePerHour, workTime);
-
+        setPosition( getClass().getCanonicalName());
     }
 
 
@@ -449,6 +469,7 @@ class Programmer extends Engineer{
 
     Programmer(String name, String id, int baseRatePerHour, double workTime) {
         super(name, id, baseRatePerHour, workTime);
+        setPosition( getClass().getCanonicalName());
     }
 
         @Override
@@ -472,6 +493,7 @@ class TeamLeader extends Programmer implements Heading{
         this.headingBonus=0;
         this.rateFromManagingOfTeam=5000;
         this.subordinates=new ArrayList <>(0);
+        setPosition( getClass().getCanonicalName());
     }
 
     @Override
@@ -488,7 +510,7 @@ class TeamLeader extends Programmer implements Heading{
         ArrayList<Programmer>programmers=getProject().get(0).getProgrammers();
        for(Programmer programmer:programmers){
            engineers.add(programmer);
-       subordinates.add(programmer);
+            subordinates.add(programmer);
        }
        for(Tester tester:getProject().get(0).getTesters()){
            engineers.add(tester);
@@ -514,6 +536,10 @@ public ArrayList<Engineer>getEngineers(){
         return bonusH;
 
     }
+
+    public ArrayList <Employee> getSubordinates() {
+        return subordinates;
+    }
 }
 //Manager - менеджер. Оплату получает из денег проекта, которым руководит.
 class Manager extends Employee implements Project{
@@ -521,6 +547,7 @@ class Manager extends Employee implements Project{
     Manager(String name, String id) {
         super(name, id);
         super.setPayment(30000);//wage for manager
+        setPosition( getClass().getCanonicalName());
     }
 
 
@@ -542,6 +569,7 @@ private int rateFromManagingOfTeam;
         this.rateFromManagingOfTeam=5000;
         this.subordinates=new ArrayList <>(0);
         super.setPayment(50000);//the wage of manager
+        setPosition( getClass().getCanonicalName());
     }
 
     public ArrayList<Employee>getSubordinates(){
@@ -571,11 +599,21 @@ public int getHeadingBonus(){
         return bonusHead;
 
     }
+
+    public int getRateFromManagingOfTeam() {
+        return rateFromManagingOfTeam;
+    }
+
+    @Override
+    public int getNumberSubordinates() {
+        return super.getNumberSubordinates();
+    }
 }
 //SeniorManager - руководитель направления
 class SeniorManager extends ProjectManager{
     SeniorManager(String name, String id) {
         super(name, id);
+        setPosition( getClass().getCanonicalName());
 
     }
 @Override

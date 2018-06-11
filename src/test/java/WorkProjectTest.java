@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class WorkProjectTest {
 
-    String path="Staff of company.xlsx";
+    String path="/Staff of company.xlsx";
     Payroll Payroll;
     ArrayList <ArrayList<String>> array;
     ArrayList<WorkProject>workProjects;
@@ -58,7 +58,7 @@ class WorkProjectTest {
 
     @Test
     void setManager() {
-        Assert.assertEquals("Миронова Екатерина Онрпаджв",workProjects.get(0).getManager().getName());
+        Assert.assertEquals("Витюгов Кондрат Андреевич",workProjects.get(0).getManager().getName());
         String position;
         for(WorkProject workProject:workProjects) {
             Assert.assertNotEquals(null, workProject.getManager());

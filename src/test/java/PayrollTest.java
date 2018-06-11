@@ -10,7 +10,7 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PayrollTest {
-    String path="Staff of company.xlsx";
+    String path="/Staff of company.xlsx";
     Payroll Payroll;
     ArrayList <ArrayList<String>> array;
     @BeforeEach
@@ -24,7 +24,7 @@ class PayrollTest {
     void createMapArrayData()throws  IOException{
         int actual=Payroll.getArray().size();
         Assert.assertEquals(31,actual);// check delete
-        Assert.assertEquals(5,Payroll.getMap().get("Project"));
+        Assert.assertEquals(4,Payroll.getMap().get("Project"));
     }
     @Test
     void createStaff()throws  IOException {

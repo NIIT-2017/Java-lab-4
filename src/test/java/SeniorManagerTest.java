@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SeniorManagerTest {
-    String path="Staff of company.xlsx";
+    String path="/Staff of company.xlsx";
     Payroll Payroll;
     ArrayList<WorkProject> workProjects;
     SeniorManager  seniorManager;

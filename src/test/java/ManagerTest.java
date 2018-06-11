@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ManagerTest {
-    String path="Staff of company.xlsx";
+    String path="/Staff of company.xlsx";
     Payroll Payroll;
     ArrayList <ArrayList<String>> arrayInput;
     ArrayList<WorkProject> workProjects;

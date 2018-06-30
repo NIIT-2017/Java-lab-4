@@ -1,0 +1,68 @@
+{
+  "staff": [
+    {"id": 1, "name": "Большаков Давид Андриянович", "position": "SeniorManager", "base": 800.0, "project": "All"},
+
+	{"id": 2, "name": "Ярмухаметов Порфирий Ипатович", "position": "ProjectManager", "base": 0, "project": "Project1"},
+    {"id": 3, "name": "Катасонов Кир Кондратович", "position": "ProjectManager", "base": 0, "project": "Project2"},
+	{"id": 4, "name": "Аносов Клавдий Макарович", "position": "ProjectManager", "base": 0, "project": "Project3"},
+
+	{"id": 5, "name": "Распутин Соломон Вадимович", "position": "Manager", "base": 0, "project": "Project1"},
+    {"id": 6, "name": "Кахадзе Яков Михаилович", "position": "Manager", "base": 0, "project": "Project1"},
+    {"id": 7, "name": "Рубанов Герман Ерофеевич", "position": "Manager", "base": 0, "project": "Project1"},
+
+    {"id": 8, "name": "Алиев Александр Платонович", "position": "Manager", "base": 0, "project": "Project2"},
+    {"id": 9, "name": "Безродная Кристина Никифоровна", "position": "Manager", "base": 0, "project": "Project2"},
+	{"id": 10, "name": "Бурков Венедикт Зиновиевич", "position": "Manager", "base": 0, "project": "Project2"},
+
+	{"id": 11, "name": "Цуканова Виктория Эрнестовна", "position": "Manager", "base": 0, "project": "Project3"},
+    {"id": 12, "name": "Курушин Евстигней Дмитриевич", "position": "Manager", "base": 0, "project": "Project3"},
+	{"id": 13, "name": "Челомцев Ярослав Ильевич", "position": "Manager", "base": 0, "project": "Project3"},
+
+    {"id": 14, "name": "Ишеев Ян Онисимович", "position": "TeamLeader", "base": 600.0, "project": "Project1"},
+    {"id": 15, "name": "Бойцов Леонид Тарасович", "position": "Programmer", "base": 500.0, "project": "Project1"},   
+	{"id": 16, "name": "Половов Лев Феоктистович", "position": "Programmer", "base": 500.0, "project": "Project1"},
+	{"id": 17, "name": "Машир Алиса Казимировна", "position": "Programmer", "base": 500.0, "project": "Project1"},
+	{"id": 18, "name": "Сопов Иларион Наумович", "position": "Tester", "base": 400.0, "project": "Project1"},
+
+    {"id": 19, "name": "Миров Адриан Леонтиевич", "position": "TeamLeader", "base": 600.0, "project": "Project1"},
+    {"id": 20, "name": "Климов Агап Андреевич", "position": "Programmer", "base": 500.0, "project": "Project1"},   
+	{"id": 21, "name": "Макаркина Агафья Тихоновна", "position": "Programmer", "base": 500.0, "project": "Project1"},
+	{"id": 22, "name": "Морина Эльвира Виталиевна", "position": "Tester", "base": 400.0, "project": "Project1"},
+	{"id": 23, "name": "Никольников Макар Филиппович", "position": "Tester", "base": 400.0, "project": "Project1"},
+
+	{"id": 24, "name": "Печкин Ким Андронович", "position": "TeamLeader", "base": 600.0, "project": "Project2"},
+    {"id": 25, "name": "Ягункин Наум Мартьянович", "position": "Programmer", "base": 500.0, "project": "Project2"},   
+	{"id": 26, "name": "Рошета Лада Карповна", "position": "Programmer", "base": 500.0, "project": "Project2"},
+	{"id": 27, "name": "Будников Роман Фомевич", "position": "Programmer", "base": 500.0, "project": "Project2"},
+	{"id": 28, "name": "Низовкина Клара Вадимовна", "position": "Tester", "base": 400.0, "project": "Project2"},
+
+    {"id": 29, "name": "Ешевский Вадим Иннокентиевич", "position": "TeamLeader", "base": 600.0, "project": "Project2"},
+    {"id": 30, "name": "Гудкова Ульяна Семеновна", "position": "Programmer", "base": 500.0, "project": "Project2"},   
+	{"id": 31, "name": "Беляев Даниил Феликсович", "position": "Programmer", "base": 500.0, "project": "Project2"},
+	{"id": 32, "name": "Алимкин Архип Архипович", "position": "Tester", "base": 400.0, "project": "Project2"},
+	{"id": 33, "name": "Ожгибесова Валерия Геннадиевна", "position": "Tester", "base": 400.0, "project": "Project2"},
+
+	{"id": 34, "name": "Цельнер Иннокентий Иванович", "position": "TeamLeader", "base": 600.0, "project": "Project3"},
+    {"id": 35, "name": "Блинов Евдоким Григориевич", "position": "Programmer", "base": 500.0, "project": "Project3"},   
+	{"id": 36, "name": "Тредиаковский Иосиф Агапович", "position": "Programmer", "base": 500.0, "project": "Project3"},
+	{"id": 37, "name": "Дрёмов Михаил Гаврилевич", "position": "Programmer", "base": 500.0, "project": "Project3"},
+	{"id": 38, "name": "Ожегов Борислав Викентиевич", "position": "Tester", "base": 400.0, "project": "Project3"},
+
+    {"id": 39, "name": "Грешнева Зинаида Емельяновна", "position": "TeamLeader", "base": 600.0, "project": "Project3"},
+    {"id": 40, "name": "Оскорбин Федосий Кириллович", "position": "Programmer", "base": 500.0, "project": "Project3"},   
+	{"id": 41, "name": "Цехановецкий Артемий Ипатиевич", "position": "Programmer", "base": 500.0, "project": "Project3"},
+	{"id": 42, "name": "Измайлова Екатерина Дмитриевна", "position": "Tester", "base": 400.0, "project": "Project3"},
+	{"id": 43, "name": "Ямов Руслан Захарович", "position": "Tester", "base": 400.0, "project": "Project3"},
+
+	{"id": 44, "name": "Белибердиев Эрнест Афанасиевич", "position": "Driver", "base": 300.0, "project": ""},
+	{"id": 45, "name": "Витковский Никита Олегович", "position": "Driver", "base": 300.0, "project": ""},
+	{"id": 46, "name": "Лазуткин Тихон Саввевич", "position": "Driver", "base": 300.0, "project": ""},
+	{"id": 47, "name": "Лещенко Юрий Аникитевич", "position": "Driver", "base": 300.0, "project": ""},
+	{"id": 48, "name": "Колобков Натан Аполлинариевич", "position": "Driver", "base": 300.0, "project": ""},
+
+	{"id": 44, "name": "Макушев Адам Епифанович", "position": "Cleaner", "base": 200.0, "project": ""},
+	{"id": 45, "name": "Андреюшкина Яна Тимофеевна", "position": "Cleaner", "base": 200.0, "project": ""},
+	{"id": 46, "name": "Садовская Марина Радиславовна", "position": "Cleaner", "base": 200.0, "project": ""},
+	{"id": 47, "name": "Летова Милена Кузьмевна", "position": "Cleaner", "base": 200.0, "project": ""}
+  ]
+}

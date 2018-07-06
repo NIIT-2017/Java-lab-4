@@ -6,14 +6,14 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.*;
 import java.util.List;
 
-public class ReadAndWrite {
+public class ReadFile {
     private List list;
     private File file;
     private XSSFWorkbook workbook;
     private XSSFSheet sheet;
     private XSSFRow row;
 
-    ReadAndWrite(File file, List list) {
+    ReadFile(File file, List list) {
         this.file = file;
         this.list = list;
     }
@@ -32,7 +32,7 @@ public class ReadAndWrite {
                                     row.getCell(4).getNumericCellValue(),
                                     row.getCell(5).getNumericCellValue(),
                                     row.getCell(7).getStringCellValue()
-                    )
+                            )
                     );
                     continue;
                 }
@@ -118,35 +118,6 @@ public class ReadAndWrite {
             }
             workbook.close();
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    void writeToFile(){
-        FileOutputStream fileOutputStream = null;
-        try {
-            fileOutputStream = new FileOutputStream(file);
-            workbook = new XSSFWorkbook();
-            sheet = workbook.createSheet("Employees");
-            row = sheet.createRow(0);
-            row.createCell(0).setCellValue("Должность");
-            row.createCell(1).setCellValue("ФИО");
-            row.createCell(2).setCellValue("Отработанное время");
-            row.createCell(3).setCellValue("Заробатная плата");
-            for (int j = 1; j < list.size(); j++) {
-                row = sheet.createRow(j);
-                Employee employee = (Employee) list.get(j);
-                row.createCell(0).setCellValue(employee.getClass().getName());
-                row.createCell(1).setCellValue(employee.getName());
-                row.createCell(2).setCellValue(employee.getWorktime());
-                row.createCell(3).setCellValue(employee.getPayment());
-            }
-            sheet.autoSizeColumn(1);
-            workbook.write(fileOutputStream);
-            workbook.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

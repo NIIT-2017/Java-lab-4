@@ -13,14 +13,12 @@ public class StaffDemo {
 
         List<Employee> employeesList = new ArrayList<Employee>();
         File inputFile = new File("employees.xls").getAbsoluteFile();
-        File outputFile = new File("payment.xls").getAbsoluteFile();
-        new ReadAndWrite(inputFile, employeesList).readFromFile();
+        new ReadFile(inputFile, employeesList).readFromFile();
 
         for(Employee emp:employeesList)
             emp.calcPayment();
 
         for (Employee emp:employeesList)
             System.out.println(emp.getName() + " " + emp.getClass().getName() + " " + emp.getPayment() );
-        new ReadAndWrite(outputFile, employeesList).writeToFile();
     }
 }

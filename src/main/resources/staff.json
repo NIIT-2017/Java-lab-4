@@ -1,0 +1,702 @@
+{
+  "staff": [
+    {
+      "id": 1,
+      "fio": "Лапаева Ефросинья Захаровна",
+	  "position": "Cleaner",
+	  "workTime": 184,
+	  "base": 85
+    },
+    {
+      "id": 2,
+      "fio": "Бугакова Агафья Анатолиевна",
+	  "position": "Cleaner",
+	  "workTime": 176,
+	  "base": 85
+    },
+    {
+      "id": 3,
+      "fio": "Мозжухин Вадим Савелиевич",
+	  "position": "Driver",
+	  "workTime": 184,
+	  "base": 135
+    },
+    {
+      "id": 4,
+      "fio": "Калитин Максим Несторович",
+	  "position": "Driver",
+	  "workTime": 144,
+	  "base": 135
+    },
+    {
+      "id": 5,
+      "fio": "Потрепалова Анисья Петровна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 6,
+      "fio": "Конев Лукьян Чеславович",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 4,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 7,
+      "fio": "Кобяков Пахом Сергеевич",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 8,
+      "fio": "Яушев Вячеслав Савелиевич",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 9,
+      "fio": "Сайтахметова Розалия Ильевна",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-1",
+	  "projectPercent": 2,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 10,
+      "fio": "Щепкин Феофан Матвеевич",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 11,
+      "fio": "Якушин Эрнест Демьянович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 12,
+      "fio": "Янкелевича Кристина Филипповна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 13,
+      "fio": "Эмскиха Полина Германовна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 14,
+      "fio": "Лапунова Лидия Николаевна",
+	  "position": "Tester",
+	  "workTime": 176,
+	  "base": 135,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 15,
+      "fio": "Борщёв Владимир Глебович",
+	  "position": "TeamLeader",
+	  "workTime": 184,
+	  "base": 180,
+	  "project": "project-1",
+	  "projectPercent": 5,
+	  "projectBase": 1700000,
+	  "subordinates": 10
+    },
+    {
+      "id": 16,
+      "fio": "Яновицкий Макар Феоктистович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 17,
+      "fio": "Ряхина Анфиса Иларионовна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 18,
+      "fio": "Кондра Вероника Мироновна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 19,
+      "fio": "Шульц Евстигней Эдуардович",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-1",
+	  "projectPercent": 2,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 20,
+      "fio": "Грызлов Ефрем Кондратович",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 4,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 21,
+      "fio": "Гуковский Чеслав Анатолиевич",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 22,
+      "fio": "Балановский Мирослав Мартьянович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 23,
+      "fio": "Каприянов Борис Гаврилевич",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-1",
+	  "projectPercent": 2,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 24,
+      "fio": "Должиков Юлий Егорович",
+	  "position": "TeamLeader",
+	  "workTime": 184,
+	  "base": 180,
+	  "project": "project-1",
+	  "projectPercent": 5,
+	  "projectBase": 1700000,
+	  "subordinates": 8
+    },
+    {
+      "id": 25,
+      "fio": "Трибой Берта Степановна",
+	  "position": "Manager",
+	  "workTime": 184,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 26,
+      "fio": "Племянникова Кристина Владленовна",
+	  "position": "Manager",
+	  "workTime": 144,
+	  "project": "project-1",
+	  "projectPercent": 3,
+	  "projectBase": 1700000
+    },
+    {
+      "id": 27,
+      "fio": "Михальченко Алина Марковна",
+	  "position": "ProjectManager",
+	  "workTime": 184,
+	  "project": "project-1",
+	  "projectPercent": 14,
+	  "projectBase": 1700000,
+	  "subordinates": 22
+    },
+    {
+      "id": 28,
+      "fio": "Шелагин Андриян Остапович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 29,
+      "fio": "Сильвестрова Лариса Глебовна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 30,
+      "fio": "Казанцева Инга Ипполитовна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+	{
+      "id": 31,
+      "fio": "Кабальнова Тамара Юлиевна",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 32,
+      "fio": "Немова Кира Владленовна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 33,
+      "fio": "Николенко Геннадий Венедиктович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 34,
+      "fio": "Парфёнова Алиса Алексеевна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 4,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 35,
+      "fio": "Чкалов Мир Прохорович",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 36,
+      "fio": "Мухоморова Ангелина Серафимовна",
+	  "position": "Tester",
+	  "workTime": 176,
+	  "base": 135,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 37,
+      "fio": "Абоймова Влада Потаповна",
+	  "position": "TeamLeader",
+	  "workTime": 184,
+	  "base": 180,
+	  "project": "project-2",
+	  "projectPercent": 5,
+	  "projectBase": 1500000,
+	  "subordinates": 9
+    },
+    {
+      "id": 38,
+      "fio": "Ануфриев Владлен Севастьянович",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 39,
+      "fio": "Саблин Тихон Артемиевич",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 40,
+      "fio": "Буклин Матвей Саввевич",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 41,
+      "fio": "Чужинов Филимон Кондратиевич",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 42,
+      "fio": "Тимошкина Яна Всеволодовна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 2,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 43,
+      "fio": "Колпакова Варвара Давидовна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 44,
+      "fio": "Яцышина Дина Федоровна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 45,
+      "fio": "Дуванова Лидия Тимуровна",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-2",
+	  "projectPercent": 2,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 46,
+      "fio": "Яночкин Мирослав Никитевич",
+	  "position": "TeamLeader",
+	  "workTime": 184,
+	  "base": 180,
+	  "project": "project-2",
+	  "projectPercent": 5,
+	  "projectBase": 1500000,
+	  "subordinates": 8
+    },
+    {
+      "id": 47,
+      "fio": "Москвитин Осип Юриевич",
+	  "position": "Manager",
+	  "workTime": 184,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 48,
+      "fio": "Педича Всеслава Захаровна",
+	  "position": "Manager",
+	  "workTime": 176,
+	  "project": "project-2",
+	  "projectPercent": 3,
+	  "projectBase": 1500000
+    },
+    {
+      "id": 49,
+      "fio": "Андрюшина Рената Глебовна",
+	  "position": "ProjectManager",
+	  "workTime": 184,
+	  "project": "project-2",
+	  "projectPercent": 16,
+	  "projectBase": 1500000,
+	  "subordinates": 21
+    },
+    {
+      "id": 50,
+      "fio": "Буковский Порфирий Казимирович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 51,
+      "fio": "Лассмана Ярослава Родионовна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 52,
+      "fio": "Кулагина Альбина Олеговна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 4,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 53,
+      "fio": "Сусоев Емельян Валерьянович",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 54,
+      "fio": "Борисюк Борислав Онисимович",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 55,
+      "fio": "Азаренкова Ефросиния Иларионовна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 56,
+      "fio": "Кунаева Лада Якововна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 57,
+      "fio": "Михалицын Анатолий Ефремович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 58,
+      "fio": "Селидов Самуил Игоревич",
+	  "position": "Tester",
+	  "workTime": 176,
+	  "base": 135,
+	  "project": "project-3",
+	  "projectPercent": 2,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 59,
+      "fio": "Шурьева Кира Николаевна",
+	  "position": "TeamLeader",
+	  "workTime": 184,
+	  "base": 180,
+	  "project": "project-3",
+	  "projectPercent": 5,
+	  "projectBase": 1600000,
+	  "subordinates": 9
+    },
+    {
+      "id": 60,
+      "fio": "Шаляпин Фома Касьянович",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+		{
+      "id": 61,
+      "fio": "Ядренкин Бронислав Савелиевич",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 4,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 62,
+      "fio": "Сюкосева Юлия Мироновна",
+	  "position": "Programmer",
+	  "workTime": 176,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 63,
+      "fio": "Бондарева Оксана Вячеславовна",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-3",
+	  "projectPercent": 2,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 64,
+      "fio": "Куксилина Полина Леонидовна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 65,
+      "fio": "Снегирёва Наталия Елизаровна",
+	  "position": "Programmer",
+	  "workTime": 184,
+	  "base": 160,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 66,
+      "fio": "Шубина Валентина Ильевна",
+	  "position": "Tester",
+	  "workTime": 184,
+	  "base": 135,
+	  "project": "project-3",
+	  "projectPercent": 2,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 67,
+      "fio": "Тимирёва Агния Тимофеевна",
+	  "position": "TeamLeader",
+	  "workTime": 184,
+	  "base": 180,
+	  "project": "project-3",
+	  "projectPercent": 5,
+	  "projectBase": 1600000,
+	  "subordinates": 7
+    },
+    {
+      "id": 68,
+      "fio": "Шипицина Марфа Тимофеевна",
+	  "position": "Manager",
+	  "workTime": 184,
+	  "project": "project-3",
+	  "projectPercent": 4,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 69,
+      "fio": "Шелепина Ариадна Глебовна",
+	  "position": "Manager",
+	  "workTime": 184,
+	  "project": "project-3",
+	  "projectPercent": 3,
+	  "projectBase": 1600000
+    },
+    {
+      "id": 70,
+      "fio": "Глускин Степан Юриевич",
+	  "position": "ProjectManager",
+	  "workTime": 184,
+	  "project": "project-3",
+	  "projectPercent": 19,
+	  "projectBase": 1600000,
+	  "subordinates": 20
+    },
+    {
+      "id": 71,
+      "fio": "Куклов Владлен Кириллович",
+	  "position": "SeniorManager",
+	  "workTime": 184,
+	  "project": "all",
+	  "projectPercent": 17,
+	  "projectBase": 4800000,
+	  "subordinates": 66
+    }
+  ]
+}

@@ -1,3 +1,6 @@
 package employee.personal;
 
-public class Cleaner extends Personal {}
+public class Cleaner extends Personal {
+
+
+}

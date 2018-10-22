@@ -2,7 +2,6 @@ package staff;
 
 import employee.Employee;
 
-import accounting_department.AccountingDepartment;
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
@@ -13,13 +12,6 @@ import java.util.*;
 public class Staff {
 
     List<Employee> employees = new ArrayList<>();
-
-    List<Employee> getEmployees(){
-        return employees;
-    }
-    void setEmployees(List<Employee> employees){
-        this.employees = employees;
-    }
 
     public Staff() throws ParserConfigurationException, IOException, SAXException {}
 
@@ -34,8 +26,6 @@ public class Staff {
 
     private void load() throws ParserConfigurationException, IOException, SAXException, IllegalAccessException, InstantiationException, ClassNotFoundException {
 
-        AccountingDepartment accountingDepartment = new AccountingDepartment();
-
         Employee employee;
 
         NodeList nodeList = createNodeList();
@@ -43,20 +33,20 @@ public class Staff {
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node nextNode = nodeList.item(i);
             if (nextNode.getNodeType() == Node.ELEMENT_NODE){
-                NodeList childes  = nextNode.getChildNodes();
-                for (int j = 0; j<childes.getLength(); j++){
-                    Node nextChild = childes.item(j);
-                    if (nextChild.getNodeType() == Node.ELEMENT_NODE) {
-                        String pcg = nextNode.getParentNode().getNodeName().toLowerCase();
-                        String pcg2 = nextChild.getParentNode().getNodeName().toLowerCase();
-                        String clazz = nextNode.getNodeName();
-                        employee = (Employee) (Class.forName(pcg + "."+pcg2+"." + clazz)).newInstance();
-                        employees.add(employee);
-                        NodeList childNodes = nextChild.getChildNodes();
-                        parseNodeList(childNodes, employee);
-                        employee.setPayment(accountingDepartment.getPayment(employee));
-                    }
-                }
+            NodeList childes  = nextNode.getChildNodes();
+            for (int j = 0; j<childes.getLength(); j++){
+                Node nextChild = childes.item(j);
+            if (nextChild.getNodeType() == Node.ELEMENT_NODE) {
+                String pcg = nextNode.getParentNode().getNodeName().toLowerCase();
+                String pcg2 = nextChild.getParentNode().getNodeName().toLowerCase();
+                String clazz = nextChild.getNodeName();
+                employee = (Employee) (Class.forName(pcg + "."+pcg2+"." + clazz)).newInstance();
+                employees.add(employee);
+                NodeList childNodes = nextChild.getChildNodes();
+                parseNodeList(childNodes, employee);
+                employee.payroll();
+            }
+            }
             }
         }
     }

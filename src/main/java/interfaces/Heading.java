@@ -1,7 +1,7 @@
-package accounting_department;
+package interfaces;
 
 import employee.Employee;
 
-interface Heading{
+public interface Heading{
     double getPaymentForHeading(Employee employee);
 }

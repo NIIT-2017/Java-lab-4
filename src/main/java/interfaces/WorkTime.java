@@ -1,7 +1,7 @@
-package accounting_department;
+package interfaces;
 
 import employee.Employee;
 
-interface WorkTime{
+public interface WorkTime{
     double getHourlyPay(Employee employee);
 }

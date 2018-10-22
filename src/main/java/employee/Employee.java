@@ -8,11 +8,12 @@ public class Employee implements Comparable<Employee>{
     private int id;
     private String name;
     private double workTime;
-    private double payment;
     private double base;
-    private Map<String, Double[]> project= new LinkedHashMap();
+    private double payment;
     private String position;
     private int subordinates;
+    private Map<String, Double[]> project= new LinkedHashMap();
+
     @Override
     public String toString() {
         return "Id: "+id+" Должность: "+position+" ФИО: "+name+" Зарплата ="+payment;
@@ -34,20 +35,20 @@ public class Employee implements Comparable<Employee>{
         return name;
     }
 
-    public void setBase(double base){
-        this.base = base;
-    }
-
-    public double getBase() {
-        return base;
-    }
-
     public void setWorkTime(double workTime){
         this.workTime = workTime;
     }
 
     public double getWorkTime(){
         return workTime;
+    }
+
+    public void setBase(double base){
+        this.base = base;
+    }
+
+    public double getBase() {
+        return base;
     }
 
     public void setPosition(String position){
@@ -65,6 +66,8 @@ public class Employee implements Comparable<Employee>{
     public double getPayment() {
         return payment;
     }
+
+    public void payroll(){}
 
     public void setSubordinates(int subordinates){
         this.subordinates = subordinates;

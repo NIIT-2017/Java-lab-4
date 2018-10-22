@@ -1,9 +1,6 @@
 package staff;
 
 import employee.Employee;
-import employee.engineer.*;
-import employee.manager.*;
-import employee.personal.*;
 
 import accounting_department.AccountingDepartment;
 import org.w3c.dom.*;
@@ -15,7 +12,7 @@ import java.util.*;
 
 public class Staff {
 
-    List<Employee> employees = new ArrayList();
+    List<Employee> employees = new ArrayList<>();
 
     List<Employee> getEmployees(){
         return employees;
@@ -35,31 +32,31 @@ public class Staff {
         return nodeList;
     }
 
-    private void load() throws ParserConfigurationException, IOException, SAXException, IllegalAccessException, InstantiationException {
+    private void load() throws ParserConfigurationException, IOException, SAXException, IllegalAccessException, InstantiationException, ClassNotFoundException {
 
         AccountingDepartment accountingDepartment = new AccountingDepartment();
-        Employee employee = null;
-        Map<String, Class<? extends Employee>> map = new HashMap();
-        map.put("Cleaner", Cleaner.class);
-        map.put("Driver", Driver.class);
-        map.put("Programmer", Programmer.class);
-        map.put("Tester", Tester.class);
-        map.put("TeamLeader", TeamLeader.class);
-        map.put("Manager", Manager.class);
-        map.put("ProjectManager", ProjectManager.class);
-        map.put("SeniorManager", SeniorManager.class);
+
+        Employee employee;
 
         NodeList nodeList = createNodeList();
 
         for (int i = 0; i < nodeList.getLength(); i++) {
             Node nextNode = nodeList.item(i);
-            if (nextNode.getNodeType() == Node.ELEMENT_NODE) {
-                if (map.containsKey(nextNode.getNodeName()))
-                    employee = map.get(nextNode.getNodeName()).newInstance();
-                employees.add(employee);
-                NodeList childNodes = nextNode.getChildNodes();
-                parseNodeList(childNodes, employee);
-                employee.setPayment(accountingDepartment.getPayment(employee));
+            if (nextNode.getNodeType() == Node.ELEMENT_NODE){
+                NodeList childes  = nextNode.getChildNodes();
+                for (int j = 0; j<childes.getLength(); j++){
+                    Node nextChild = childes.item(j);
+                    if (nextChild.getNodeType() == Node.ELEMENT_NODE) {
+                        String pcg = nextNode.getParentNode().getNodeName().toLowerCase();
+                        String pcg2 = nextChild.getParentNode().getNodeName().toLowerCase();
+                        String clazz = nextNode.getNodeName();
+                        employee = (Employee) (Class.forName(pcg + "."+pcg2+"." + clazz)).newInstance();
+                        employees.add(employee);
+                        NodeList childNodes = nextChild.getChildNodes();
+                        parseNodeList(childNodes, employee);
+                        employee.setPayment(accountingDepartment.getPayment(employee));
+                    }
+                }
             }
         }
     }
@@ -111,10 +108,11 @@ public class Staff {
         }
     }
 
-    public void loadAndPrint() throws ParserConfigurationException, IllegalAccessException, InstantiationException, SAXException, IOException {
+    public void loadAndPrint() throws ParserConfigurationException, IllegalAccessException, InstantiationException, SAXException, IOException, ClassNotFoundException {
 
         load();
         System.out.println(Format.printHead());
+        Collections.sort(employees);
         for (Employee employee:employees){
             System.out.println(Format.printEmployee(employee));
         }

@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class Employee{
+public class Employee implements Comparable<Employee>{
     private int id;
     private String name;
     private double workTime;
@@ -82,8 +82,19 @@ public class Employee{
         project.put(title, values);
     }
 
+    @Override
+    public boolean equals (Object other){
+        Employee e = (Employee) other;
+        return id == e.getId();
+    }
+
     public Object[] getProjectTitle() {
         Set<String> projects = project.keySet();
         return projects.toArray();
+    }
+
+    public int compareTo(Employee p) {
+
+        return ((Integer)id).compareTo(p.getId());
     }
 }

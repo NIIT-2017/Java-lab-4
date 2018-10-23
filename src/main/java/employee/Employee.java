@@ -1,8 +1,6 @@
 package employee;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Employee implements Comparable<Employee>{
     private int id;
@@ -12,7 +10,9 @@ public class Employee implements Comparable<Employee>{
     private double payment;
     private String position;
     private int subordinates;
-    private Map<String, Double[]> project= new LinkedHashMap();
+    private List<Project> projects = new ArrayList<>();
+
+    public Employee(){}
 
     @Override
     public String toString() {
@@ -77,13 +77,6 @@ public class Employee implements Comparable<Employee>{
         return subordinates;
     }
 
-    public Map<String, Double[]> getProject() {
-        return project;
-    }
-
-    public void setProject(String title, Double[] values ){
-        project.put(title, values);
-    }
 
     @Override
     public boolean equals (Object other){
@@ -91,13 +84,36 @@ public class Employee implements Comparable<Employee>{
         return id == e.getId();
     }
 
-    public Object[] getProjectTitle() {
-        Set<String> projects = project.keySet();
-        return projects.toArray();
-    }
-
     public int compareTo(Employee p) {
 
         return ((Integer)id).compareTo(p.getId());
+    }
+
+    public static class Project {
+        private String title;
+        private double budget;
+        private double personalInput;
+
+        public Project(String title, double budget, double personalInput){
+            this.title = title;
+            this.budget = budget;
+            this.personalInput = personalInput;
+        }
+
+        public double getBudget() {
+            return budget;
+        }
+
+        public double getPersonalInput() {
+            return personalInput;
+        }
+    }
+
+    public void addProject(Project project){
+        projects.add(project);
+    }
+
+    public List<Project> getProjects() {
+        return projects;
     }
 }

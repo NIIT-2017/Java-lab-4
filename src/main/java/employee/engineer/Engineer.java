@@ -5,6 +5,7 @@ import interfaces.WorkTime;
 import interfaces.Project;
 
 import java.util.Collection;
+import java.util.List;
 
 public class Engineer extends Employee implements WorkTime, Project{
 
@@ -16,12 +17,14 @@ public class Engineer extends Employee implements WorkTime, Project{
     @Override
     public double getPaymentForProject(Employee employee) {
 
-        Collection<Double[]> val = employee.getProject().values();
-        double payment=0;
-        for (Double[] arr:val){
-            payment=arr[0]*arr[1];
-            //payment+=payment;
+        double payment = 0;
+
+        List<Project> projects = employee.getProjects();
+        for(int i = 0; i< projects.size(); i++){
+            Project project = projects.get(i);
+            payment = project.getBudget()*project.getPersonalInput();
         }
+
         return payment;
     }
 

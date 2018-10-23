@@ -11,7 +11,7 @@ import java.util.*;
 
 public class Staff {
 
-    List<Employee> employees = new ArrayList<>();
+    private List<Employee> employees = new ArrayList<>();
 
     public Staff() throws ParserConfigurationException, IOException, SAXException {}
 
@@ -71,12 +71,19 @@ public class Staff {
                     if (nextChildNode.getNodeName().equals("project")) {
                         Element element = (Element) nextChildNode;
                         double budget = Double.parseDouble(element.getAttribute("budget"));
-                        NodeList projectList = ((Element) nextChildNode).getElementsByTagName("personalInput");
-                        double personalInput = Double.parseDouble(projectList.item(0).getTextContent());
-                        Double[] arr = {budget, personalInput};
-                        NodeList projectList2 = ((Element) nextChildNode).getElementsByTagName("title");
-                        String projectTitle = projectList2.item(0).getTextContent();
-                        employee.getProject().put(projectTitle, arr);
+                        String title = null;
+                        double personalInput = 0;
+                        NodeList projectEntries = nextChildNode.getChildNodes();
+                        for (int j = 0; j < projectEntries.getLength(); j++) {
+                            Node projectEntry = projectEntries.item(j);
+                            if (projectEntry.getNodeType()== Node.ELEMENT_NODE) {
+                                if (projectEntry.getNodeName().equals("title"))
+                                    title = projectEntry.getTextContent();
+                                if (projectEntry.getNodeName().equals("personalInput"))
+                                    personalInput = Double.parseDouble(projectEntry.getTextContent());
+                            }
+                        }
+                        employee.addProject(new Employee.Project(title, budget, personalInput));
                     }
                 }
             }

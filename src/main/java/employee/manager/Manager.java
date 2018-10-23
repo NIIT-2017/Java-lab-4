@@ -4,6 +4,7 @@ import employee.Employee;
 import interfaces.Project;
 
 import java.util.Collection;
+import java.util.List;
 
 public class Manager extends Employee implements Project {
     @Override
@@ -14,11 +15,14 @@ public class Manager extends Employee implements Project {
     @Override
     public double getPaymentForProject(Employee employee) {
 
-        Collection<Double[]> val = employee.getProject().values();
-        double payment=0;
-        for (Double[] arr:val){
-            payment=arr[0]*arr[1];
+        double payment = 0;
+
+        List<Project> projects = employee.getProjects();
+        for(int i = 0; i< projects.size(); i++){
+            Project project = projects.get(i);
+            payment = project.getBudget()*project.getPersonalInput();
         }
+
         return payment;
     }
 

@@ -1,0 +1,344 @@
+﻿[
+    {
+      "ID": 1,
+      "Name": "Овчинникова Н.Н.",
+	  "function": "Cleaner",
+	  "Worktime": 176,
+	  "Salary": 50
+    },
+    {
+      "ID": 2,
+      "Name": "Ермолаева И.В.",
+	  "function": "Cleaner",
+	  "Worktime": 176,
+	  "Salary": 50
+    },
+    {
+      "ID": 3,
+      "Name": "Бессчастнов А.В.",
+	  "function": "Driver",
+	  "Worktime": 176,
+	  "Salary": 75
+    },
+    {
+      "ID": 4,
+      "Name": "Долгополов И.Н.",
+	  "function": "Driver",
+	  "Worktime": 176,
+	  "Salary": 75
+    },
+    {
+      "ID": 5,
+      "Name": "Баринова Т.В.",
+	  "function": "Cleaner",
+	  "Worktime": 176,
+	  "Salary": 50
+    },
+    {
+      "ID": 6,
+      "Name": "Желтоножский А.А.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project1",
+	  "ProjectPerc": 7,
+	  "ProjectFund": 1000000
+    },
+    {
+      "ID": 7,
+      "Name": "Филатов А.М.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project1",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 1000000
+    },
+    {
+      "ID": 8,
+      "Name": "Якушев А.С.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project1",
+	  "ProjectPerc": 10,
+	  "ProjectFund": 1000000
+    },
+    {
+      "ID": 9,
+      "Name": "Ушатов А.Б.",
+	  "function": "Tester",
+	  "Worktime": 176,
+	  "Salary": 105,
+	  "NameProject": "Project1",
+	  "ProjectPerc": 6,
+	  "ProjectFund": 1000000
+    },
+    {
+      "ID": 10,
+      "Name": "Селезенев С.В.",
+	  "function": "Tester",
+	  "Worktime": 176,
+	  "Salary": 105,
+	  "NameProject": "Project1",
+	  "ProjectPerc": 4,
+	  "ProjectFund": 1000000
+    },
+    {
+      "ID": 11,
+      "Name": "Титовский В.В.",
+	  "function": "TeamLeader",
+	  "Worktime": 176,
+	  "Salary": 140,
+	  "NameProject": "Project1",
+	  "ProjectPerc": 14,
+	  "ProjectFund": 1000000,
+	  "Numbersubject": 5
+    },
+    {
+      "ID": 12,
+      "Name": "Богатырева И.С.",
+	  "function": "Manager",
+	  "NameProject": "Project1",
+	  "ProjectPerc": 8,
+	  "ProjectFund": 1000000
+    },
+    {
+      "ID": 13,
+      "Name": "Кормушечкина В.А.",
+	  "function": "Manager",
+	  "NameProject": "Project1",
+	  "ProjectPerc": 7,
+	  "ProjectFund": 1000000
+    },
+    {
+      "ID": 14,
+      "Name": "Соколов С.Н.",
+	  "function": "ProjectManager",
+	  "NameProject": "Project1",
+	  "ProjectPerc": 15,
+	  "ProjectFund": 1000000,
+	  "Numbersubject": 8
+    },
+    {
+      "ID": 15,
+      "Name": "Неделькин П.В",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 7,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 16,
+      "Name": "Родионов В.Ю.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 17,
+      "Name": "Ерашов А.Т.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 4,
+	  "ProjectFund": 1200000
+    },
+	{
+      "ID": 18,
+      "Name": "Сенин И.Н.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 19,
+      "Name": "Росляков А.Г.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 3,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 20,
+      "Name": "Парфёнова О.В.",
+	  "function": "Tester",
+	  "Worktime": 176,
+	  "Salary": 105,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 4,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 21,
+      "Name": "Кочурова К.П.",
+	  "function": "Tester",
+	  "Worktime": 176,
+	  "Salary": 105,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 3,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 22,
+      "Name": "Гаврилин А.С.",
+	  "function": "Tester",
+	  "Worktime": 176,
+	  "Salary": 105,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 23,
+      "Name": "Агафонцева О.Ш.",
+	  "function": "TeamLeader",
+	  "Worktime": 176,
+	  "Salary": 140,
+	  "NameProject": "Project2",
+	  "ProjectPerc": 12,
+	  "ProjectFund": 1200000,
+	  "Numbersubject": 8
+    },
+    {
+      "ID": 24,
+      "Name": "Тругубов А.Ю.",
+	  "function": "Manager",
+	  "NameProject": "Project2",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 25,
+      "Name": "Чудинов С.А.",
+	  "function": "Manager",
+	  "NameProject": "Project2",
+	  "ProjectPerc": 7,
+	  "ProjectFund": 1200000
+    },
+    {
+      "ID": 26,
+      "Name": "Силина К.С.",
+	  "function": "ProjectManager",
+	  "NameProject": "Project2",
+	  "ProjectPerc": 16,
+	  "ProjectFund": 1200000,
+	  "Numbersubject": 11
+    },
+    {
+      "ID": 27,
+      "Name": "Кудяшов С.Ю.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project3",
+	  "ProjectPerc": 7,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 28,
+      "Name": "Чистяков У.Е.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project3",
+	  "ProjectPerc": 6,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 29,
+      "Name": "Морозов И.П.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project3",
+	  "ProjectPerc": 7,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 30,
+      "Name": "Давыдов Е.В.",
+	  "function": "Tester",
+	  "Worktime": 176,
+	  "Salary": 105,
+	  "NameProject": "Project3",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 31,
+      "Name": "Михалицин А.Е.",
+	  "function": "Programmer",
+	  "Worktime": 176,
+	  "Salary": 120,
+	  "NameProject": "Project3",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 32,
+      "Name": "Володин Е.Д.",
+	  "function": "Tester",
+	  "Worktime": 176,
+	  "Salary": 105,
+	  "NameProject": "Project3",
+	  "ProjectPerc": 6,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 33,
+      "Name": "Ваганов Л.С.",
+	  "function": "TeamLeader",
+	  "Worktime": 176,
+	  "Salary": 140,
+	  "NameProject": "Project3",
+	  "ProjectPerc": 12,
+	  "ProjectFund": 900000,
+	  "Numbersubject": 6
+    },
+    {
+      "ID": 34,
+      "Name": "Валова О.Т.",
+	  "function": "Manager",
+	  "NameProject": "Project3",
+	  "ProjectPerc": 7,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 35,
+      "Name": "Котов А.Г.",
+	  "function": "Manager",
+	  "NameProject": "Project3",
+	  "ProjectPerc": 5,
+	  "ProjectFund": 900000
+    },
+    {
+      "ID": 36,
+      "Name": "Колпакова С.Ю.",
+	  "function": "ProjectManager",
+	  "NameProject": "Project3",
+	  "ProjectPerc": 16,
+	  "ProjectFund": 900000,
+	  "Numbersubject": 9
+    },
+    {
+      "ID": 37,
+      "Name": "Титаренко А.А.",
+	  "function": "SeniorManager",
+	  "NameProject": "allProject",
+	  "ProjectPerc": 24,
+	  "ProjectFund": 3100000,
+	  "Numbersubject": 31
+    }
+  ]

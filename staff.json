@@ -1,0 +1,215 @@
+{
+		"stuff": [
+			{
+				"name":"Савинков Терентий",
+				"position":"Cleaner",
+				"base":"500"
+			},
+			{
+				"name":"Шаталов Ян",
+				"position":"Cleaner",
+				"base":"500"
+			},
+			{
+				"name":"Зощенко Артемий",
+				"position":"Driver",
+				"base":"800"
+			},
+			{
+				"name":"Северинов Вячеслав",
+				"position":"Driver",
+				"base":"800"
+			},
+			{
+				"name":"Ковальчук Никон",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"500000",
+				"part": "0.06"
+			},
+			{
+				"name":"Галкин Мирон",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"500000",
+				"part": "0.06"
+			},
+			{
+				"name":"Терентьев Мстислав",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"500000",
+				"part": "0.06"
+			},
+			{
+				"name":"Якушевича Инесса",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"500000",
+				"part": "0.06"
+			},
+			{
+				"name":"Наумова Наталья",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"500000",
+				"part": "0.06"
+			},
+			{
+				"name":"Кощеева Ариадна",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"700000",
+				"part": "0.06"
+			},
+			
+			{
+				"name":"Николаева Вероника",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"700000",
+				"part": "0.06"
+			},
+			{
+				"name":"Кравец Янина",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"700000",
+				"part": "0.06"
+			},
+			{
+				"name":"Бурда Виктория",
+				"position":"Tester",
+				"base":"1300",
+				"project":"500000"
+				"part": "0.04"
+			},
+			{
+				"name":"Яковленко Маргарита",
+				"position":"Cleaner",
+				"base":"500"
+			},
+			{
+				"name":"Семичаевская Рада",
+				"position":"Tester",
+				"base":"1300",
+				"project":"700000",
+				"part": "0.04"
+			},
+			{
+				"name":"Твардовский Клавдий",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"700000",
+				"part": "0.06"
+			},
+			{
+				"name":"Буковски Самсон",
+				"position":"Tester",
+				"base":"1300",
+				"project":"900000",
+				"part": "0.04"
+			},
+			{
+				"name":"Каравашкин Игорь",
+				"position":"TeamLeader",
+				"base":"2000",
+				"project":"500000",
+				"numofsubord":"6",
+				"part": "0.16"
+			},
+			{
+				"name":"Сахаровский Прохор",
+				"position":"TeamLeader",
+				"base":"2000",
+				"project":"700000",
+				"numofsubord":"6",
+				"part": "0.16"
+			},
+			{
+				"name":"Серебряков Федот",
+				"position":"TeamLeader",
+				"base":"2000",
+				"project":"900000",
+				"numofsubord":"6",
+				"part": "0.16"
+			},
+			
+			{
+				"name":"Курневич Евдокия",
+				"position":"ProjectManager",
+				"base":"2500",
+				"project":"500000",
+				"numofsubord":"7",
+				"part": "0.2"
+			},
+			{
+				"name":"Гордеева Маргарита",
+				"position":"ProjectManager",
+				"base":"2500",
+				"project":"700000",
+				"numofsubord":"7",
+				"part": "0.2"
+			},
+			{
+				"name":"Викашева Ева",
+				"position":"ProjectManager",
+				"base":"2500",
+				"project":"900000",
+				"numofsubord":"7",
+				"part": "0.2"
+			},
+			{
+				"name":"Низьева Лада",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"700000",
+				"part": "0.06"
+			},
+			{
+				"name":"Хуртин Радион",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"900000",
+				"part": "0.06"
+			},
+			{
+				"name":"Низьев Артем",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"900000",
+				"part": "0.06"
+			},
+			{
+				"name":"Чукреев Эрнест",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"900000",
+				"part": "0.06"
+			},
+			{
+				"name":"Малинов Павел",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"900000",
+				"part": "0.06"
+			},
+			{
+				"name":"Цуканов Тихон",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"900000",
+				"part": "0.06"
+			},
+			{
+				"name":"Шаронов Виссарион",
+				"position":"SeniorManager",
+				"base":"1000",
+				"project":"2100000",
+				"numofsubord":"24",
+				"part": "0.3"
+			}
+			
+		]
+	
+}

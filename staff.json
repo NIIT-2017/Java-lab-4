@@ -1,0 +1,299 @@
+{
+  "staff": [
+    {
+      "id": "1",
+      "name":"Минеева Каролина",
+      "position":"Cleaner",
+      "rate":"500",
+      "worktime": "100"
+    },
+    {
+      "id": "2",
+      "name":"Тукай Изяслав",
+      "position":"Cleaner",
+      "rate":"500",
+      "worktime": "120"
+    },
+    {
+      "id": "3",
+      "name":"Шурша Инна",
+      "position":"Cleaner",
+      "rate":"500",
+      "worktime": "90"
+    },
+    {
+      "id": "4",
+      "name":"Иньков Евграф",
+      "position":"Driver",
+      "rate":"800",
+      "worktime": "200"
+    },
+    {
+      "id": "5",
+      "name":"Опекунов Станислав",
+      "position":"Driver",
+      "rate":"800",
+      "worktime": "160"
+    },
+    {
+      "id": "6",
+      "name":"Кулумбаева Рада",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"java",
+      "budget": "500000",
+      "part": "0.05",
+      "worktime": "200"
+    },
+    {
+      "id": "7",
+      "name":"Камбарова Эмилия",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"java",
+      "budget": "500000",
+      "part": "0.05",
+      "worktime": "180"
+    },
+    {
+      "id": "8",
+      "name":"Яцунова Инна",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"java",
+      "budget": "500000",
+      "part": "0.05",
+      "worktime": "185"
+    },
+    {
+      "id": "9",
+      "name":"Гика Зинаида",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"java",
+      "budget": "500000",
+      "part": "0.05",
+      "worktime": "165"
+    },
+    {
+      "id": "10",
+      "name":"Холопова Дарья",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"java",
+      "budget": "500000",
+      "part": "0.05",
+      "worktime": "200"
+    },
+    {
+      "id": "11",
+      "name":"Подшивалова Злата",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"python",
+      "budget": "600000",
+      "part": "0.06",
+      "worktime": "170"
+    },
+    {
+      "id": "12",
+      "name":"Лелух Моисей",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"python",
+      "budget": "600000",
+      "part": "0.06",
+      "worktime": "175"
+    },
+    {
+      "id": "13",
+      "name":"Муленко Валентина",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"python",
+      "budget": "600000",
+      "part": "0.06",
+      "worktime": "160"
+    },
+    {
+      "id": "14",
+      "name":"Цейдлиц Кондрат",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"python",
+      "budget": "600000",
+      "part": "0.06",
+      "worktime": "200"
+    },
+    {
+      "id": "15",
+      "name":"Приходько Филимон",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"python",
+      "budget": "600000",
+      "part": "0.06",
+      "worktime": "150"
+    },
+    {
+      "id": "16",
+      "name":"Борисюка Римма",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"js",
+      "budget": "700000",
+      "part": "0.06",
+      "worktime": "170"
+    },
+    {
+      "id": "17",
+      "name":"Майсака Ариадна",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"js",
+      "budget": "700000",
+      "part": "0.06",
+      "worktime": "165"
+    },
+    {
+      "id": "18",
+      "name":"Глебова Евгения",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"js",
+      "budget": "700000",
+      "part": "0.06",
+      "worktime": "185"
+    },
+    {
+      "id": "19",
+      "name":"Блохина Нона",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"js",
+      "budget": "700000",
+      "part": "0.06",
+      "worktime": "180"
+    },
+    {
+      "id": "20",
+      "name":"Компанец Мстислав",
+      "position":"Programmer",
+      "rate":"1500",
+      "project":"js",
+      "budget": "700000",
+      "part": "0.06",
+      "worktime": "190"
+    },
+    {
+      "id": "21",
+      "name":"Буданова Марина",
+      "position":"Tester",
+      "rate":"1800",
+      "project":"java",
+      "budget": "500000",
+      "part": "0.04",
+      "worktime": "100"
+    },
+    {
+      "id": "22",
+      "name":"Царицын Роман",
+      "position":"Tester",
+      "rate":"1800",
+      "project":"python",
+      "budget": "600000",
+      "part": "0.04",
+      "worktime": "120"
+    },
+    {
+      "id": "23",
+      "name":"Рытова Алла",
+      "position":"Tester",
+      "rate":"1800",
+      "project":"js",
+      "budget": "700000",
+      "part": "0.04",
+      "worktime": "130"
+    },
+    {
+      "id": "24",
+      "name":"Голотина Владлена",
+      "position":"TeamLeader",
+      "rate":"2000",
+      "project":"java",
+      "budget": "500000",
+      "subordinates":"6",
+      "sumForOne": "1000",
+      "part": "0.16",
+      "worktime": "120"
+    },
+    {
+      "id": "25",
+      "name":"Лужков Варфоломей",
+      "position":"TeamLeader",
+      "rate":"2000",
+      "project":"python",
+      "budget": "600000",
+      "subordinates":"6",
+      "sumForOne": "1000",
+      "part": "0.16",
+      "worktime": "115"
+    },
+    {
+      "id": "26",
+      "name":"Кулатова Роза",
+      "position":"TeamLeader",
+      "rate":"2000",
+      "project":"js",
+      "budget": "700000",
+      "subordinates":"6",
+      "sumForOne": "1000",
+      "part": "0.16",
+      "worktime": "120"
+    },
+    {
+      "id": "27",
+      "name":"Большова Инна",
+      "position":"ProjectManager",
+      "project":"java",
+      "budget": "500000",
+      "subordinates":"7",
+      "sumForOne": "1200",
+      "part": "0.2",
+      "worktime": "100"
+    },
+    {
+      "id": "28",
+      "name":"Якшина Клара",
+      "position":"ProjectManager",
+      "project":"python",
+      "budget": "600000",
+      "subordinates":"7",
+      "sumForOne": "1200",
+      "part": "0.2",
+      "worktime": "90"
+    },
+    {
+      "id": "29",
+      "name":"Голованова Злата",
+      "position":"ProjectManager",
+      "project":"js",
+      "budget": "700000",
+      "subordinates":"7",
+      "sumForOne": "1200",
+      "part": "0.2",
+      "worktime": "95"
+    },
+    {
+      "id": "30",
+      "name":"Красильников Артемий",
+      "position":"SeniorManager",
+      "project":"",
+      "budget": "1800000",
+      "subordinates":"29",
+      "sumForOne": "1500",
+      "part": "0.3",
+      "worktime": "70"
+    }
+  ]
+}

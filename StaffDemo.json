@@ -1,0 +1,190 @@
+{
+		"stuff": [
+			{
+				"name":"Астанин Александр Владимирович",
+				"position":"SeniorManager",
+				"base":"3000",
+				"project":"1000000",
+				"numofsubord":"24",
+				"part": "0.2"
+			},
+			{
+				"name":"Антонов Евгений Русланович",
+				"position":"ProjectManager",
+				"base":"2000",
+				"project":"300000",
+				"numofsubord":"8",
+				"part": "0.3"
+			},
+			{
+				"name":"Бочков Вячеслав Алексеевич",
+				"position":"ProjectManager",
+				"base":"2000",
+				"project":"350000",
+				"numofsubord":"8",
+				"part": "0.3"
+			},
+			{
+				"name":"Гудилин Михаил Андреевич",
+				"position":"ProjectManager",
+				"base":"3000",
+				"project":"400000",
+				"numofsubord":"8",
+				"part": "0.3"
+			},
+			{
+				"name":"Жикеева Жанна Базаровна",
+				"position":"TeamLeader",
+				"base":"1200",
+				"project":"300000",
+				"numofsubord":"5",
+				"part": "0.2"
+			},
+			{
+				"name":"Егер Евгений Алексеевич",
+				"position":"TeamLeader",
+				"base":"1100",
+				"project":"400000",
+				"numofsubord":"5",
+				"part": "0.2"
+			},
+			{
+				"name":"Карева Софья Константиновна",
+				"position":"TeamLeader",
+				"base":"1400",
+				"project":"800000",
+				"numofsubord":"5",
+				"part": "0.2"
+			},
+			{
+				"name":"Комиченко Екатерина Владимировна",
+				"position":"Programmer",
+				"base":"1300",
+				"project":"700000",
+				"part": "0.1"
+			},
+			{
+				"name":"Мартынкина Екатерина Александровна",
+				"position":"Programmer",
+				"base":"1000",
+				"project":"900000",
+				"part": "0.1"
+			},
+			{
+				"name":"Моргунов Александр Александрович",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"900000",
+				"part": "0.1"
+			},
+			{
+				"name":"Овсянников Павел Александрович",
+				"position":"Programmer",
+				"base":"1600",
+				"project":"900000",
+				"part": "0.1"
+			},
+			{
+				"name":"Петров Павел Николаевич",
+				"position":"Programmer",
+				"base":"1250",
+				"project":"900000",
+				"part": "0.1"
+			},
+			{
+				"name":"Цикало Тихон петрович",
+				"position":"Programmer",
+				"base":"1000",
+				"project":"900000",
+				"part": "0.1"
+			},			
+			{
+				"name":"Киркин Николай Васильевич",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"500000",
+				"part": "0.1"
+			},
+			{
+				"name":"Галкин Петр Петрович",
+				"position":"Programmer",
+				"base":"1400",
+				"project":"500000",
+				"part": "0.1"
+			},
+			{
+				"name":"Тараканов Григовий Федорович",
+				"position":"Programmer",
+				"base":"1300",
+				"project":"500000",
+				"part": "0.1"
+			},
+			{
+				"name":"Гриценко Янис Арнольдович",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"500000",
+				"part": "0.1"
+			},
+			{
+				"name":"Сорокина Наталья Викторовна",
+				"position":"Programmer",
+				"base":"1200",
+				"project":"500000",
+				"part": "0.1"
+			},
+			{
+				"name":"Королева Арина Семеновна",
+				"position":"Programmer",
+				"base":"1500",
+				"project":"700000",
+				"part": "0.1"
+			},
+			{
+				"name":"Корякин Семен Анатольевич",
+				"position":"Tester",
+				"base":"1300",
+				"project":"500000"
+				"part": "0.04"
+			},
+			{
+				"name":"Малинин Михаил Валерьевич",
+				"position":"Tester",
+				"base":"1300",
+				"project":"700000",
+				"part": "0.5"
+			},
+			{
+				"name":"Будник Илья Викторович",
+				"position":"Tester",
+				"base":"1300",
+				"project":"900000",
+				"part": "0.5"
+			},
+			{
+				"name":"Троцкий Кирилл Александрович",
+				"position":"Driver",
+				"base":"400"
+			},
+			{
+				"name":"Семенов Вячеслав Станиславович",
+				"position":"Driver",
+				"base":"400"
+			},
+			{
+				"name":"Сластенова Ирина Олеговна",
+				"position":"Cleaner",
+				"base":"500"
+			},
+			{
+				"name":"Полотеркина Нина Викторовна",
+				"position":"Cleaner",
+				"base":"300"
+			},
+			{
+				"name":"Глушкова Светлана Алексеевна",
+				"position":"Cleaner",
+				"base":"300"
+			}
+		]
+} 

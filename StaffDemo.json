@@ -1,0 +1,220 @@
+[
+  {
+    "id" : "01",
+    "name" : "Якушкин Валерий Эрнстович",
+    "position" : "TeamLeader",
+    "base" : "1400",
+    "project" : "Project1",
+    "workers" : "5"
+  },
+  {
+    "id" : "02",
+    "name" : "Муравей Святослав Эмилевич",
+    "position" : "TeamLeader",
+    "base" : "1400",
+    "project" : "Project2",
+    "workers" : "5"
+  },
+  {
+    "id" : "03",
+    "name" : "Сафиюлин Ираклий Елисеевич",
+    "position" : "TeamLeader",
+    "base" : "1400",
+    "project" : "Project3",
+    "workers" : "5"
+  },
+  {
+    "id" : "04",
+    "name" : "Званцов Богдан Игоревич",
+    "position" : "ProjectManager",
+    "base" : "",
+    "project" : "Project1",
+    "workers" : "6"
+  },
+  {
+    "id" : "05",
+    "name" : "Соболевский Петр Яковович",
+    "position" : "ProjectManager",
+    "base" : "",
+    "project" : "Project2",
+    "workers" : "6"
+  },
+  {
+    "id" : "06",
+    "name" : "Шуличенко Игорь Владимирович",
+    "position" : "ProjectManager",
+    "base" : "",
+    "project" : "Project3",
+    "workers" : "6"
+  },
+  {
+    "id" : "07",
+    "name" : "Матвиенко Касьян Иванович",
+    "position" : "SeniorManager",
+    "base" : "",
+    "project" : "",
+    "workers" : "28"
+  },
+  {
+    "id" : "08",
+    "name" : "Разин Дементий Никанорович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project1"
+  },
+  {
+    "id" : "09",
+    "name" : "Бойцов Иосиф Дмитриевич",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project1"
+  },
+  {
+    "id" : "10",
+    "name" : "Меркушев Михей Онисимович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project1"
+  },
+  {
+    "id" : "11",
+    "name" : "Храмов Поликарп Казимирович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project1"
+  },
+  {
+    "id" : "12",
+    "name" : "Фернандес Леонид Ипполитович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project1"
+  },
+  {
+    "id" : "13",
+    "name" : "Сияница Владилен Феликсович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project2"
+  },
+  {
+    "id" : "14",
+    "name" : "Жидков Герасим Всеволодович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project2"
+  },
+  {
+    "id" : "15",
+    "name" : "Тюшняков Архип Венедиктович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project2"
+  },
+  {
+    "id" : "16",
+    "name" : "Чапаев Вениамин Андроникович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project2"
+  },
+  {
+    "id" : "17",
+    "name" : "Буков Лука Кондратиевич",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project2"
+  },
+  {
+    "id" : "18",
+    "name" : "Дьяков Лавр Гордеевич",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project3"
+  },
+  {
+    "id" : "19",
+    "name" : "Курепин Афанасий Савелиевич",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project3"
+  },
+  {
+    "id" : "20",
+    "name" : "Хабалов Гавриил Адамович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project3"
+  },
+  {
+    "id" : "21",
+    "name" : "Ярустовский Ярослав Серафимович",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project3"
+  },
+  {
+    "id" : "22",
+    "name" : "Кузикин Панкратий Иннокентиевич",
+    "position" : "Programmer",
+    "base" : "1400",
+    "project" : "Project3"
+  },
+  {
+    "id" : "23",
+    "name" : "Караулов Степан Александрович",
+    "position" : "Manager",
+    "base" : "",
+    "project" : "Project1"
+  },
+  {
+    "id" : "24",
+    "name" : "Юшаков Мстислав Юриевич",
+    "position" : "Manager",
+    "base" : "",
+    "project" : "Project2"
+  },
+  {
+    "id" : "25",
+    "name" : "Косарёв Лев Ираклиевич",
+    "position" : "Manager",
+    "base" : "",
+    "project" : "Project3"
+  },
+  {
+    "id" : "26",
+    "name" : "Поличев Геннадий Давыдович",
+    "position" : "Tester",
+    "base" : "1300",
+    "project" : "Project1"
+  },
+  {
+    "id" : "27",
+    "name" : "Кабаидзе Аркадий Изяславович",
+    "position" : "Tester",
+    "base" : "1300",
+    "project" : "Project1"
+  },
+  {
+    "id" : "28",
+    "name" : "Машуков Ипатий Архипович",
+    "position" : "Tester",
+    "base" : "1300",
+    "project" : "Project1"
+  },
+  {
+    "id" : "29",
+    "name" : "Вишняков Емельян Олегович",
+    "position" : "Cleaner",
+    "base" : "700",
+    "project" : ""
+  },
+  {
+    "id" : "30",
+    "name" : "Ханилов Евгений Сергеевич",
+    "position" : "Driver",
+    "base" : "600",
+    "project" : ""
+  }
+
+ ] 

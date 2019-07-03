@@ -1,0 +1,3 @@
+interface WorkTime {
+    int WorktimePay();
+}

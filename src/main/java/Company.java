@@ -223,24 +223,6 @@ public class Company {
         return numberOfEmployeesInCompany;
     }
 
-    public void createFileMonthSalary(String string) {
-        File file = new File("MonthSalary.txt");
-        FileWriter fr = null;
-        try {
-            FileWriter fileWriter = new FileWriter(file);
-            PrintWriter writer = new PrintWriter(fileWriter);
-            writer.printf(string);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                fr.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
 }
 
 

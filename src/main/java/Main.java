@@ -27,8 +27,8 @@ public class Main {
             cleaners.get(c).setWorktime(workedHours);
             cleaners.get(c).getRate();
             cleaners.get(c).calculateSalary();
-            System.out.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", cleaners.get(c).getFio(), cleaners.get(c).getPosition(), cleaners.get(c).getRate(), cleaners.get(c).getWorktime(), cleaners.get(c).getPayment(), 0, "NO", 0);
-            writer.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", cleaners.get(c).getFio(), cleaners.get(c).getPosition(), cleaners.get(c).getRate(), cleaners.get(c).getWorktime(), cleaners.get(c).getPayment(), 0, "NO", 0);
+            System.out.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", cleaners.get(c).getFio(), cleaners.get(c).getPosition(), cleaners.get(c).getRate(), cleaners.get(c).getWorktime(), cleaners.get(c).getPayment(), 0, "NO", 0);
+            writer.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", cleaners.get(c).getFio(), cleaners.get(c).getPosition(), cleaners.get(c).getRate(), cleaners.get(c).getWorktime(), cleaners.get(c).getPayment(), 0, "NO", 0);
         }
         //Calculate month  salary for drivers
         ArrayList<Driver> drivers = com.getAllDrivers();
@@ -37,8 +37,8 @@ public class Main {
             drivers.get(d).setWorktime(workedHours);
             drivers.get(d).getRate();
             drivers.get(d).calculateSalary();
-            System.out.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", drivers.get(d).getFio(), drivers.get(d).getPosition(), drivers.get(d).getRate(), drivers.get(d).getWorktime(), drivers.get(d).getPayment(), drivers.get(d).getBusinessTrip(), "NO", 0);
-            writer.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", drivers.get(d).getFio(), drivers.get(d).getPosition(), drivers.get(d).getRate(), drivers.get(d).getWorktime(), drivers.get(d).getPayment(), drivers.get(d).getBusinessTrip(), "NO", 0);
+            System.out.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", drivers.get(d).getFio(), drivers.get(d).getPosition(), drivers.get(d).getRate(), drivers.get(d).getWorktime(), drivers.get(d).getPayment(), drivers.get(d).getBusinessTrip(), "NO", 0);
+            writer.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", drivers.get(d).getFio(), drivers.get(d).getPosition(), drivers.get(d).getRate(), drivers.get(d).getWorktime(), drivers.get(d).getPayment(), drivers.get(d).getBusinessTrip(), "NO", 0);
         }
         //Calculate month  salary for managers
         ArrayList<Manager> managers = com.getAllManegers();
@@ -87,8 +87,8 @@ public class Main {
             testers.get(t).setProjectTermInMonths((float) (Math.random() * 14+6));
             testers.get(t).calculateSalaryForTheProject(proportionOfParticipationInProject,  testers.get(t).getprojectTermInMonths());
             testers.get(t).calculateSalary();
-            System.out.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", testers.get(t).getFio(), testers.get(t).getPosition(), testers.get(t).getRate(), testers.get(t).getWorktime(), testers.get(t).getPayment(), 0, testers.get(t).getProject(), 0);
-            writer.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", testers.get(t).getFio(), testers.get(t).getPosition(), testers.get(t).getRate(), testers.get(t).getWorktime(), testers.get(t).getPayment(), 0, testers.get(t).getProject(), 0);
+            System.out.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", testers.get(t).getFio(), testers.get(t).getPosition(), testers.get(t).getRate(), testers.get(t).getWorktime(), testers.get(t).getPayment(), 0, testers.get(t).getProject(), 0);
+            writer.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", testers.get(t).getFio(), testers.get(t).getPosition(), testers.get(t).getRate(), testers.get(t).getWorktime(), testers.get(t).getPayment(), 0, testers.get(t).getProject(), 0);
         }
         //Calculate month  salary for programmers
         ArrayList<Programmer> programmers = com.getAllProgrammers();
@@ -103,8 +103,8 @@ public class Main {
             programmers.get(p).setProjectTermInMonths((float) (Math.random() * 14+6));
             programmers.get(p).calculateSalaryForTheProject(proportionOfParticipationInProject,  programmers.get(p).getprojectTermInMonths());
             programmers.get(p).calculateSalary();
-            System.out.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", programmers.get(p).getFio(), programmers.get(p).getPosition(), programmers.get(p).getRate(), programmers.get(p).getWorktime(), programmers.get(p).getPayment(), 0, programmers.get(p).getProject(), 0);
-            writer.printf("%-32s%-30s%-30s%-30.2f%-30.2f%-30d%-30s%-10d%n", programmers.get(p).getFio(), programmers.get(p).getPosition(), programmers.get(p).getRate(), programmers.get(p).getWorktime(), programmers.get(p).getPayment(), 0, programmers.get(p).getProject(), 0);
+            System.out.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", programmers.get(p).getFio(), programmers.get(p).getPosition(), programmers.get(p).getRate(), programmers.get(p).getWorktime(), programmers.get(p).getPayment(), 0, programmers.get(p).getProject(), 0);
+            writer.printf("%-32s%-30s%-30s%-30.1f%-30.2f%-30d%-30s%-10d%n", programmers.get(p).getFio(), programmers.get(p).getPosition(), programmers.get(p).getRate(), programmers.get(p).getWorktime(), programmers.get(p).getPayment(), 0, programmers.get(p).getProject(), 0);
         }
         writer.close();
     }

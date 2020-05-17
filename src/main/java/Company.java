@@ -87,6 +87,8 @@ public class Company {
                 int id = (int) staffJSON.get("id");
                 newTeamLeader.setId(id);
                 newTeamLeader.setPosition(position);
+                int payment = (int) staffJSON.get("base");
+                newTeamLeader.setRate(payment);
                 String project = (String) staffJSON.get("project");
                 newTeamLeader.setProject(project);
                 allTTeamLeaders.add(newTeamLeader);

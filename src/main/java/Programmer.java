@@ -3,7 +3,7 @@ public class Programmer extends Engineer implements WorkTime{
     int numberOfPeopleInProject;
     float overtimeWork = (int) (Math.random() * 1);
     float bonusForOvertimeWork = 20000;
-    float percentOfBudgetForAllPromrammers = (float) 0.60;
+    float percentOfBudgetForAllPromrammers = (float) 0.54;
 
     public Programmer (String name, int id) {
         this.name = name;

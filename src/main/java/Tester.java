@@ -29,6 +29,7 @@ public class Tester extends Engineer implements WorkTime {
         return numberOfPeopleInProject;
     }
 
+    @Override
     public float calculateSalaryForWorkedTime() {
         paymentWT = worktime * rate + (discoveredSeriousBug * bonusFordiscoveredSeriousBug);
         return paymentWT;

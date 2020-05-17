@@ -68,19 +68,22 @@
         "name": "Плаксий Арсений Петрович",
         "project": "SmartWatch",
         "id": 12,
-        "position": "Team Leader"
+        "position": "Team Leader",
+        "base": 950
     },
     {
         "name": "Гаврилов Август Иванович",
         "project": "SmartScales",
         "id": 13,
-        "position": "Team Leader"
+        "position": "Team Leader",
+        "base": 950
     },
     {
         "name": "Зайцев Харитон Артёмович",
         "project": "SmartKeys",
         "id": 14,
-        "position": "Team Leader"
+        "position": "Team Leader",
+        "base": 950
     },
     {
         "name": "Николаева Оксана Брониславовна",

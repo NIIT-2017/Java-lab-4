@@ -49,6 +49,8 @@ public class CreateFile {
         base.add(400);
         //Driver
         base.add(500);
+        //TeamLeader
+        base.add(950);
         //Programmer
         base.add(750);
         //Tester
@@ -104,6 +106,7 @@ public class CreateFile {
             if(i>=11 && i<14){
                 //Team Leader
                 person.put("position", "Team Leader");
+                person.put("base", 950);
                 person.put("project", projects.get(tmj));
                 tmj += 1;
             }
@@ -147,6 +150,7 @@ public class CreateFile {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
+        int q =0;
     }
 
 

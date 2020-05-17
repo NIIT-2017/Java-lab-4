@@ -25,7 +25,7 @@ public class ProgrammerTest {
         testPr.setNumberOfPeopleInProject(10);
         int numberOfProgrammersInProject = testPr.getNumberOfPeopleInProject();
         float budget = 1600000;
-        assertEquals(96000, testPr.getProportionOfParticipationInProject(budget, numberOfProgrammersInProject), 0.01);
+        assertEquals(86400, testPr.getProportionOfParticipationInProject(budget, numberOfProgrammersInProject), 0.01);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class ProgrammerTest {
         testPr.setNumberOfPeopleInProject(20);
         int numberOfProgrammersInProject = testPr.getNumberOfPeopleInProject();
         float budget = 4800000;
-        assertEquals(144000, testPr.getProportionOfParticipationInProject(budget, numberOfProgrammersInProject), 0.01);
+        assertEquals(129600, testPr.getProportionOfParticipationInProject(budget, numberOfProgrammersInProject), 0.01);
     }
 
     @Test
@@ -44,8 +44,7 @@ public class ProgrammerTest {
         int numberOfProgrammersInProject = testPr.getNumberOfPeopleInProject();
         float budget = 4800000;
         float proportionOfParticipationInProject = testPr.getProportionOfParticipationInProject(budget, numberOfProgrammersInProject);
-        assertEquals(18000, testPr.calculateSalaryForTheProject(proportionOfParticipationInProject, months), 0.01);
-        System.out.println("Month salary for participation in project of programmer " + testPr.getFio() + " is " + testPr.calculateSalaryForTheProject(proportionOfParticipationInProject, months));
+        assertEquals(16200, testPr.calculateSalaryForTheProject(proportionOfParticipationInProject, months), 0.01);
     }
 
     @Test
@@ -56,8 +55,7 @@ public class ProgrammerTest {
         int numberOfProgrammersInProject = testPr.getNumberOfPeopleInProject();
         float budget = 1600000;
         float proportionOfParticipationInProject = testPr.getProportionOfParticipationInProject(budget, numberOfProgrammersInProject);
-        assertEquals(16000, testPr.calculateSalaryForTheProject(proportionOfParticipationInProject, months), 0.01);
-        System.out.println("Month salary for participation in project of programmer " + testPr.getFio() + " is " + testPr.calculateSalaryForTheProject(proportionOfParticipationInProject, months));
+        assertEquals(14400, testPr.calculateSalaryForTheProject(proportionOfParticipationInProject, months), 0.01);
     }
 
     @Test
@@ -72,7 +70,7 @@ public class ProgrammerTest {
         float budget = 1600000;
         float proportionOfParticipationInProject = testPr.getProportionOfParticipationInProject(budget, numberOfProgrammersInProject);
         testPr.calculateSalaryForTheProject(proportionOfParticipationInProject, testPr.getprojectTermInMonths());
-        assertEquals(140400, testPr.calculateSalary(), 0.01);
+        assertEquals(138800, testPr.calculateSalary(), 0.01);
     }
 
 }

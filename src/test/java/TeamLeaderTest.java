@@ -10,7 +10,7 @@ public class TeamLeaderTest {
         testTL.setNumberOfPeopleInProject(12);
         int number = testTL.getNumberOfPeopleInProject();
         testTL.setOverfulfilmentOfPlan(0);
-        assertEquals(150750, testTL.calculateSalaryForHeading(number), 0.01);
+        assertEquals(45000, testTL.calculateSalaryForHeading(number), 0.01);
     }
 
     @Test
@@ -18,7 +18,7 @@ public class TeamLeaderTest {
         testTL.setNumberOfPeopleInProject(8);
         int number = testTL.getNumberOfPeopleInProject();
         testTL.setOverfulfilmentOfPlan(1);
-        assertEquals(113750, testTL.calculateSalaryForHeading(number), 0.01);
+        assertEquals(25000, testTL.calculateSalaryForHeading(number), 0.01);
     }
 
     @Test

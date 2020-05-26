@@ -62,12 +62,12 @@ public class StuffTest {
         stuff.createHeading();
         stuff.calcPayments();
 
-        assertEquals(stuff.getAllEmployees().get(0).getPayment(),330000);
-        assertEquals(stuff.getAllEmployees().get(1).getPayment(),36000);
-        assertEquals(stuff.getAllEmployees().get(4).getPayment(),20000);
-        assertEquals(stuff.getAllEmployees().get(7).getPayment(),70000);
-        assertEquals(stuff.getAllEmployees().get(10).getPayment(),74000);
-        assertEquals(stuff.getAllEmployees().get(13).getPayment(),90000);
-        assertEquals(stuff.getAllEmployees().get(14).getPayment(),10000);
+        assertEquals(stuff.getAllEmployees().get(0).getPayment(),330000, 0);
+        assertEquals(stuff.getAllEmployees().get(1).getPayment(),36000, 0);
+        assertEquals(stuff.getAllEmployees().get(4).getPayment(),20000, 0);
+        assertEquals(stuff.getAllEmployees().get(7).getPayment(),70000, 0);
+        assertEquals(stuff.getAllEmployees().get(10).getPayment(),74000, 0);
+        assertEquals(stuff.getAllEmployees().get(13).getPayment(),90000, 0);
+        assertEquals(stuff.getAllEmployees().get(14).getPayment(),10000, 0);
     }
 }

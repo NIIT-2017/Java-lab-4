@@ -19,6 +19,6 @@ public class SeniorManager extends ProjectManager{
         for (Project project : this.projects) {
             result += project.getProjectCost() * this.projectPart;
         }
-        return result;
+        return this.roundDouble(result,2);
     }
 }

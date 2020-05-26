@@ -15,6 +15,6 @@ public class TeamLeader extends Programmer implements Heading{
 
     @Override
     public void calcPayment(){
-        this.payment = this.getPaymentByWorkTime() + this.getPaymentByProject() + this.getPaymentByHeading();
+        this.payment = this.roundDouble(this.getPaymentByWorkTime() + this.getPaymentByProject() + this.getPaymentByHeading(),2);
     }
 }

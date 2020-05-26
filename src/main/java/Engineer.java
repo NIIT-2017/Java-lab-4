@@ -27,6 +27,6 @@ public class Engineer extends Employee implements TimeWorking, Projecting {
 
     @Override
     public void calcPayment(){
-        this.payment = this.getPaymentByWorkTime() + this.getPaymentByProject();
+        this.payment = this.roundDouble(this.getPaymentByWorkTime() + this.getPaymentByProject(),2) ;
     }
 }

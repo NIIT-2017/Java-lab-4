@@ -14,6 +14,6 @@ public class Personal extends Employee implements TimeWorking {
 
     @Override
     public void calcPayment(){
-        this.payment = this.getPaymentByWorkTime();
+        this.payment = this.roundDouble(this.getPaymentByWorkTime(),2) ;
     }
 }

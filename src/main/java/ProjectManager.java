@@ -17,6 +17,6 @@ public class ProjectManager extends Manager implements Heading{
 
     @Override
     public void calcPayment(){
-        this.payment = this.getPaymentByProject() + this.getPaymentByHeading();
+		this.payment = this.roundDouble(this.getPaymentByProject() + this.getPaymentByHeading(),2) ;
     }
 }

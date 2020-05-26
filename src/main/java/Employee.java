@@ -1,3 +1,6 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Employee {
 //fields
     protected int id;
@@ -22,4 +25,10 @@ public class Employee {
 }
 //methods
     public void calcPayment(){}
+	
+	protected double roundDouble(double value, int places) {
+        BigDecimal bd = new BigDecimal(Double.toString(value));
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
+    }
 }

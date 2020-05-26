@@ -16,7 +16,7 @@ public class Manager extends Employee implements Projecting {
 
     @Override
     public void calcPayment(){
-        this.payment = this.getPaymentByProject();
+        this.payment = this.roundDouble(this.getPaymentByProject(),2) ;
     }
 }
 

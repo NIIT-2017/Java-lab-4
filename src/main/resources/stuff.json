@@ -1,0 +1,150 @@
+{
+    "allProjects" : 
+	[
+	    {
+		    "name": "blueProject",
+			"cost": 100000
+		},
+		{
+		    "name": "redProject",
+			"cost": 200000
+		},
+		{
+		    "name": "greenProject",
+			"cost": 300000
+		}
+    ],
+	
+	"allEmployees" :
+	[
+	    {
+	        "position"   : "SeniorManager",
+		    "id"         : 111,
+		    "name"       : "Arnold Bolshoi",
+			"projectPart": 0.5,
+        },
+		{
+	        "position"   : "ProjectManager",
+		    "id"         : 211,
+		    "name"      : "Boris Borisov",
+			"projectPart": 0.3,
+			"projects"   : "blueProject"
+        },
+		{
+	        "position"   : "ProjectManager",
+		    "id"         : 212,
+		    "name"      : "Petr Petrov",
+			"projectPart": 0.3,
+			"projects"   : "redProject"
+        },
+		{
+	        "position"   : "ProjectManager",
+		    "id"         : 213,
+		    "name"      : "Ivan Ivanov",
+			"projectPart": 0.3,
+			"projects"   : "greenProject"
+        },
+		{
+	        "position"   : "Manager",
+		    "id"         : 221,
+		    "name"       : "Elena Kust",
+			"projectPart": 0.2,
+			"projects"   : "blueProject"
+        },
+		{
+	        "position"   : "Manager",
+		    "id"         : 222,
+		    "name"       : "Zoi Veselova",
+			"projectPart": 0.2,
+			"projects"   : "redProject"
+        },
+		{
+	        "position"   : "Manager",
+		    "id"         : 223,
+		    "name"       : "Kate Bakinbom",
+			"projectPart": 0.2,
+			"projects"   : "greenProject"
+        },
+		{
+	        "position"   : "TeamLeader",
+		    "id"         : 311,
+		    "name"       : "Artur Panaryan",
+			"base"       : 300,
+			"worktime"   : 160,
+			"projectPart": 0.2,
+			"projects"   : "blueProject"
+        },
+		{
+	        "position"   : "TeamLeader",
+		    "id"         : 312,
+		    "name"       : "Marta Somova",
+			"base"       : 350,
+			"worktime"   : 160,
+			"projectPart": 0.2,
+			"projects"   : "redProject"
+        },
+		{
+	        "position"   : "TeamLeader",
+		    "id"         : 313,
+		    "name"       : "Jack Fields",
+			"base"       : 400,
+			"worktime"   : 160,
+			"projectPart": 0.2,
+			"projects"   : "greenProject"
+        },
+		{
+	        "position"   : "Programmer",
+		    "id"         : 321,
+		    "name"       : "Pavel Smirnov",
+			"base"       : 200,
+			"worktime"   : 320,
+			"projectPart": 0.1,
+			"projects"   : "blueProject",
+			"teamleader" : "Artur Panaryan"
+        },
+		{
+	        "position"   : "Programmer",
+		    "id"         : 322,
+		    "name"       : "Max Verkhoff",
+			"base"       : 200,
+			"worktime"   : 320,
+			"projectPart": 0.1,
+			"projects"   : "redProject",
+			"teamleader" : "Marta Somova"
+        },
+		{
+	        "position"   : "Programmer",
+		    "id"         : 323,
+		    "name"       : "Grey Bronson",
+			"base"       : 200,
+			"worktime"   : 400,
+			"projectPart": 0.1,
+			"projects"   : "greenProject",
+			"teamleader" : "Jack Fields"
+        },
+		{
+	        "position"   : "Tester",
+		    "id"         : 324,
+		    "name"       : "Nataly Medova",
+			"base"       : 150,
+			"worktime"   : 400,
+			"projectPart": 0.1,
+			"projects"   : "greenProject",
+			"teamleader" : "Jack Fields"
+        },
+		{
+	        "position"   : "Cleaner",
+		    "id"         : 411,
+		    "name"       : "Nadezhda Dmitrieva",
+			"base"       : 100,
+			"worktime"   : 100,
+        },
+		{
+	        "position"   : "Driver",
+		    "id"         : 412,
+		    "name"       : "Ivan Petrovich",
+			"base"       : 200,
+			"worktime"   : 200,
+        }
+	]
+}

@@ -10,7 +10,7 @@ public class StuffTest {
 
         assertEquals(stuff.getAllProjects().size(),3);
         assertEquals(stuff.getAllProjects().get(0).getProjectName(),"blueProject");
-        assertEquals(stuff.getAllProjects().get(0).getProjectCost(),100000, 0.0000001);
+        assertEquals(stuff.getAllProjects().get(0).getProjectCost(),100000, 0);
 
         assertEquals(stuff.getAllEmployees().size(),16);
         assertEquals(stuff.getAllEmployees().get(0).getID(),111);
@@ -21,7 +21,7 @@ public class StuffTest {
         assertEquals(stuff.getAllEmployees().get(10).getName(),"Pavel Smirnov");
         assertEquals(stuff.getAllEmployees().get(10).getPosition(), POSITIONS.Programmer);
         assertEquals(stuff.getAllEmployees().get(10).getWorktime(), 320);
-        assertEquals(((Programmer) stuff.getAllEmployees().get(10)).getBase(), 200);
+        assertEquals(((Programmer) stuff.getAllEmployees().get(10)).getBase(), 200, 0);
         assertEquals(((Programmer) stuff.getAllEmployees().get(10)).getProject().getProjectName(), "blueProject");
         assertEquals(((Programmer) stuff.getAllEmployees().get(10)).getTeamLeaderName(), "Artur Panaryan");
     }

@@ -10,7 +10,7 @@ public class StuffTest {
 
         assertEquals(stuff.getAllProjects().size(),3);
         assertEquals(stuff.getAllProjects().get(0).getProjectName(),"blueProject");
-        assertEquals(stuff.getAllProjects().get(0).getProjectCost(),100000);
+        assertEquals(stuff.getAllProjects().get(0).getProjectCost(),100000, 0.0000001);
 
         assertEquals(stuff.getAllEmployees().size(),16);
         assertEquals(stuff.getAllEmployees().get(0).getID(),111);

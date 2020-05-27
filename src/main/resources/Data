@@ -1,0 +1,12 @@
+{"numberOfProjects":3,"numberOfEmployees":8}
+{"title":"project2","cost":20000,"executioners":[4,5,8]}
+{"title":"project1","cost":10000,"executioners":[3,5,6,7,8]}
+{"title":"project3","cost":30000,"executioners":[7,8]}
+{"position":"Driver","name":"Driver","id":1,"worktime":100,"base":10}
+{"position":"Cleaner","name":"Cleaner","id":2,"worktime":100,"base":10}
+{"position":"Tester","name":"Tester","id":3,"worktime":100,"base":15,"projects":["project1"]}
+{"position":"Programmer","name":"Programmer","id":4,"worktime":100,"base":20,"projects":["project2"]}
+{"position":"TeamLead","name":"TeamLead","id":5,"worktime":100,"base":40,"projects":["project2","project1"],"sub_staff":[3,4]}
+{"position":"Manager","name":"Manager","id":6,"worktime":100,"projects":["project1"]}
+{"position":"ProjectManager","name":"ProjectManager","id":7,"worktime":100,"projects":["project1","project3"],"sub_staff":[6]}
+{"position":"SeniorManager","name":"SeniorManger","id":8,"worktime":100,"projects":["project2","project1","project3"],"sub_staff":[5,7]}

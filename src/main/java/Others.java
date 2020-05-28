@@ -97,6 +97,9 @@ class HR{
             System.out.format("%15s | %10d | %10.2f|\n", employee.getValue().getName(), employee.getValue().getWorktime(), employee.getValue().getPayment());
         }
     }
+    public static void delStaff(){
+        staff.clear();
+    }
 }
 
 class Accounting {
@@ -172,6 +175,9 @@ class Accounting {
             return 0.01f;
         else
             return 0f;
+    }
+    public static void delProject(){
+        projects.clear();
     }
 }
 //Contains heading functionality

@@ -13,12 +13,14 @@ public class OtherTest {
     public static Manager testManager = new Manager(106, "testManager");
     public static ProjectManager testProjectManager = new ProjectManager(107, "testProjectManager");
     public static SeniorManager testSeniorManager = new SeniorManager(108, "testSeniorManger");
-    ProjectItem project1 = new ProjectItem("project1", 10000);
-    ProjectItem project2 = new ProjectItem("project2", 20000);
-    ProjectItem project3 = new ProjectItem("project3", 30000);
+    public static ProjectItem project1 = new ProjectItem("project1", 10000);
+    public static ProjectItem project2 = new ProjectItem("project2", 20000);
+    public static ProjectItem project3 = new ProjectItem("project3", 30000);
 
     @BeforeClass
     public static void start(){
+        HR.delStaff();
+        Accounting.delProject();
         HR.addStaff(new Programmer(1, "Nameless", 25));
         HR.addStaff(testSeniorManager);
         HR.addStaff(testProjectManager);

@@ -16,6 +16,8 @@ public class ITGroupTest {
 
     @BeforeClass
     public static void start(){
+        HR.delStaff();
+        Accounting.delProject();
         HR.addStaff(testTeamLead);
         HR.addStaff(testProgrammer);
         HR.addStaff(testTester);

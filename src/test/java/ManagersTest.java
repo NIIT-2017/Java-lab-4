@@ -15,6 +15,8 @@ public class ManagersTest {
 
     @BeforeClass
     public static void start(){
+        HR.delStaff();
+        Accounting.delProject();
         HR.addStaff(testSeniorManager);
         HR.addStaff(testProjectManager);
         HR.addStaff(testManager);

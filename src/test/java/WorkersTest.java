@@ -10,6 +10,8 @@ public class WorkersTest {
 
     @BeforeClass
     public static void start(){
+        HR.delStaff();
+        Accounting.delProject();
         HR.addStaff(testDriver);
         HR.addStaff(testCleaner);
         testCleaner.setWorktime(100);

@@ -1,0 +1,411 @@
+{
+"workers": [
+            {
+             "id": 1,
+             "name": "Сенькин Я. С.",
+	         "position": "TeamLeader",
+	         "base": 5000,
+	         "project": 0
+            },
+
+            {
+             "id": 2,
+             "name": "Антонова А. Э.",
+	         "position": "SeniorManager",
+	         "base": 35000,
+	         "project": 0
+            },
+
+            {
+             "id": 3,
+             "name": "Рудников Т. К.",
+	         "position": "ProjectManager",
+	         "base": 0,
+	         "project": 1000000
+            },
+
+            {
+             "id": 4,
+             "name": "Махова А. З.",
+	         "position": "ProjectManager",
+	         "base": 0,
+	         "project": 1000000
+            },
+
+            {
+             "id": 5,
+             "name": "Матвеев Е. И.",
+	         "position": "ProjectManager",
+	         "base": 0,
+	         "project": 1000000
+            },
+
+            {
+             "id": 6,
+             "name": "Максимова В. П.",
+	         "position": "ProjectManager",
+	         "base": 0,
+	         "project": 1000000
+            },
+
+            {
+             "id": 7,
+             "name": "Оборина М. Н.",
+	         "position": "ProjectManager",
+	         "base": 0,
+	         "project": 1000000
+            },
+
+            {
+             "id": 8,
+             "name": "Хохлов Г. И.",
+	         "position": "Programmer",
+	         "base": 350,
+	         "project": 1000000
+            },
+
+            {
+             "id": 9,
+             "name": "Москвина Я. М.",
+	         "position": "Programmer",
+	         "base": 350,
+	         "project": 1000000
+            },
+
+            {
+             "id": 10,
+             "name": "Лесничая Э. П.",
+	         "position": "Programmer",
+	         "base": 350,
+	         "project": 1000000
+            },
+
+            {
+             "id": 11,
+             "name": "Большова М. Я.",
+	         "position": "Programmer",
+	         "base": 340,
+	         "project": 1000000
+            },
+
+            {
+             "id": 12,
+             "name": "Щеглов О. А.",
+	         "position": "Programmer",
+	         "base": 340,
+	         "project": 1000000
+            },
+
+            {
+             "id": 13,
+             "name": "Маринина М. Е.",
+	         "position": "Programmer",
+	         "base": 340,
+	         "project": 1000000
+            },
+
+            {
+             "id": 14,
+             "name": "Липина Н. Б.",
+	         "position": "Programmer",
+	         "base": 340,
+	         "project": 1000000
+            },
+
+            {
+             "id": 15,
+             "name": "Фокин Р. В.",
+	         "position": "Programmer",
+	         "base": 340,
+	         "project": 1000000
+            },
+
+            {
+             "id": 16,
+             "name": "Милова Н. Г.",
+	         "position": "Programmer",
+	         "base": 340,
+	         "project": 1000000
+            },
+
+            {
+             "id": 17,
+             "name": "Дроздова П. Т.",
+	         "position": "Programmer",
+	         "base": 320,
+	         "project": 1000000
+            },
+
+            {
+             "id": 18,
+             "name": "Швецова М. В.",
+	         "position": "Programmer",
+	         "base": 320,
+	         "project": 1000000
+            },
+
+            {
+             "id": 19,
+             "name": "Коротаев К. П.",
+	         "position": "Programmer",
+	         "base": 320,
+	         "project": 1000000
+            },
+
+            {
+             "id": 20,
+             "name": "Докова Г. С.",
+	         "position": "Programmer",
+	         "base": 320,
+	         "project": 1000000
+            },
+
+            {
+             "id": 21,
+             "name": "Боров В. Е.",
+	         "position": "Programmer",
+	         "base": 320,
+	         "project": 1000000
+            },
+
+            {
+             "id": 22,
+             "name": "Крутов К. К.",
+	         "position": "Programmer",
+	         "base": 320,
+	         "project": 1000000
+            },
+
+            {
+             "id": 23,
+             "name": "Морозов М. А.",
+	         "position": "Programmer",
+	         "base": 300,
+	         "project": 1000000
+            },
+
+            {
+             "id": 24,
+             "name": "Цветаев А. М.",
+	         "position": "Programmer",
+	         "base": 300,
+	         "project": 1000000
+            },
+
+            {
+             "id": 25,
+             "name": "Казакова А. А.",
+	         "position": "Programmer",
+	         "base": 300,
+	         "project": 1000000
+            },
+
+            {
+             "id": 26,
+             "name": "Ларин В. М.",
+	         "position": "Programmer",
+	         "base": 300,
+	         "project": 1000000
+            },
+
+            {
+             "id": 27,
+             "name": "Наумов Е. П.",
+	         "position": "Programmer",
+	         "base": 300,
+	         "project": 1000000
+            },
+
+            {
+             "id": 28,
+             "name": "Уланова А. В.",
+	         "position": "Tester",
+	         "base": 270,
+	         "project": 1000000
+            },
+
+            {
+             "id": 29,
+             "name": "Ефремов И. К.",
+	         "position": "Tester",
+	         "base": 270,
+	         "project": 1000000
+            },
+
+            {
+             "id": 30,
+             "name": "Степанова И. И.",
+	         "position": "Tester",
+	         "base": 270,
+	         "project": 1000000
+            },
+
+            {
+             "id": 31,
+             "name": "Логинов В. С.",
+	         "position": "Tester",
+	         "base": 270,
+	         "project": 1000000
+            },
+
+            {
+             "id": 32,
+             "name": "Клиев Э. М.",
+	         "position": "Tester",
+	         "base": 270,
+	         "project": 1000000
+            },
+
+            {
+             "id": 33,
+             "name": "Катков Л. К.",
+	         "position": "Tester",
+	         "base": 270,
+	         "project": 1000000
+            },
+
+            {
+             "id": 34,
+             "name": "Быков Р. К.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 35,
+             "name": "Шульгин У. А.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 35,
+             "name": "Свечина А. А.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 36,
+             "name": "Дубровина Л. В.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 37,
+             "name": "Витаева В. В.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 38,
+             "name": "Иванова М. Т.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 39,
+             "name": "Шарапов М. В.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 40,
+             "name": "Петрова Д. А.",
+	         "position": "Tester",
+	         "base": 260,
+	         "project": 1000000
+            },
+
+            {
+             "id": 41,
+             "name": "Реутова А. К.",
+	         "position": "Tester",
+	         "base": 250,
+	         "project": 1000000
+            },
+
+            {
+             "id": 42,
+             "name": "Набокова Е. Е.",
+	         "position": "Tester",
+	         "base": 250,
+	         "project": 1000000
+            },
+
+            {
+             "id": 43,
+             "name": "Лебедев М. В.",
+	         "position": "Tester",
+	         "base": 250,
+	         "project": 1000000
+            },
+
+            {
+             "id": 44,
+             "name": "Онегина А. Д.",
+	         "position": "Tester",
+	         "base": 250,
+	         "project": 1000000
+            },
+
+            {
+             "id": 45,
+             "name": "Меньшова Н. С.",
+	         "position": "Tester",
+	         "base": 250,
+	         "project": 1000000
+            },
+
+            {
+             "id": 46,
+             "name": "Золин С. Е.",
+	         "position": "Driver",
+	         "base": 200,
+	         "project": 0
+            },
+
+            {
+             "id": 47,
+             "name": "Колесов Т. Н.",
+	         "position": "Driver",
+	         "base": 190,
+	         "project": 0
+            },
+
+            {
+             "id": 48,
+             "name": "Ясев Я. А.",
+	         "position": "Driver",
+	         "base": 190,
+	         "project": 0
+            },
+
+            {
+             "id": 49,
+             "name": "Благова Р. Т.",
+	         "position": "Cleaner",
+	         "base": 150,
+	         "project": 0
+            },
+
+            {
+             "id": 50,
+             "name": "Сахарова И. М.",
+	         "position": "Cleaner",
+	         "base": 150,
+	         "project": 0
+            }
+            ]
+}

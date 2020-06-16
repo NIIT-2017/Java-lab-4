@@ -1,0 +1,955 @@
+[
+  {
+    "position" : "Clear",
+    "id" : 22793225,
+    "name": "Гришина Лили Артёмовна",
+    "base": 15713.24
+  },
+  {
+    "position": "Clear",
+    "id":22793226,
+    "name":"Миронова Эрика Пётровна",
+    "base":15713.24
+  },
+
+  {
+    "position": "Driver",
+    "id": 22793227,
+    "name":"Рыбаков Аверьян Арсеньевич",
+    "base": 17713.68,
+    "countWeekendTripsHours": 1
+  },
+  {
+    "position": "Driver",
+    "id":22793228,
+    "name":"Третьяков Ян Артёмович",
+    "base":17713.68,
+    "countWeekendTripsHours":3
+  },
+
+  {
+    "position": "Programmer",
+    "id":22793229 ,
+    "name":"Андреева Муза Авдеевна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0003
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0007
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0005
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793230,
+    "name":"Капустин Станислав Лаврентьевич",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0002
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0004
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0003
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793231,
+    "name":"Ермаков Аким Олегович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0006
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0002
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0004
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793232,
+    "name":"Тимофеева Аурелия Созоновна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0002
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0007
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0006
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793233,
+    "name":"Фёдорова Любава Анатольевна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0007
+      },
+
+      {
+        "project":"Workshop planning",
+        "percent":0.0003
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793234,
+    "name":"Матвеев Игнатий Куприянович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0009
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0002
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793235,
+    "name":"Кузьмин Кассиан Романович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0002
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793236,
+    "name":"Гришина Марианна Авксентьевна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      },
+
+      {
+        "project":"Unmanned control",
+        "percent":0.0005
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793237,
+    "name":"Блинов Арсений Евсеевич",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      },
+      {
+        "project":"Online store",
+        "percent":0.0009
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0003
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793238,
+    "name":"Шестакова Радослава Борисовна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0005
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0002
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793239,
+    "name":"Мишин Руслан Егорович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.0002
+      },
+      {
+        "project":"Online store",
+        "percent":0.0005
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0002
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793240,
+    "name":"Кулагин Клим Иринеевич",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.0004
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0004
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793241,
+    "name":"Ершов Глеб Парфеньевич",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Online store",
+        "percent":0.0007
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.0003
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793242,
+    "name":"Орехова Доминика Протасьевна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0007
+      },
+      {
+        "project":"Online store",
+        "percent":0.0002
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0004
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793243,
+    "name":"Воронцов Витольд Степанович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0005
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0002
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793244,
+    "name":"Евсеев Владимир Александрович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0003
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0001
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793245,
+    "name":"Блохин Устин Олегович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0004
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0003
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793246,
+    "name":"Кудряшов Федор Валерьевич",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0002
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793247,
+    "name":"Данилов Вадим Артемович",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Online store",
+        "percent":0.0005
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      }
+    ]
+  },
+  {
+    "position": "Programmer",
+    "id":22793248,
+    "name":"Савельева Елизавета Станиславовна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Online store",
+        "percent":0.0002
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      }
+    ]
+  },
+
+  {
+    "position": "Tester",
+    "id":22793249,
+    "name":"Соколов Тимур Данилович",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0007
+      },
+      {
+        "project":"Online store",
+        "percent":0.001
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.001
+      },
+      {
+        "project":"Unmanned control",
+        "percent": 0.0004
+      }
+    ],
+    "percentCode": 0.0007
+  },
+  {
+    "position": "Tester",
+    "id":22793250,
+    "name":"Макарова Тала Феликсовна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0007
+      }
+    ],
+    "percentCode":0.0005
+  },
+  {
+    "position": "Tester",
+    "id":22793251,
+    "name":"Быкова Майя Семеновна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0009
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0001
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0009
+  },
+  {
+    "position": "Tester",
+    "id":22793252,
+    "name":"Зимин Варлаам Аристархович",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.0003
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0003
+  },
+  {
+    "position": "Tester",
+    "id":22793253,
+    "name":"Савина Наталья Наумовна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.0001
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      }
+    ],
+    "percentCode":0.0007
+  },
+  {
+    "position": "Tester",
+    "id":22793254,
+    "name":"Тимофеев Александр Фролович",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.0002
+      },
+      {
+        "project":"Online store",
+        "percent":0.0002
+      }
+    ],
+    "percentCode":0.0009
+  },
+  {
+    "position": "Tester",
+    "id":22793255,
+    "name":"Ситникова Ванда Рубеновна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Unmanned control",
+        "percent":0.0001
+      },
+      {
+        "project":"Online store",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0008
+  },
+  {
+    "position": "Tester",
+    "id":22793256,
+    "name":"Носков Борис Гордеевич",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Unmanned control",
+        "percent":0.0001
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0004
+  },
+  {
+    "position": "Tester",
+    "id":22793257,
+    "name":"Игнатьев Илья Евгеньевич",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Unmanned control",
+        "percent":0.0002
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0007
+  },
+  {
+    "position": "Tester",
+    "id":22793258,
+    "name":"Носова Софья Евгеньевна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0002
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0006
+  },
+  {
+    "position": "Tester",
+    "id":22793259,
+    "name":"Петухов Семен Максимович",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0001
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0005
+  },
+  {
+    "position": "Tester",
+    "id":22793260,
+    "name":"Лобанов Панкратий Максимович",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0001
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0002
+      }
+    ],
+    "percentCode":0.0007
+  },
+  {
+    "position": "Tester",
+    "id":22793261,
+    "name":"Мельников Герман Никитевич",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0001
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0002
+      }
+    ],
+    "percentCode":0.0007
+  },
+  {
+    "position": "Tester",
+    "id":22793262,
+    "name":"Яковлева Анжелика Никитевна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0001
+      },
+      {
+        "project":"Online store",
+        "percent":0.0009
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0005
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0007
+      }
+    ],
+
+    "percentCode":0.0008
+  },
+  {
+    "position": "Tester",
+    "id":22793263,
+    "name":"Мельников Герман Никитевич",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0001
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0002
+      }
+    ],
+    "percentCode":0.0003
+  },
+  {
+    "position": "Tester",
+    "id":22793264,
+    "name":"Кулакова Олеся Эдуардовна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0006
+      },
+      {
+        "project":"Online store",
+        "percent":0.0002
+      }
+    ],
+    "percentCode":0.0005
+  },
+  {
+    "position": "Tester",
+    "id":22793265,
+    "name":"Сидорова Жасмин Федотовна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0009
+      },
+      {
+        "project":"Online store",
+        "percent":0.0002
+      }
+    ],
+    "percentCode":0.001
+  },
+  {
+    "position": "Tester",
+    "id":22793266,
+    "name":"Костина Кармелитта Егоровна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0003
+      },
+      {
+        "project":"Online store",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0009
+  },
+  {
+    "position": "Tester",
+    "id":22793267,
+    "name":"Федосеева Вида Константиновна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0002
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      }
+    ],
+    "percentCode":0.0007
+  },
+
+  {
+    "position": "TeamLeader",
+    "id":22793268,
+    "name":"Дорофеев Олег Дмитриевич",
+    "base":47980.66 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0007
+      },
+      {
+        "project":"Online store",
+        "percent":0.0008
+      }
+    ],
+    "personal":6
+  },
+  {
+    "position": "TeamLeader",
+    "id":22793269,
+    "name":"Зиновьев Климент Данилович",
+    "base":47980.66 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0009
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0015
+      }
+    ],
+    "personal":7
+  },
+  {
+    "position": "TeamLeader",
+    "id":22793269,
+    "name":"Комиссаров Ираклий Игнатьевич",
+    "base":47980.66 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0008
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.0009
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0025
+      }
+    ],
+    "personal":7
+  },
+  {
+    "position": "TeamLeader",
+    "id":22793270,
+    "name":"Соколов Тимур Данилович",
+    "base":47980.66 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0008
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0009
+      }
+    ],
+    "personal":6
+  },
+  {
+    "position": "TeamLeader",
+    "id":22793271,
+    "name":"Константинов Кассиан Арсеньевич",
+    "base":47980.66 ,
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.0007
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      }
+    ],
+    "personal":6
+  },
+  {
+    "position": "TeamLeader",
+    "id":22793272,
+    "name":"Давыдов Владимир Филиппович",
+    "base":47980.66 ,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0005
+      },
+      {
+        "project":"Online store",
+        "percent":0.0003
+      }
+    ],
+    "personal":7
+  },
+
+  {
+    "position": "Manager",
+    "id":22793273,
+    "name":"Фадеев Никифор Евсеевич",
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.005
+      },
+      {
+        "project":"Online store",
+        "percent":0.009
+      }
+    ]
+  },
+  {
+    "position": "Manager",
+    "id":22793274,
+    "name":"Сидоров Петр Владимирович",
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.007
+      },
+      {
+        "project":"Online store",
+        "percent":0.009
+      }
+    ]
+  },
+  {
+    "position": "Manager",
+    "id":22793275,
+    "name":"Осипов Аскольд Авксентьевич",
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.008
+      },
+      {
+        "project":"Online store",
+        "percent":0.009
+      }
+    ]
+  },
+
+  {
+    "position": "ProjectManager",
+    "id":22793276,
+    "name":"Давыдов Велор Ростиславович",
+    "mapProjectPercent":[
+      {
+        "project":"Unmanned control",
+        "percent":0.03
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.007
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.015
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.003
+      },
+      {
+        "project":"Online store",
+        "percent":0.02
+      }
+    ],
+    "personal":9
+  },
+
+  {
+    "position": "SeniorManager",
+    "id":22793277,
+    "name":"Марков Дмитрий Наумович",
+    "mapProjectPercent":[
+
+      {
+        "project":"Unmanned control",
+        "percent":0.009
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.025
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.05
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.04
+      },
+      {
+        "project":"Online store",
+        "percent":0.01
+      }
+    ],
+    "personal":49
+  }
+
+]
+

@@ -104,10 +104,10 @@ public  class JsonStreamer {
         Company company= new Company();
         company.setTitle((String) jsonObjectCompany.get("title"));
         JSONArray jsonArrayProjects=(JSONArray) jsonObjectCompany.get("projects");
-        for(var jsonObjectProject : jsonArrayProjects)
+        for(Object jsonObjectProject : jsonArrayProjects)
             company.addProject(readProjectFromJsonObject((JSONObject) jsonObjectProject));
         JSONArray jsonArrayPersonel=(JSONArray)jsonObjectCompany.get("personal");
-        for(var jsonObjectPeson : jsonArrayPersonel)
+        for(Object jsonObjectPeson : jsonArrayPersonel)
         {
             Personal personal=(Personal) readEmployeeFromJson((JSONObject) jsonObjectPeson, null);
             personal.setWorkTime((long)((JSONObject) jsonObjectPeson).get("workTime"));

@@ -1,0 +1,647 @@
+{
+  "projects": [
+    {
+      "title": "Linux" ,
+      "projectManager": {
+        "class": "Employees.ProjectManager" ,
+        "id": 0 ,
+        "name": "Skarde" ,
+        "surname": "Kitelinger" ,
+        "workTime": 0 ,
+        "salaryPerSubordinate": 6802 ,
+        "managerId": -1
+      } ,
+      "employees": [
+        {
+          "class": "Employees.ProjectManager" ,
+          "id": 0 ,
+          "name": "Skarde" ,
+          "surname": "Kitelinger" ,
+          "workTime": 0 ,
+          "salaryPerSubordinate": 6802 ,
+          "managerId": -1
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 1 ,
+          "name": "Wassily" ,
+          "surname": "Kvalheim" ,
+          "workTime": 0 ,
+          "managerId": 0
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 2 ,
+          "name": "Paul" ,
+          "surname": "Hartvigsen" ,
+          "workTime": 0 ,
+          "managerId": 1
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 3 ,
+          "name": "Halfdan" ,
+          "surname": "Helgason" ,
+          "workTime": 136 ,
+          "salaryForHour": 33 ,
+          "managerId": 2
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 4 ,
+          "name": "Vadim" ,
+          "surname": "Van Every" ,
+          "workTime": 132 ,
+          "salaryForHour": 24 ,
+          "managerId": 2
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 5 ,
+          "name": "Toke" ,
+          "surname": "Nord" ,
+          "workTime": 812 ,
+          "salaryForHour": 43 ,
+          "managerId": 2
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 6 ,
+          "name": "Maksim" ,
+          "surname": "Canine" ,
+          "workTime": 538 ,
+          "salaryForHour": 41 ,
+          "managerId": 2
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 7 ,
+          "name": "Xenik" ,
+          "surname": "Haugrud" ,
+          "workTime": 408 ,
+          "salaryForHour": 38 ,
+          "managerId": 2
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 8 ,
+          "name": "Sune" ,
+          "surname": "Halvorson" ,
+          "workTime": 0 ,
+          "managerId": 1
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 9 ,
+          "name": "Fyodor" ,
+          "surname": "Ridlehoover" ,
+          "workTime": 181 ,
+          "salaryForHour": 20 ,
+          "managerId": 8
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 10 ,
+          "name": "Leif" ,
+          "surname": "Easterlin" ,
+          "workTime": 771 ,
+          "salaryForHour": 31 ,
+          "managerId": 8
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 11 ,
+          "name": "Vanya" ,
+          "surname": "Felch" ,
+          "workTime": 538 ,
+          "salaryForHour": 31 ,
+          "managerId": 8
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 12 ,
+          "name": "Valerian" ,
+          "surname": "Klish" ,
+          "workTime": 73 ,
+          "salaryForHour": 47 ,
+          "managerId": 8
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 13 ,
+          "name": "Sten" ,
+          "surname": "Jostad" ,
+          "workTime": 148 ,
+          "salaryForHour": 23 ,
+          "managerId": 8
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 14 ,
+          "name": "Bo" ,
+          "surname": "Konstantinov" ,
+          "workTime": 0 ,
+          "managerId": 1
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 15 ,
+          "name": "Magar" ,
+          "surname": "Jostad" ,
+          "workTime": 575 ,
+          "salaryForHour": 32 ,
+          "managerId": 14
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 16 ,
+          "name": "Arne" ,
+          "surname": "Kolsrud" ,
+          "workTime": 197 ,
+          "salaryForHour": 42 ,
+          "managerId": 14
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 17 ,
+          "name": "Mikhail" ,
+          "surname": "Imler" ,
+          "workTime": 806 ,
+          "salaryForHour": 17 ,
+          "managerId": 14
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 18 ,
+          "name": "Ivan" ,
+          "surname": "Felch" ,
+          "workTime": 75 ,
+          "salaryForHour": 33 ,
+          "managerId": 14
+        } ,
+        {
+          "class": "Employees.Engineer" ,
+          "id": 19 ,
+          "name": "Roar" ,
+          "surname": "Konstantinov" ,
+          "workTime": 616 ,
+          "salaryForHour": 49 ,
+          "managerId": 14
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 20 ,
+          "name": "Rune" ,
+          "surname": "Felch" ,
+          "workTime": 0 ,
+          "managerId": 0
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 21 ,
+          "name": "Yurchik" ,
+          "surname": "Haldorson" ,
+          "workTime": 0 ,
+          "managerId": 20
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 22 ,
+          "name": "Oksana" ,
+          "surname": "Haugstad" ,
+          "workTime": 603 ,
+          "salaryForHour": 59 ,
+          "managerId": 21
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 23 ,
+          "name": "Knud" ,
+          "surname": "Felch" ,
+          "workTime": 712 ,
+          "salaryForHour": 31 ,
+          "managerId": 21
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 24 ,
+          "name": "Ivan" ,
+          "surname": "Kolbeck" ,
+          "workTime": 435 ,
+          "salaryForHour": 37 ,
+          "managerId": 21
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 25 ,
+          "name": "Frode" ,
+          "surname": "Lund" ,
+          "workTime": 691 ,
+          "salaryForHour": 21 ,
+          "managerId": 21
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 26 ,
+          "name": "Wassily" ,
+          "surname": "Kinderman" ,
+          "workTime": 18 ,
+          "salaryForHour": 22 ,
+          "managerId": 21
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 27 ,
+          "name": "Venedict" ,
+          "surname": "Christianson" ,
+          "workTime": 0 ,
+          "managerId": 20
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 28 ,
+          "name": "Semyon" ,
+          "surname": "Brando" ,
+          "workTime": 917 ,
+          "salaryForHour": 50 ,
+          "managerId": 27
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 29 ,
+          "name": "Mike" ,
+          "surname": "Krogh" ,
+          "workTime": 533 ,
+          "salaryForHour": 36 ,
+          "managerId": 27
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 30 ,
+          "name": "Maksim" ,
+          "surname": "Halvorson" ,
+          "workTime": 894 ,
+          "salaryForHour": 46 ,
+          "managerId": 27
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 31 ,
+          "name": "Feodore" ,
+          "surname": "Hartvigsen" ,
+          "workTime": 239 ,
+          "salaryForHour": 29 ,
+          "managerId": 27
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 32 ,
+          "name": "Troels" ,
+          "surname": "Leif" ,
+          "workTime": 739 ,
+          "salaryForHour": 53 ,
+          "managerId": 27
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 33 ,
+          "name": "Ustin" ,
+          "surname": "Hatlen" ,
+          "workTime": 0 ,
+          "managerId": 20
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 34 ,
+          "name": "Michael" ,
+          "surname": "Kaase" ,
+          "workTime": 826 ,
+          "salaryForHour": 18 ,
+          "managerId": 33
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 35 ,
+          "name": "Sten" ,
+          "surname": "Imler" ,
+          "workTime": 369 ,
+          "salaryForHour": 65 ,
+          "managerId": 33
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 36 ,
+          "name": "Mike" ,
+          "surname": "Matsen" ,
+          "workTime": 954 ,
+          "salaryForHour": 35 ,
+          "managerId": 33
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 37 ,
+          "name": "Sacha" ,
+          "surname": "Haugstad" ,
+          "workTime": 312 ,
+          "salaryForHour": 17 ,
+          "managerId": 33
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 38 ,
+          "name": "Konstantin" ,
+          "surname": "Imler" ,
+          "workTime": 836 ,
+          "salaryForHour": 38 ,
+          "managerId": 33
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 39 ,
+          "name": "Skarde" ,
+          "surname": "Halpain" ,
+          "workTime": 0 ,
+          "managerId": 20
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 40 ,
+          "name": "Roar" ,
+          "surname": "Chia" ,
+          "workTime": 959 ,
+          "salaryForHour": 22 ,
+          "managerId": 39
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 41 ,
+          "name": "Halfdan" ,
+          "surname": "Haugstad" ,
+          "workTime": 836 ,
+          "salaryForHour": 37 ,
+          "managerId": 39
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 42 ,
+          "name": "Joseph" ,
+          "surname": "Mathieson" ,
+          "workTime": 476 ,
+          "salaryForHour": 18 ,
+          "managerId": 39
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 43 ,
+          "name": "Ulan" ,
+          "surname": "Goleman" ,
+          "workTime": 307 ,
+          "salaryForHour": 69 ,
+          "managerId": 39
+        } ,
+        {
+          "class": "Employees.Programmer" ,
+          "id": 44 ,
+          "name": "Vlas" ,
+          "surname": "Felch" ,
+          "workTime": 912 ,
+          "salaryForHour": 60 ,
+          "managerId": 39
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 45 ,
+          "name": "Rune" ,
+          "surname": "Hatlen" ,
+          "workTime": 0 ,
+          "managerId": 0
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 46 ,
+          "name": "Sacha" ,
+          "surname": "Sauerbrey" ,
+          "workTime": 0 ,
+          "managerId": 45
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 47 ,
+          "name": "Feodore" ,
+          "surname": "Halpain" ,
+          "workTime": 682 ,
+          "salaryForHour": 29 ,
+          "managerId": 46
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 48 ,
+          "name": "Yevgeni" ,
+          "surname": "Settlemire" ,
+          "workTime": 891 ,
+          "salaryForHour": 29 ,
+          "managerId": 46
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 49 ,
+          "name": "Valeri" ,
+          "surname": "Felch" ,
+          "workTime": 361 ,
+          "salaryForHour": 27 ,
+          "managerId": 46
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 50 ,
+          "name": "Fyodor" ,
+          "surname": "Helvig" ,
+          "workTime": 387 ,
+          "salaryForHour": 10 ,
+          "managerId": 46
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 51 ,
+          "name": "Kostas" ,
+          "surname": "Thobe" ,
+          "workTime": 996 ,
+          "salaryForHour": 38 ,
+          "managerId": 46
+        } ,
+        {
+          "class": "Employees.Manager" ,
+          "id": 52 ,
+          "name": "Halfdan" ,
+          "surname": "Hexum" ,
+          "workTime": 0 ,
+          "managerId": 45
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 53 ,
+          "name": "Oksana" ,
+          "surname": "Frydenlund" ,
+          "workTime": 272 ,
+          "salaryForHour": 10 ,
+          "managerId": 52
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 54 ,
+          "name": "Harald" ,
+          "surname": "Gulbranson" ,
+          "workTime": 917 ,
+          "salaryForHour": 15 ,
+          "managerId": 52
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 55 ,
+          "name": "Sune" ,
+          "surname": "Brando" ,
+          "workTime": 396 ,
+          "salaryForHour": 31 ,
+          "managerId": 52
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 56 ,
+          "name": "Arne" ,
+          "surname": "Easterlin" ,
+          "workTime": 113 ,
+          "salaryForHour": 20 ,
+          "managerId": 52
+        } ,
+        {
+          "class": "Employees.Tester" ,
+          "id": 57 ,
+          "name": "Ulan" ,
+          "surname": "Krog" ,
+          "workTime": 317 ,
+          "salaryForHour": 34 ,
+          "managerId": 52
+        }
+      ] ,
+      "hashMapParticipationPoints": {
+        "0": 61708 ,
+        "1": 62071 ,
+        "2": 7587 ,
+        "3": 31419 ,
+        "4": 23800 ,
+        "5": 71127 ,
+        "6": 32456 ,
+        "7": 58215 ,
+        "8": 27437 ,
+        "9": 81310 ,
+        "10": 8044 ,
+        "11": 112293 ,
+        "12": 63153 ,
+        "13": 95868 ,
+        "14": 115484 ,
+        "15": 122902 ,
+        "16": 115887 ,
+        "17": 51456 ,
+        "18": 43383 ,
+        "19": 28729 ,
+        "20": 50549 ,
+        "21": 138672 ,
+        "22": 10246 ,
+        "23": 35603 ,
+        "24": 154374 ,
+        "25": 40487 ,
+        "26": 140588 ,
+        "27": 169117 ,
+        "28": 9666 ,
+        "29": 145581 ,
+        "30": 180333 ,
+        "31": 95839 ,
+        "32": 157887 ,
+        "33": 30210 ,
+        "34": 32753 ,
+        "35": 163232 ,
+        "36": 121409 ,
+        "37": 118509 ,
+        "38": 65462 ,
+        "39": 80223 ,
+        "40": 210044 ,
+        "41": 292798 ,
+        "42": 175920 ,
+        "43": 311262 ,
+        "44": 9601 ,
+        "45": 53183 ,
+        "46": 343498 ,
+        "47": 88505 ,
+        "48": 483652 ,
+        "49": 103362 ,
+        "50": 446858 ,
+        "51": 259489 ,
+        "52": 582447 ,
+        "53": 590320 ,
+        "54": 464970 ,
+        "55": 1281538 ,
+        "56": 451810 ,
+        "57": 1452807
+      } ,
+      "budget": 488292535 ,
+      "participationPoints": 1904617
+    }
+  ] ,
+  "personal": [
+    {
+      "class": "Employees.Driver" ,
+      "id": 58 ,
+      "name": "Semyon" ,
+      "surname": "Felch" ,
+      "workTime": 946 ,
+      "salaryForHour": 172 ,
+      "managerId": -1
+    } ,
+    {
+      "class": "Employees.Driver" ,
+      "id": 59 ,
+      "name": "Bo" ,
+      "surname": "Rodeheaver" ,
+      "workTime": 733 ,
+      "salaryForHour": 129 ,
+      "managerId": -1
+    } ,
+    {
+      "class": "Employees.Driver" ,
+      "id": 60 ,
+      "name": "Wassily" ,
+      "surname": "Wisener" ,
+      "workTime": 600 ,
+      "salaryForHour": 137 ,
+      "managerId": -1
+    } ,
+    {
+      "class": "Employees.Cleaner" ,
+      "id": 61 ,
+      "name": "Trygve" ,
+      "surname": "Hartvigsen" ,
+      "workTime": 318 ,
+      "salaryForHour": 106 ,
+      "managerId": -1
+    } ,
+    {
+      "class": "Employees.Cleaner" ,
+      "id": 62 ,
+      "name": "Yerik" ,
+      "surname": "Dollar" ,
+      "workTime": 31 ,
+      "salaryForHour": 133 ,
+      "managerId": -1
+    } ,
+    {
+      "class": "Employees.Cleaner" ,
+      "id": 63 ,
+      "name": "Rune" ,
+      "surname": "Hatlen" ,
+      "workTime": 770 ,
+      "salaryForHour": 114 ,
+      "managerId": -1
+    }
+  ] ,
+  "title": "Google"
+}

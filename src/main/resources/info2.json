@@ -1,0 +1,176 @@
+{
+  "allProjects": [
+    {
+      "name": "Project1",
+      "cost": 150000,
+      "employee": [
+        {
+          "id": "1",
+          "fio": "Силин Григорий Львович",
+          "position": "Manager",
+          "projectIndex": "0.1",
+          "worktime": "176",
+          "project": "Project1"
+        },
+        {
+          "id": "2",
+          "fio": "Панфилов Филипп Станиславович",
+          "position": "Programmer",
+          "base": "400",
+          "projectIndex": "0.1",
+          "worktime": "176",
+          "project": "Project1"
+        },
+        {
+          "id": "3",
+          "fio": "Громов Платон Вадимович",
+          "position": "Tester",
+          "base": "350",
+          "projectIndex": "0.1",
+          "worktime": "176",
+          "project": "Project1"
+        },
+        {
+          "id": "4",
+          "fio": "Романенко Федосья Ярославовна",
+          "position": "TeamLeader",
+          "base": "450",
+          "projectIndex": "0.2",
+          "worktime": "176",
+          "project": "Project1"
+        },
+        {
+          "id": "5",
+          "fio": "Давыдов Остап Брониславович",
+          "position": "ProjectManager",
+          "projectIndex": "0.2",
+          "worktime": "180",
+          "project": "Project1"
+        },
+        {
+          "id": "6",
+          "fio": "Михайлов Георгий Эдуардович",
+          "position": "SeniorManager",
+          "projectIndex": "0.3",
+          "worktime": "200",
+          "project": "Project1"
+        }
+      ]
+    },
+    {
+      "name": "Project2",
+      "cost": 200000,
+      "employee": [
+        {
+          "id": "7",
+          "fio": "Силин Григорий Львович",
+          "position": "Manager",
+          "projectIndex": "0.05",
+          "worktime": "176",
+          "project": "Project2"
+        },
+        {
+          "id": "8",
+          "fio": "Москвин Максимилиан Андреевич",
+          "position": "Programmer",
+          "base": "400",
+          "projectIndex": "0.025",
+          "worktime": "176",
+          "project": "Project2"
+        },
+        {
+          "id": "9",
+          "fio": "Цехановецкий Дмитрий Моисеевич",
+          "position": "Tester",
+          "base": "350",
+          "projectIndex": "0.05",
+          "worktime": "176",
+          "project": "Project2"
+        },
+        {
+          "id": "10",
+          "fio": "Щеткина Марфа Евдокимовна",
+          "position": "TeamLeader",
+          "base": "450",
+          "projectIndex": "0.1",
+          "worktime": "176",
+          "project": "Project2"
+        },
+        {
+          "id": "11",
+          "fio": "Горлатых Екатерина Сергеевна",
+          "position": "ProjectManager",
+          "projectIndex": "0.3",
+          "worktime": "180",
+          "project": "Project2"
+        },
+        {
+          "id": "12",
+          "fio": "Чугунов Вадим Олегович",
+          "position": "SeniorManager",
+          "projectIndex": "0.4",
+          "worktime": "186",
+          "project": "Project2"
+        },
+        {
+          "id": "13",
+          "fio": "Терентьев Артур Фёдорович",
+          "position": "Manager",
+          "projectIndex": "0.05",
+          "worktime": "140",
+          "project": "Project2"
+        },
+        {
+          "id": "14",
+          "fio": "Терещенко Анатолий Валериевич",
+          "position": "Programmer",
+          "base": "400",
+          "projectIndex": "0.025",
+          "worktime": "170",
+          "project": "Project2"
+        }
+      ]
+    },
+    {
+      "name": "Administration",
+      "cost": 5000,
+      "employee": [
+        {
+          "id": "15",
+          "fio": "Кулибин Максимильян Кириллович",
+          "position": "Cleaner",
+          "base": "240",
+          "worktime": "100",
+          "project": "Administration"
+        },
+        {
+          "id": "16",
+          "fio": "Мичуева Оксана Анатолиевна",
+          "position": "Driver",
+          "base": "240",
+          "worktime": "100",
+          "project": "Administration"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

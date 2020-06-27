@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1, "name": "Путина Татьяна Павловна", "position": "Cleaner", "base": 150, "worktime": 168
+  },
+  {
+    "id": 2, "name": "Яблокова Джава Геннадьевна", "position": "Cleaner", "base": 150, "worktime": 84
+  },
+  {
+    "id": 3, "name": "Васькин Василий Васильевич", "position": "Driver", "base": 250, "worktime": 168
+  },
+  {
+    "id": 4, "name": "Базукин Александр Петрович", "position": "Driver", "base": 250, "worktime": 84
+  },
+  {
+    "id": 5, "name": "Десктопов Сергей Михайлович", "position": "Programmer", "base": 600, "project": "LEGO",
+    "worktime": 168, "share": 0.05
+  },
+  {
+    "id": 6, "name": "Баскова Даздраперма Никитишна", "position": "Programmer", "base": 600, "project": "LEGO",
+    "worktime": 168, "share": 0.05
+  },
+  {
+    "id": 7, "name": "Магазинов Илья Ильич", "position": "Programmer", "base": 600, "project": "EA",
+    "worktime": 168, "share": 0.05
+  },
+  {
+    "id": 8, "name": "Топоров Зураб Олегович", "position": "Programmer", "base": 600, "project": "5ka",
+    "worktime": 210, "share": 0.05
+  },
+  {
+    "id": 9, "name": "Глазов Николай Петрович", "position": "Programmer", "base": 600, "project": "5ka",
+    "worktime": 210, "share": 0.05
+  },
+  {
+    "id": 10, "name": "Ведрова Мария Павловна", "position": "Programmer", "base": 600, "project": "5ka",
+    "worktime": 210, "share": 0.05
+  },
+  {
+    "id": 11, "name": "Веников Глеб Петрович", "position": "Tester", "base": 500, "project": "LEGO",
+    "worktime": 168, "share": 0.05
+  },
+  {
+    "id": 12, "name": "Беггинс Федор Викторович", "position": "Tester", "base": 500, "project": "EA",
+    "worktime": 168, "share": 0.05
+  },
+  {
+    "id": 13, "name": "Таргариен Джон Бастардович", "position": "Tester", "base": 500, "project": "5ka",
+    "worktime": 210, "share": 0.05
+  },
+  {
+    "id": 14, "name": "Мышкин Виктор Викторович", "position": "Manager", "project": "LEGO", "share": 0.05
+  },
+  {
+    "id": 15, "name": "Лысина Вера Глебовна", "position": "Manager", "project": "LEGO", "share": 0.05
+  },
+  {
+    "id": 16, "name": "Палкин Олег Олегович", "position": "Manager", "project": "LEGO, ", "share": 0.05
+  },
+  {
+    "id": 17, "name": "Доскина Юлия Михайловна", "position": "Manager", "project": "EA", "share": 0.05
+  },
+  {
+    "id": 18, "name": "Бобров Борис Павлович", "position": "Manager", "project": "EA", "share": 0.05
+  },
+  {
+    "id": 19, "name": "Антонов Алексей Александрович", "position": "Manager", "project": "5ka", "share": 0.05
+  },
+  {
+    "id": 20, "name": "Собакина Лена Натальевна", "position": "Manager", "project": "5ka", "share": 0.05
+  },
+  {
+    "id": 21, "name": "Ефремов Михаил Станиславович", "position": "ProjectManager", "project": "LEGO",
+    "people": 3, "share": 0.07
+  },
+  {
+    "id": 22, "name": "Гусейман Оглы Осипович", "position": "ProjectManager", "project": "EA",
+    "people": 2, "share": 0.07
+  },
+  {
+    "id": 23, "name": "Вазовский Майк Леонидович", "position": "ProjectManager", "project": "5ka",
+    "people": 4, "share": 0.07
+  },
+  {
+    "id": 24, "name": "Поттер Гарри Джеймсович", "position": "SeniorManager", "project": "Allproject",
+    "people": 12, "share": 0.1
+  },
+  {
+    "id": 25, "name": "Больших Лебовски Андреевич", "position": "TeamLeader", "base": 1000, "project": "Allproject",
+    "people": 9, "worktime": 168, "share": 0.1
+  }
+]

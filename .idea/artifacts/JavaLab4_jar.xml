@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaLab4:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaLab4_jar</output-path>
+    <root id="archive" name="JavaLab4.jar">
+      <element id="module-output" name="JavaLab4" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,299 @@
+{ "employees":
+ [
+	{
+		"id": 1,
+		"name": "Иванов Иван Иванович",
+		"worktime": 184,
+		"base": 300.0,
+		"position": "водитель",
+		"category": "B"
+	},
+	{
+		"id": 2,
+		"name": "Петров Иван Иванович",
+		"worktime": 184,
+		"base": 300.0,
+		"position": "водитель",
+		"category": "D"
+	},
+	 {
+		 "id": 3,
+		 "name": "Павлик Светлана Владимировна",
+		 "worktime": 63,
+		 "base": 200.0,
+		 "position": "Уборщица"
+	 },
+	 {
+		 "id": 4,
+		 "name": "Шарапова Евгения Михайловна",
+		 "worktime": 63,
+		 "base": 200.0,
+		 "position": "Уборщица"
+	 },
+	 {
+		 "id": 5,
+		 "name": "Рыбаков Захар Васильевич",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 6,
+		 "name": "Устинова Таисия Виталиевна",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 7,
+		 "name": "Кулакова Оксана Андреевна",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 8,
+		 "name": "Костин Вячеслав Ярославович",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 9,
+		 "name": "Правый Максим Васильевич",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 10,
+		 "name": "Большакова Любовь Платоновна",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 11,
+		 "name": "Шарова Надежда Михайловна",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 12,
+		 "name": "Зуев Никита Романович",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "Технический лидер",
+		 "project": "project1",
+		 "count": 7
+	 },
+	 {
+		 "id": 13,
+		 "name": "Бондаренко Яков Владимирович",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 14,
+		 "name": "Ширяев Николай Станиславович",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 15,
+		 "name": "Ермакова Софья Евгеньевна",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 16,
+		 "name": "Авдеева Алёна Андреевна",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 17,
+		 "name": "Бердник Варвара Петровна",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 18,
+		 "name": "Лаврентьев Юрий Андреевич",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 19,
+		 "name": "Петухов Пётр Данилович",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 20,
+		 "name": "Князев Тарас Юхимович",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "Технический лидер",
+		 "project": "project2",
+		 "count": 7
+	 },
+	 {
+		 "id": 21,
+		 "name": "Красильникова Тамара Васильевна",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 22,
+		 "name": "Казаков Владимир Борисович",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 23,
+		 "name": "Гуляев Руслан Виталиевич",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "программист",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 24,
+		 "name": "Лебедева Александра Борисовна",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 25,
+		 "name": "Красильникова Тамара Васильевна",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 26,
+		 "name": "Ермаков Павел Платонович",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 27,
+		 "name": "Мартынов Артём Станиславович",
+		 "worktime": 184,
+		 "base": 400.0,
+		 "position": "Инженер по тестированию",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 28,
+		 "name": "Виноградов Трофим Платонович",
+		 "worktime": 184,
+		 "base": 500.0,
+		 "position": "Технический лидер",
+		 "project": "project3",
+		 "count": 7
+	 },
+	 {
+		 "id": 29,
+		 "name": "Кошелева Лилия Алексеевна",
+		 "position": "Менеджер",
+		 "project": "project1"
+	 },
+	 {
+		 "id": 30,
+		 "name": "Васильева Ирина Дмитриевна",
+		 "position": "Менеджер",
+		 "project": "project1"
+	 },
+	 {
+	     "id": 31,
+		 "name": "Голубева Майя Вадимовна",
+		 "position": "Менеджер",
+	     "project": "project2"
+	 },
+	 {
+		 "id": 32,
+		 "name": "Иващенко Светлана Фёдоровна",
+		 "position": "Менеджер",
+		 "project": "project2"
+	 },
+	 {
+		 "id": 31,
+		 "name": "Гамула Тимофей Ярославович",
+		 "position": "Менеджер",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 32,
+		 "name": "Князев Фёдор Иванович",
+		 "position": "Менеджер",
+		 "project": "project3"
+	 },
+	 {
+		 "id": 33,
+		 "name": "Щербакова Дарья Александровна",
+		 "position": "Проектный менеджер",
+		 "project": "project1",
+		 "count": 8
+	 },
+	 {
+		 "id": 34,
+		 "name": "Каськов Олег Владимирович",
+		 "position": "Проектный менеджер",
+		 "project": "project2",
+		 "count": 8
+	 },
+	 {
+		 "id": 35,
+		 "name": "Пасичник Николай Петрович",
+		 "position": "Проектный менеджер",
+		 "project": "project3",
+		 "count": 8
+	 },
+	 {
+		 "id": 36,
+		 "name": "Галкин Дмитрий Сергеевич",
+		 "position": "Проектный менеджер",
+		 "project": "project3",
+		 "count": 8
+	 },
+	 {
+		 "id": 37,
+		 "name": "Шадрин Евгений Евгеньевич",
+		 "position": "ИТ директор",
+		 "count": 33
+	 }
+ ]
+}

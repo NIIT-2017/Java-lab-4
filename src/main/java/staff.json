@@ -1,0 +1,274 @@
+{
+  "employees": [
+    {
+      "id":101,
+      "fio":"Абрикосов А.А.",
+      "position":"Cleaner",
+      "rate":100,
+      "project":"",
+      "part":null,
+      "subs":null
+    },
+    {
+      "id":102,
+      "fio":"Березов Б.Б.",
+      "position":"Driver",
+      "rate":150,
+      "project":"",
+      "part":null,
+      "subs":null
+    },
+    {
+      "id":103,
+      "fio":"Вавилов В.В.",
+      "position":"Driver",
+      "rate":180,
+      "project":"",
+      "part":null,
+      "subs":null
+    },
+    {
+      "id":104,
+      "fio":"Гаврилов Г.Г.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"FirstProject",
+      "part":0.15,
+      "subs":null
+    },
+    {
+      "id":105,
+      "fio":"Данилов Д.Д.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"FirstProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":106,
+      "fio":"Ежов Е.Е.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"FirstProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":107,
+      "fio":"Ёлкин Ё.Ё.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"SecondProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":108,
+      "fio":"Жаров Ж.Ж.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"SecondProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":109,
+      "fio":"Зайцев З.З.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"SecondProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":110,
+      "fio":"Йодов Й.Й.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"SecondProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":111,
+      "fio":"Иванов И.И.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"ThirdProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":112,
+      "fio":"Кошкин К.К.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"ThirdProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":113,
+      "fio":"Лебедев Л.Л.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"ThirdProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":114,
+      "fio":"Мошкин М.М.",
+      "position":"Programmer",
+      "rate":50,
+      "project":"ThirdProject",
+      "part":0.1,
+      "subs":null
+    },
+    {
+      "id":115,
+      "fio":"Носов Н.Н.",
+      "position":"Tester",
+      "rate":120,
+      "project":"FirstProject",
+      "part":0.05,
+      "subs":null
+    },
+    {
+      "id":116,
+      "fio":"Овалов О.О.",
+      "position":"Tester",
+      "rate":120,
+      "project":"FirstProject",
+      "part":0.05,
+      "subs":null
+    },
+    {
+      "id":117,
+      "fio":"Павлов П.П.",
+      "position":"Tester",
+      "rate":120,
+      "project":"SecondProject",
+      "part":0.05,
+      "subs":null
+    },
+    {
+      "id":118,
+      "fio":"Рыжов Р.Р.",
+      "position":"Tester",
+      "rate":120,
+      "project":"SecondProject",
+      "part":0.05,
+      "subs":null
+    },
+    {
+      "id":119,
+      "fio":"Сидоров С.С.",
+      "position":"Tester",
+      "rate":120,
+      "project":"ThirdProject",
+      "part":0.05,
+      "subs":null
+    },
+    {
+      "id":120,
+      "fio":"Титов Т.Т.",
+      "position":"Tester",
+      "rate":120,
+      "project":"ThirdProject",
+      "part":0.05,
+      "subs":null
+    },
+    {
+      "id":121,
+      "fio":"Ужов У.У.",
+      "position":"TeamLeader",
+      "rate":180,
+      "project":"FirstProject",
+      "part":0.15,
+      "subs":1
+    },
+    {
+      "id":122,
+      "fio":"Филинов Ф.Ф.",
+      "position":"TeamLeader",
+      "rate":180,
+      "project":"FirstProject",
+      "part":0.1,
+      "subs":2
+    },
+    {
+      "id":123,
+      "fio":"Ханов Х.Х.",
+      "position":"TeamLeader",
+      "rate":180,
+      "project":"SecondProject",
+      "part":0.1,
+      "subs":2
+    },
+    {
+      "id":124,
+      "fio":"Цаплин Ц.Ц.",
+      "position":"TeamLeader",
+      "rate":180,
+      "project":"SecondProject",
+      "part":0.1,
+      "subs":2
+    },
+    {
+      "id":125,
+      "fio":"Чаров Ч.Ч.",
+      "position":"TeamLeader",
+      "rate":180,
+      "project":"ThirdProject",
+      "part":0.1,
+      "subs":2
+    },
+    {
+      "id":126,
+      "fio":"Шаров Ш.Ш.",
+      "position":"TeamLeader",
+      "rate":180,
+      "project":"ThirdProject",
+      "part":0.1,
+      "subs":2
+    },
+    {
+      "id":127,
+      "fio":"Щапов Щ.Щ.",
+      "position":"ProjectManager",
+      "rate":null,
+      "project":"FirstProject",
+      "part":0.2,
+      "subs":7
+    },
+    {
+      "id":128,
+      "fio":"Эров Э.Э.",
+      "position":"ProjectManager",
+      "rate":null,
+      "project":"SecondProject",
+      "part":0.2,
+      "subs":8
+    },
+    {
+      "id":129,
+      "fio":"Юдин Ю.Ю.",
+      "position":"ProjectManager",
+      "rate":null,
+      "project":"ThirdProject",
+      "part":0.2,
+      "subs":8
+    },
+    {
+      "id":130,
+      "fio":"Яблоков Я.Я.",
+      "position":"SeniorManager",
+      "rate":null,
+      "project":"",
+      "part":0.1,
+      "subs":29
+    }
+  ]
+}

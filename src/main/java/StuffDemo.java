@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class _Demo {
+public class StuffDemo {
     public static void main(String args[]){
         ArrayList<Employee> employees = new ArrayList<Employee>();
         JSONParser jParser = new JSONParser();

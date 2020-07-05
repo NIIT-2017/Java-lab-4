@@ -1,0 +1,177 @@
+{
+  "employees": [
+    {
+      "id":1,
+      "fio":"Авдеев Герасим Сергеевич",
+      "position":"Programmer",
+      "rate":40,
+      "project":"SecondProject"
+    },
+    {
+      "id":2,
+      "fio":"Филатов Конрад Александрович",
+      "position":"Cleaner",
+      "rate":50,
+      "project":"FirstProject"
+    },
+    {
+      "id":3,
+      "fio":"Шаров Эдуард Эдуардович",
+      "position":"Driver",
+      "rate":100
+    },
+    {
+      "id":4,
+      "fio":"Чумак Макар Львович",
+      "position":"Programmer",
+      "rate":150,
+      "project":"FirstProject"
+    },
+    {
+      "id":5,
+      "fio":"Дмитриев Шарль Виталиевич",
+      "position":"Programmer",
+      "rate":150,
+      "project":"FirstProject"
+    },
+    {
+      "id":6,
+      "fio":"Филиппов Сергей Евгеньевич",
+      "position":"Programmer",
+      "rate":150,
+      "project":"FirstProject"
+    },
+    {
+      "id":7,
+      "fio":"Калашников Йосеф Петрович",
+      "position":"Programmer",
+      "rate":150,
+      "project":"SecondProject"
+    },
+    {
+      "id":8,
+      "fio":"Федотов Эдуард Ярославович",
+      "position":"Programmer",
+      "rate":150,
+      "project":"SecondProject"
+    },
+    {
+      "id":9,
+      "fio":"Новиков Егор Львович",
+      "position":"Programmer",
+      "rate":150,
+      "project":"SecondProject"
+    },
+    {
+      "id":10,
+      "fio":"Сазонов Глеб Валериевич",
+      "position":"Programmer",
+      "rate":150,
+      "project":"SecondProject"
+    },
+    {
+      "id":11,
+      "fio":"Фёдоров Чеслав Алексеевич",
+      "position":"Programmer",
+      "rate":150,
+      "project":"ThirdProject"
+    },
+    {
+      "id":12,
+      "fio":"Многогрешный Жигер Брониславович",
+      "position":"Driver",
+      "rate":100
+    },
+    {
+      "id":13,
+      "fio":"Грабчак Платон Дмитриевич",
+      "position":"Programmer",
+      "rate":150,
+      "project":"ThirdProject"
+    },
+    {
+      "id":14,
+      "fio":"Пилипейко Ждан Платонович",
+      "position":"Programmer",
+      "rate":150,
+      "project":"ThirdProject"
+    },
+    {
+      "id":15,
+      "fio":"Петренко Ярослав Александрович",
+      "position":"Tester",
+      "rate":40,
+      "project":"FirstProject"
+    },
+    {
+      "id":16,
+      "fio":"Федоренко Цицерон Львович",
+      "position":"Tester",
+      "rate":100,
+      "project":"FirstProject"
+    },
+    {
+      "id":17,
+      "fio":"Александров Пётр Викторович",
+      "position":"Tester",
+      "rate":100,
+      "project":"SecondProject"
+    },
+    {
+      "id":18,
+      "fio":"Рыжов Р.Р.",
+      "position":"Tester",
+      "rate":40,
+      "project":"SecondProject"
+    },
+    {
+      "id":19,
+      "fio":"Яровой Устин Петрович",
+      "position":"Tester",
+      "rate":40,
+      "project":"ThirdProject"
+    },
+    {
+      "id":20,
+      "fio":"Нестеров Егор Анатолиевич",
+      "position":"Tester",
+      "rate":40,
+      "project":"ThirdProject"
+    },
+    {
+      "id":21,
+      "fio":"Самойлов Ким Васильевич",
+      "position":"TeamLeader",
+      "rate":140,
+      "project":"FirstProject"
+    },
+    {
+      "id":22,
+      "fio":"Денисов Евстахий Богданович",
+      "position":"TeamLeader",
+      "rate":140,
+      "project":"FirstProject"
+    },
+    {
+      "id":23,
+      "fio":"Яковлев Ярослав Эдуардович",
+      "position":"TeamLeader",
+      "rate":180,
+      "project":"SecondProject"
+    },
+    {
+      "id":24,
+      "fio":"Кириллов Савва Владимирович",
+      "position":"SeniorManager",
+      "rate":140,
+      "project":"SecondProject"
+    },
+    {
+      "id":25,
+      "fio":"Анисимов Гордей Васильевич",
+      "position":"ProjectManager",
+      "rate":140,
+      "project":"ThirdProject"
+    }
+  ]
+}

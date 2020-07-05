@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "name":"FirstProject",
+      "budget":100000
+    },
+    {
+      "name":"SecondProject",
+      "budget":200000
+    },
+    {
+      "name":"ThirdProject",
+      "budget":500000
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "stuff": [
+    {
+      "name": "Тургенев Назар",
+      "position": "Driver",
+      "base": "200"
+    },
+    {
+      "name": "Яльцева Роза",
+      "position": "Cleaner",
+      "base": "150"
+    },
+    {
+      "name": "Эрдниева Ирина",
+      "position": "Cleaner",
+      "base": "150"
+    },
+    {
+      "name": "Сомова Аза",
+      "position": "Programmer",
+      "base": "400",
+      "project": "9000000",
+      "part": "0.005"
+    },
+    {
+      "name": "Чугунов Клавдий",
+      "position": "Programmer",
+      "base": "400",
+      "project": "9000000",
+      "part": "0.005"
+    },
+    {
+      "name": "Усилова Полина",
+      "position": "Programmer",
+      "base": "200",
+      "project": "9000000",
+      "part": "0.001"
+    },
+    {
+      "name": "Борхес Прокл",
+      "position": "Tester",
+      "base": "300",
+      "project": "9000000",
+      "part": "0.003"
+    },
+    {
+      "name": "Подкользина Дарья",
+      "position": "TeamLeader",
+      "base": "600",
+      "project": "9000000",
+      "part": "0.008",
+      "subordinateCount": "4",
+      "ratio": "0.07"
+    },
+    {
+      "name": "Новохацкий Харитон",
+      "position": "Programmer",
+      "base": "400",
+      "project": "12000000",
+      "part": "0.005"
+    },
+    {
+      "name": "Алексеев Евгений",
+      "position": "Programmer",
+      "base": "400",
+      "project": "12000000",
+      "part": "0.005"
+    },
+    {
+      "name": "Ярощук Руслан",
+      "position": "Programmer",
+      "base": "400",
+      "project": "12000000",
+      "part": "0.005"
+    },
+    {
+      "name": "Кизюрина Берта",
+      "position": "Programmer",
+      "base": "400",
+      "project": "12000000",
+      "part": "0.005"
+    },
+    {
+      "name": "Чурсунова Инесса",
+      "position": "Programmer",
+      "base": "200",
+      "project": "12000000",
+      "part": "0.001"
+    },
+    {
+      "name": "Амбражевич Порфирий",
+      "position": "Tester",
+      "base": "300",
+      "project": "12000000",
+      "part": "0.003"
+    },
+    {
+      "name": "Лукашевич Ярослав",
+      "position": "Tester",
+      "base": "300",
+      "project": "12000000",
+      "part": "0.003"
+    },
+    {
+      "name": "Журавлев Тимур",
+      "position": "TeamLeader",
+      "base": "600",
+      "project": "12000000",
+      "part": "0.008",
+      "subordinateCount": "7",
+      "ratio": "0.07"
+    },
+    {
+      "name": "Проскура Стела",
+      "position": "ProjectManager",
+      "project": "9000000",
+      "part": "0.01",
+      "subordinateCount": "5",
+      "ratio": "0.05"
+    },
+    {
+      "name": "Калинин Никон",
+      "position": "ProjectManager",
+      "project": "12000000",
+      "part": "0.01",
+      "subordinateCount": "8",
+      "ratio": "0.05"
+    },
+    {
+      "name": "Тюрина Любава",
+      "position": "SeniorManager",
+      "project": "21000000",
+      "part": "0.02",
+      "subordinateCount": "15",
+      "ratio": "0.03"
+    }
+  ]
+}

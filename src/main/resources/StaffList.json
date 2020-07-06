@@ -1,0 +1,354 @@
+[
+    {
+        "name": "Казаков Фёдор Дмитриевич",
+        "id": 1,
+        "position": "Cleaner",
+        "base": 400
+    },
+    {
+        "name": "Котовский Цефас Анатольевич",
+        "id": 2,
+        "position": "Cleaner",
+        "base": 400
+    },
+    {
+        "name": "Шарапов Марк Андреевич",
+        "id": 3,
+        "position": "Driver",
+        "base": 500
+    },
+    {
+        "name": "Худобяк Болеслав Романович",
+        "id": 4,
+        "position": "Driver",
+        "base": 500
+    },
+    {
+        "name": "Гаврилов Богдан Ярославович",
+        "id": 5,
+        "position": "Senior Manager"
+    },
+    {
+        "name": "Горобчук Захар Сергеевич",
+        "project": "SmartWatch",
+        "id": 6,
+        "position": "Project Manager"
+    },
+    {
+        "name": "Фёдоров Филипп Борисович",
+        "project": "SmartScales",
+        "id": 7,
+        "position": "Project Manager"
+    },
+    {
+        "name": "Кабанов Никодим Иванович",
+        "project": "SmartKeys",
+        "id": 8,
+        "position": "Project Manager"
+    },
+    {
+        "name": "Ершов Спартак Вадимович",
+        "project": "SmartWatch",
+        "id": 9,
+        "position": "Manager"
+    },
+    {
+        "name": "Пономаренко Фёдор Андреевич",
+        "project": "SmartScales",
+        "id": 10,
+        "position": "Manager"
+    },
+    {
+        "name": "Лаврентьев Данила Алексеевич",
+        "project": "SmartKeys",
+        "id": 11,
+        "position": "Manager"
+    },
+    {
+        "name": "Плаксий Арсений Петрович",
+        "project": "SmartWatch",
+        "id": 12,
+        "position": "Team Leader",
+        "base": 950
+    },
+    {
+        "name": "Гаврилов Август Иванович",
+        "project": "SmartScales",
+        "id": 13,
+        "position": "Team Leader",
+        "base": 950
+    },
+    {
+        "name": "Зайцев Харитон Артёмович",
+        "project": "SmartKeys",
+        "id": 14,
+        "position": "Team Leader",
+        "base": 950
+    },
+    {
+        "name": "Николаева Оксана Брониславовна",
+        "project": "SmartWatch",
+        "id": 15,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Белобокина Доминика Леонидовна",
+        "project": "SmartWatch",
+        "id": 16,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Яковлева Василиса Валериевна",
+        "project": "SmartScales",
+        "id": 17,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Сердюк Вера Леонидовна",
+        "project": "SmartScales",
+        "id": 18,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Кашина Любовь Алексеевна",
+        "project": "SmartKeys",
+        "id": 19,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Собакина Марфа Петровна",
+        "project": "SmartKeys",
+        "id": 20,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Волкова Татьяна Дмитриевна",
+        "project": "SmartKeys",
+        "id": 21,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Цветкова Юлия Ивановна",
+        "project": "SmartKeys",
+        "id": 22,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Белова Мария Фёдорвна",
+        "project": "SmartKeys",
+        "id": 23,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Николаева Алла Алексеевна",
+        "project": "SmartKeys",
+        "id": 24,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Ткаченко Надежда Станиславовна",
+        "project": "SmartKeys",
+        "id": 25,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Давыдова Евгения Эдуардовна",
+        "project": "SmartKeys",
+        "id": 26,
+        "position": "QA",
+        "base": 650
+    },
+    {
+        "name": "Хорошева Мая Дмитриевна",
+        "project": "SmartWatch",
+        "id": 27,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Разгильдяев Станислав Петрович",
+        "project": "SmartWatch",
+        "id": 28,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Мишина Розалина Фёдоровна",
+        "project": "SmartWatch",
+        "id": 29,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Шарова Злата Вадимовна",
+        "project": "SmartWatch",
+        "id": 30,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Шестаков Афанасий Эдуардович",
+        "project": "SmartScales",
+        "id": 31,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Нестеров Тимур Владимирович",
+        "project": "SmartScales",
+        "id": 32,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Юдин Юрий Богданович",
+        "project": "SmartScales",
+        "id": 33,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Лаврентьев Пётр Евгеньевич",
+        "project": "SmartScales",
+        "id": 34,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Бирюков Евдоким Леонидович",
+        "project": "SmartKeys",
+        "id": 35,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Шашков Яков Данилович",
+        "project": "SmartKeys",
+        "id": 36,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Ерёменко Яков Дмитриевич",
+        "project": "SmartKeys",
+        "id": 37,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Устинов Лаврентий Викторович",
+        "project": "SmartKeys",
+        "id": 38,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Бутко Тимур Анатолиевич",
+        "project": "SmartKeys",
+        "id": 39,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Артемьев Герман Львович",
+        "project": "SmartKeys",
+        "id": 40,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Герасимов Корнелий Эдуардович",
+        "project": "SmartKeys",
+        "id": 41,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Кулаков Филипп Иванович",
+        "project": "SmartKeys",
+        "id": 42,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Суворов Устин Леонидович",
+        "project": "SmartKeys",
+        "id": 43,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Пожарова Анна Викторовна",
+        "project": "SmartKeys",
+        "id": 44,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Ермошкина Фёкла Львовна",
+        "project": "SmartKeys",
+        "id": 45,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Дубина Юлия Дмитриевна",
+        "project": "SmartKeys",
+        "id": 46,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Кудрявцева Василиса Викторовна",
+        "project": "SmartKeys",
+        "id": 47,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Масловска Богдана Михайловна",
+        "project": "SmartKeys",
+        "id": 48,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Григорьева Инна Михайловна",
+        "project": "SmartKeys",
+        "id": 49,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Шубина Юнона Григорьевна",
+        "project": "SmartKeys",
+        "id": 50,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Самсонова Арина Романовна",
+        "project": "SmartKeys",
+        "id": 51,
+        "position": "Programmer",
+        "base": 900
+    },
+    {
+        "name": "Сыпченко Олеся Фёдоровна",
+        "project": "SmartKeys",
+        "id": 52,
+        "position": "Programmer",
+        "base": 900
+    }
+]

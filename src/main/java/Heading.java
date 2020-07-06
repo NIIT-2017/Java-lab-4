@@ -1,0 +1,4 @@
+interface Heading
+{
+    float calcHeading ();
+}

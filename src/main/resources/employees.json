@@ -1,0 +1,478 @@
+{"employees": [
+  {
+    "id": "1",
+    "name": "Подоров Капитон Кириллович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "2",
+    "name": "Ратников Мирослав Адрианович",
+    "position": "manager",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "3",
+    "name": "Шулепин Григорий Леонидович",
+    "position": "tester",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "4",
+    "name": "Шелепов Георгий Иннокентиевич",
+    "position": "driver",
+    "base": "30000"
+  },
+  {
+    "id": "5",
+    "name": "Карнаухов Михаил Остапович",
+    "position": "manager",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "6",
+    "name": "Плеханова Ирина Святославовна",
+    "position": "cleaner",
+    "base": "20000"
+  },
+  {
+    "id": "7",
+    "name": "Ярцин Антип Герасимович",
+    "position": "driver",
+    "base": "30000"
+  },
+  {
+    "id": "8",
+    "name": "Позон Рюрик Прокофиевич",
+    "position": "manager",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "9",
+    "name": "Ругов Филимон Мечиславович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "10",
+    "name": "Калнберзин Агафон Андроникович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "11",
+    "name": "Кузьминыха Лилия Казимировна",
+    "position": "cleaner",
+    "base": "20000"
+  },
+  {
+    "id": "12",
+    "name": "Низамутдинов Василий Гордеевич",
+    "position": "driver",
+    "base": "30000"
+  },
+  {
+    "id": "13",
+    "name": "Караулина Клара Федотовна",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "14",
+    "name": "Фомичёв Кондратий Куприянович",
+    "position": "team-leader",
+    "base": "25000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15",
+    "subordinates": "5",
+    "rate": "1000"
+  },
+  {
+    "id": "15",
+    "name": "Полушин Наум Денисович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "16",
+    "name": "Глинин Карл Сидорович",
+    "position": "driver",
+    "base": "30000"
+  },
+  {
+    "id": "17",
+    "name": "Груздев Владислав Натанович",
+    "position": "tester",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "18",
+    "name": "Пыхтина Эвелина Ипполитовна",
+    "position": "cleaner",
+    "base": "20000"
+  },
+  {
+    "id": "19",
+    "name": "Полушин Дмитрий Пахомович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "20",
+    "name": "Кардапольцев Фока Ростиславович",
+    "position": "manager",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "21",
+    "name": "Куксилов Владлен Иннокентиевич",
+    "position": "tester",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "22",
+    "name": "Гуковский Ираклий Никонович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "23",
+    "name": "Капица Пахом Филимонович",
+    "position": "tester",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "24",
+    "name": "Шакмаков Порфирий Адамович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "25",
+    "name": "Богатырева Ева Петровна",
+    "position": "manager",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "26",
+    "name": "Низова Елизавета Иларионовна",
+    "position": "tester",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "27",
+    "name": "Листунов Осип Натанович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "28",
+    "name": "Черкасов Фадей Леонович",
+    "position": "team-leader",
+    "base": "25000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15",
+    "subordinates": "5",
+    "rate": "1000"
+  },
+  {
+    "id": "29",
+    "name": "Кропанина Элеонора Владиленовна",
+    "position": "tester",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "30",
+    "name": "Недельский Парфен Феликсович",
+    "position": "tester",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "31",
+    "name": "Чежеков Семен Тихонович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "32",
+    "name": "Мухоморов Евдоким Маркович",
+    "position": "projectManager",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15",
+    "subordinates": "13",
+    "rate": "1000"
+  },
+  {
+    "id": "33",
+    "name": "Тюшняков Михей Аникитевич",
+    "position": "manager",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "34",
+    "name": "Янукович Яков Андроникович",
+    "position": "tester",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "35",
+    "name": "Берлунова Владлена Тихоновна",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  },
+  {
+    "id": "36",
+    "name": "Авдеев Филипп Трофимович",
+    "position": "seniorManager",
+    "project": "project1, project2, project3",
+    "budget": "7050000",
+    "duration": "9",
+    "share": "0.15",
+    "subordinates": "39",
+    "rate": "1000"
+  },
+  {
+    "id": "37",
+    "name": "Шаломенцева Юлия Виталиевна",
+    "position": "tester",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "38",
+    "name": "Смотрова Маргарита Мефодиевна",
+    "position": "tester",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "39",
+    "name": "Косма Иосиф Леонидович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "40",
+    "name": "Жевлакова Инга Марковна",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "41",
+    "name": "Ясюлевич Леонид Анатолиевич",
+    "position": "tester",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "42",
+    "name": "Позона Светлана Романовна",
+    "position": "projectManager",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15",
+    "subordinates": "13",
+    "rate": "1000"
+  },
+  {
+    "id": "43",
+    "name": "Кошечкина Нона Игнатиевна",
+    "position": "tester",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "44",
+    "name": "Маркин Данила Никанорович",
+    "position": "team-leader",
+    "base": "25000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15",
+    "subordinates": "5",
+    "rate": "1000"
+  },
+  {
+    "id": "45",
+    "name": "Яцышина Марианна Святославовна",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "46",
+    "name": "Липов Рюрик Никитевич",
+    "position": "tester",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "47",
+    "name": "Яблонов Казимир Никонович",
+    "position": "tester",
+    "base": "20000",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15"
+  },
+  {
+    "id": "48",
+    "name": "Подоров Алексей Мирославович",
+    "position": "programmer",
+    "base": "20000",
+    "project": "project3",
+    "budget": "3000000",
+    "duration": "12",
+    "share": "0.15"
+  },
+  {
+    "id": "49",
+    "name": "Тютчев Соломон Наумович",
+    "position": "projectManager",
+    "project": "project2",
+    "budget": "2250000",
+    "duration": "9",
+    "share": "0.15",
+    "subordinates": "13",
+    "rate": "1000"
+  },
+  {
+    "id": "50",
+    "name": "Строганова Майя Тихоновна",
+    "position": "tester",
+    "base": "20000",
+    "project": "project1",
+    "budget": "1850000",
+    "duration": "6",
+    "share": "0.15"
+  }
+]}

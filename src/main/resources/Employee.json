@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "name": "Бородина Едоксия Васильевна",
+    "position": "Cleaner",
+    "base": 150,
+    "worktime": 168
+  },
+  {
+    "id": 2,
+    "name": "Львова Сауда Степановна",
+    "position": "Cleaner",
+    "base": 150,
+    "worktime": 84
+  },
+  {
+    "id": 3,
+    "name": "Медведев Хаббан Святославович",
+    "position": "Driver",
+    "base": 250,
+    "worktime": 168
+  },
+  {
+    "id": 4,
+    "name": "Белокрылов Девнидий Геннадиевич",
+    "position": "Driver",
+    "base": 250,
+    "worktime": 84
+  },
+  {
+    "id": 5,
+    "name": "Пчёлкин Ахмедзаки Викторович",
+    "position": "Programmer",
+    "base": 600,
+    "progect": "Progect1",
+    "worktime": 168,
+    "share": 0.05
+  },
+  {
+    "id": 6,
+    "name": "Пименова Эмануэль Артемовна",
+    "position": "Programmer",
+    "base": 600,
+    "progect": "Progect1",
+    "worktime": 168,
+    "share": 0.05
+  },
+  {
+    "id": 7,
+    "name": "Даров Фарион Станиславович",
+    "position": "Programmer",
+    "base": 600,
+    "progect": "Progect2",
+    "worktime": 168,
+    "share": 0.05
+  },
+  {
+    "id": 8,
+    "name": "Шорохов Мохьмад Святославович",
+    "position": "Programmer",
+    "base": 600,
+    "progect": "Progect3",
+    "worktime": 210,
+    "share": 0.05
+  },
+  {
+    "id": 9,
+    "name": "Волощук Джэн Федоровна",
+    "position": "Tester",
+    "base": 500,
+    "progect": "Progect1",
+    "worktime": 168,
+    "share": 0.05
+  },
+  {
+    "id": 10,
+    "name": "Травников Намаз Тимурович",
+    "position": "Tester",
+    "base": 500,
+    "progect": "Progect2",
+    "worktime": 168,
+    "share": 0.05
+  },
+  {
+    "id": 11,
+    "name": "Мищенко Календион Семенович",
+    "position": "Tester",
+    "base": 500,
+    "progect": "Progcet3",
+    "worktime": 210,
+    "share": 0.05
+  },
+  {
+    "id": 12,
+    "name": "Баранова Сеия Юрьевна",
+    "position": "Manager",
+    "progect": "Progect1",
+    "share": 0.05
+  },
+  {
+    "id": 13,
+    "name": "Быкова Аилита Анатольевна",
+    "position": "Manager",
+    "progect": "Progect1",
+    "share": 0.05
+  },
+  {
+    "id": 14,
+    "name": "Быкова Аилита Анатольевна",
+    "position": "Manager",
+    "progect": "Progect1",
+    "share": 0.05
+  },
+  {
+    "id": 15,
+    "name": "Абрамович Бахара Григорьевна",
+    "position": "Manager",
+    "progect": "Progect2",
+    "share": 0.05
+  },
+  {
+    "id": 16,
+    "name": "Прокофьева Тамако Геннадиевна",
+    "position": "Manager",
+    "progect": "Progect2",
+    "share": 0.05
+  },
+  {
+    "id": 17,
+    "name": "Наумов Балтай Вячеславович",
+    "position": "Manager",
+    "progect": "Progect3",
+    "share": 0.05
+  },
+  {
+    "id": 18,
+    "name": "Городнов Гансо Кириллович",
+    "position": "Manager",
+    "progect": "Progect3",
+    "share": 0.05
+  },
+  {
+    "id": 19,
+    "name": "Абрамович Излат Дмитриевич",
+    "position": "ProgectManager",
+    "progect": "Progect1",
+    "people": 3,
+    "share": 0.07
+  },
+  {
+    "id": 20,
+    "name": "Федосеев Арвыдас Антонович",
+    "position": "ProgectManager",
+    "progect": "Progect2",
+    "people": 2,
+    "share": 0.07
+  },
+  {
+    "id": 21,
+    "name": "Басков Ройс Степанович",
+    "position": "ProgectManager",
+    "progect": "Progect3",
+    "people": 2,
+    "share": 0.07
+  },
+  {
+    "id": 22,
+    "name": "Русина Забеля Станиславовна",
+    "position": "SeniorManager",
+    "progect": "Allprogect",
+    "people": 10,
+    "share": 0.1
+  },
+  {
+    "id": 23,
+    "name": "Кожин Сатымбай Валерьевич",
+    "position": "TeamLeader",
+    "base": 1000,
+    "progect": "Allprogect",
+    "people": 7,
+    "worktime": 168,
+    "share": 0.1
+  }
+]

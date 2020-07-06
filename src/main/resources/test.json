@@ -1,0 +1,150 @@
+[
+  {
+    "position" : "Clear",
+    "id" : 22793225,
+    "name": "Гришина Лили Артёмовна",
+    "base": 15713.24
+  },
+  {
+    "position": "Driver",
+    "id": 22793227,
+    "name":"Рыбаков Аверьян Арсеньевич",
+    "base": 17713.68,
+    "countWeekendTripsHours": 1
+  },
+  {
+    "position": "Programmer",
+    "id":22793229 ,
+    "name":"Андреева Муза Авдеевна",
+    "base":33126.26 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0003
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0007
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0005
+      }
+    ]
+  },
+  {
+    "position": "Tester",
+    "id":22793251,
+    "name":"Быкова Майя Семеновна",
+    "base":31781.26,
+    "mapProjectPercent":[
+      {
+        "project":"Internet of things in production",
+        "percent":0.0009
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.0001
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0001
+      }
+    ],
+    "percentCode":0.0009
+  },
+  {
+    "position": "TeamLeader",
+    "id":22793269,
+    "name":"Комиссаров Ираклий Игнатьевич",
+    "base":47980.66 ,
+    "mapProjectPercent":[
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.0008
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.0009
+      },
+      {
+        "project":"Unmanned control",
+        "percent":0.0025
+      }
+    ],
+    "personal":7
+  },
+  {
+    "position": "Manager",
+    "id":22793273,
+    "name":"Фадеев Никифор Евсеевич",
+    "mapProjectPercent":[
+      {
+        "project":"Workshop planning",
+        "percent":0.005
+      },
+      {
+        "project":"Online store",
+        "percent":0.009
+      }
+    ]
+  },
+  {
+    "position": "ProjectManager",
+    "id":22793276,
+    "name":"Давыдов Велор Ростиславович",
+    "mapProjectPercent":[
+      {
+        "project":"Unmanned control",
+        "percent":0.03
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.007
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.015
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.003
+      },
+      {
+        "project":"Online store",
+        "percent":0.02
+      }
+    ],
+    "personal":9
+  },
+
+  {
+    "position": "SeniorManager",
+    "id":22793277,
+    "name":"Марков Дмитрий Наумович",
+    "mapProjectPercent":[
+
+      {
+        "project":"Unmanned control",
+        "percent":0.009
+      },
+      {
+        "project":"Operation monitoring of a resource",
+        "percent":0.025
+      },
+      {
+        "project":"Workshop planning",
+        "percent":0.05
+      },
+      {
+        "project":"Internet of things in production",
+        "percent":0.04
+      },
+      {
+        "project":"Online store",
+        "percent":0.01
+      }
+    ],
+    "personal":49
+  }
+]

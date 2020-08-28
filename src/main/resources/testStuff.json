@@ -1,0 +1,51 @@
+[
+  
+  {
+    "id": 1,
+    "position": "driver",
+    "fio": "﻿Погребнова Оксана Тимуровна",
+    "workTime": 160
+  },
+  {
+    "id": 2,
+    "position": "cleaner",
+    "fio": "Сапалёв Андрон Денисович",
+    "workTime": 160
+  },
+  {
+    "id": 3,
+    "position": "programmer",
+    "fio": "Мячин Чеслав Карлович",
+    "workTime": 160
+  },
+  {
+    "id": 4,
+    "position": "tester",
+    "fio": "Валуева Ирина Анатолиевна",
+    "workTime": 160
+  },
+  {
+    "id": 5,
+    "position": "teamLeader",
+    "fio": "Тамило Кузьма Ираклиевич",
+    "workTime": 160
+  },
+  {
+    "id": 6,
+    "position": "manager",
+    "fio": "Киреев Петр Измаилович",
+    "workTime": 160
+  },
+  {
+    "id": 7,
+    "position": "projectManager",
+    "fio": "Рясной Бронислав Герасимович",
+    "workTime": 160
+  },
+  {
+    "id": 8,
+    "position": "seniorManager",
+    "fio": "Энгельгардт Пимен Артемиевич",
+    "workTime": 160
+  }
+]
